@@ -8,26 +8,26 @@ This ISC21 SCC takes place virtually. Each team will have access to the competit
 
 ### Aspire 1 Specs<sup>[1]</sup>
 
- - Fujitsu PRIMERGY servers providing compute capacity of up to 1 PFlops and 128 GB memory per node --> 5.33 GB memory per core.
+ - <b>Fujitsu PRIMERGY</b> servers providing compute capacity of up to <b>1 PFlops</b> and <b>128 GB</b> memory per node --> 5.33 GB memory per core.
 
- - GPU Compute Capability with NVIDIA Tesla K40
+ - GPU Compute Capability with <b>NVIDIA Tesla K40</b>
 
  ### Niagara Specs<sup>[2]</sup>
 
  - <b>2,016</b> nodes
- - 40-core Skylake nodes @ 2.4 GHz or Cascaselake cores 2.5GHz, for a total of 80,640 cores
+ - <b>40-core Skylake</b> nodes @ 2.4 GHz or <b>Cascaselake</b> cores 2.5GHz, for a total of <b>80,640</b> cores
 
- - 202 GB per node
+ - <b>202 GB</b> per node
 
- - EDR Infiniband network --> 'Dragonfly+' topology
+ - EDR <b>Infiniband network</b> --> 'Dragonfly+' topology
 
  - 256 TB burst buffer (Excelero + IBM Spectrum Scale)
 
  - No local disks
 
- - RPeak: 6PFlops
+ - RPeak: <b>6 PFlops</b>
 
- - RMax: 4PFlops
+ - RMax: <b>4 PFlops</b>
 
  - 900kW power consumption
 
