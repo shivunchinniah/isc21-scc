@@ -29,3 +29,21 @@ https://hpcadvisorycouncil.atlassian.net/wiki/spaces/HPCWORKS/pages/1928986641/L
 
 ## Coding Challenge
 To be added...
+
+
+## Scoring
+
+| Benchmark  | Weight |
+|------------|--------|
+| HPCC       | 10%    |
+| HPCG       | 10%    |
+| GPAW       | 10%    |
+| LAMMPS     | 10%    |
+| MHM2       | 10%    |
+| WRF        | 10%    |
+| Coding     | 15%    |
+| Innovation | 10%    |
+| Interview  | 15%    |
+
+
+via https://www.hpcadvisorycouncil.com/events/student-cluster-competition/scoring.php

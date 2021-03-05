@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Eyespy v1.0"
+
+sacct --starttime 2014-07-01 --format=User%15,JobID,Jobname%30,partition,state,time,start,end,elapsed,nnodes,nodelist --allusers

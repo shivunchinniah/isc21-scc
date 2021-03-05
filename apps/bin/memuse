@@ -1,0 +1,4 @@
+#!/bin/bash
+
+free -t | awk 'FNR == 2 {print "Current Memory Utilization % is : " $3/$2*100}'
+free -t | awk 'FNR == 3 {print "Current Swap Utilization % is : " $3/$2*100}'
