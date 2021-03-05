@@ -1,0 +1,7 @@
+# set time zone to South African time
+export TZ=Africa/Johannesburg
+
+# add isc21-scc/apps to path and lib path
+export PATH=$PATH:$HOME/isc21-scc/apps/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/isc21-scc/apps/lib
+export LIBRARY_PATH=$LIBRARY_PATH:$HOME/isc21-scc/apps/lib
