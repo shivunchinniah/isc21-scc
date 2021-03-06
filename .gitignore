@@ -1,0 +1,14 @@
+# Downloads should not be tracked with git
+downloads/*
+
+#apps to ignore --> apps can be installed on the envrionment via scripts/install.sh
+apps/bin/*
+apps/src/*
+apps/lib/*
+apps/share/*
+
+
+#apps to include
+!apps/bin/memuse
+!apps/bin/cpuclock
+!apps/bin/eyespy
