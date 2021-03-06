@@ -28,7 +28,7 @@ https://hpcadvisorycouncil.atlassian.net/wiki/spaces/HPCWORKS/pages/1928986641/L
 
 
 ## Coding Challenge
-To be added...
+https://hpcadvisorycouncil.atlassian.net/wiki/spaces/HPCWORKS/pages/2159706134/Coding+Challenge+ISC21
 
 
 ## Scoring
