@@ -6,6 +6,7 @@ apps/bin/*
 apps/src/*
 apps/lib/*
 apps/share/*
+apps/miniconda/*
 
 
 #apps to include

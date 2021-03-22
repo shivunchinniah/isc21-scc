@@ -1,0 +1,10 @@
+# Coding Challeng Env
+# to create this environment: conda env create -f environment.yml
+name: coding_challenge
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - compilers
+  - openmpi
+
