@@ -9,6 +9,7 @@ This ISC21 SCC takes place virtually. Each team will have access to the competit
 ### Aspire 1 Specs<sup>[1]</sup>
 
  - <b>Fujitsu PRIMERGY</b> servers providing compute capacity of up to <b>1 PFlops</b> and <b>128 GB</b> memory per node --> 5.33 GB memory per core.
+ - Intel E5-2690v3 (2.60GHz, 12 cores)
 
  - GPU Compute Capability with <b>NVIDIA Tesla K40</b>
 
