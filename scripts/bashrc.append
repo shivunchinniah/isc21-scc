@@ -5,3 +5,6 @@ export TZ=Africa/Johannesburg
 export PATH=$PATH:$HOME/isc21-scc/apps/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/isc21-scc/apps/lib
 export LIBRARY_PATH=$LIBRARY_PATH:$HOME/isc21-scc/apps/lib
+
+
+source ~/isc21-scc/scripts/benchenv.sh
