@@ -2,10 +2,7 @@
 downloads/*
 
 #apps to ignore --> apps can be installed on the envrionment via scripts/install.sh
-apps/bin/*
-apps/src/*
-apps/lib/*
-apps/share/*
+apps/*
 apps/miniconda/*
 apps/openmpi/*
 apps/modulefiles/*
@@ -15,3 +12,8 @@ apps/modulefiles/*
 !apps/bin/memuse
 !apps/bin/cpuclock
 !apps/bin/eyespy
+
+!apps/bin
+!apps/src
+!apps/lib
+!apps/share
