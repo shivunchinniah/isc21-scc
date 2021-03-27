@@ -7,6 +7,7 @@ apps/src/*
 apps/lib/*
 apps/share/*
 apps/miniconda/*
+apps/openmpi/*
 
 
 #apps to include

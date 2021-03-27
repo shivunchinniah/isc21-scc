@@ -29,3 +29,15 @@ LMOD keeps versioning in mind. Say you have two gcc versions under the module na
 then `gcc/9.4.1` will be loaded when you <code>ml gcc</code>
 
 Read more about LMOD https://lmod.readthedocs.io/en/latest/
+
+
+## OpenMPI
+
+### CHPC Research Cluster
+There is a precompiled version of OpenMPI under the path /home/schinniah/share/openmpi_rchpc_v1.tar.gz
+
+Make a copy and extract then:
+
+<code>
+mkdir --parents $APPS/openmpi/rchpc_v1/; mv openmpi $APPS/openmpi/rchpc_v1/
+</code>

@@ -1,5 +1,12 @@
 # Challenges
 
+## Setting up your environment
+1. Clone this repo
+2. Edit ~/.bashrc and add line:
+<code>source ~isc21-scc/scripts/bashrc.append</code>
+
+3. That is it. Now you can use some environment variables and `ml`
+
 ## HPC Challenge
 http://icl.cs.utk.edu/hpcc/
 
