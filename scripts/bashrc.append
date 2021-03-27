@@ -8,8 +8,9 @@ export PATH=$HOME/isc21-scc/apps/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/isc21-scc/apps/lib
 export LIBRARY_PATH=$LIBRARY_PATH:$HOME/isc21-scc/apps/lib
 
-# add apps and lmod shortcut
+# add apps, scripts and lmod shortcut
 export APPS=~/isc21-scc/apps
+export SCRIPTS=~/isc21-scc/scripts
 export ML_DIR=$APPS/modulefiles
 
 # prepend modules to env
@@ -18,3 +19,4 @@ export MODULEPATH=$ML_DIR:$MODULEPATH
 export ISC=~/isc21-scc
 
 source ~/isc21-scc/scripts/benchenv.sh
+
