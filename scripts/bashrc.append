@@ -1,3 +1,5 @@
+# in your .bashrc source ~/isc-21/scripts/bashrc.append
+
 # set time zone to South African time
 export TZ=Africa/Johannesburg
 
