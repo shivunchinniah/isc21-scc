@@ -29,7 +29,9 @@ k80 - Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
 
 1. Download & extract latest version of OpenBLAS from https://www.openblas.net/
 
-2. Compile and install using:
+2. Load dependancies: libfabric and openmpi via <code>ml libfabric; ml openmpi</code>
+
+3. Compile and install using:
 <code> 
 mkdir build; cd build;
 
