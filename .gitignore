@@ -21,3 +21,5 @@ apps/share/*
 !apps/src
 !apps/lib
 !apps/share
+
+.vscode
