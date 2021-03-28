@@ -4,6 +4,7 @@
 1. Clone this repos
 2. Edit ~/.bashrc and add line:
 <code>source ~isc21-scc/scripts/bashrc.append</code>
+or run the script inject_bashrc.sh in scripts.
 
 3. That is it. Now you can use some environment variables and `ml`
 
