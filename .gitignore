@@ -6,6 +6,10 @@ apps/*
 apps/miniconda/*
 apps/openmpi/*
 apps/modulefiles/*
+apps/bin/*
+apps/lib/*
+apps/lib64/*
+apps/share/*
 
 
 #apps to include
