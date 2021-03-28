@@ -5,7 +5,7 @@ then
     echo "Setup Completed previously."
 else
     echo "source ~/isc21-scc/scripts/bashrc.append" >> ~/.bashrc
-    echo "Setup Completed."
+    echo "Setup Completed. Run: `exec bash` to apply changes"
 fi
 
 
