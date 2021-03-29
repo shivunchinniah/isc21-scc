@@ -2,10 +2,10 @@
 
 # Download and extract tarball
 
-tarball=$DOWNLOADS/openmpi-4.1.0.tar.gz
-download=https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.0.tar.gz
-appname=openmpi
-appversion=openmpi-4.1.0
+tarball=$DOWNLOADS/OpenBLAS-0.3.13.tar.gz
+download=https://github.com/xianyi/OpenBLAS/releases/download/v0.3.13/OpenBLAS-0.3.13.tar.gz
+appname=openblas
+appversion=OpenBLAS-0.3.13
 installdir=$APPS/$appname/$appversion
 
 cd $DOWNLOADS
@@ -38,27 +38,16 @@ cd $appversion
 
 echo "Loading Dependancies..."
 ml libfabric
+ml cmake
+ml openmpi
 
-echo "Configuring..."
-./configure --prefix=$installdir --without-verbs
+echo "Making Build Dir"
+mkdir build
+cd build
 
-echo "Building... May take a while"
-sleep 3
-
-#Build
-make -j
-
-echo "Installing..."
-sleep 2
-
-make install
-
-echo "Adding Module File"
-mkdir --parents $APPS/modulefiles/openmpi
-cp $SCRIPTS/modulefiles/openmpi/4.1.0.lua $APPS/modulefiles/openmpi/
+echo "Installing... May take a while"
+cmake .. -DCMAKE_INSTALL_PREFIX=$installdir \
+-DCMAKE_C_COMPILER=mpicc \
+&& make -j install
 
 echo "DONE!!!"
-
-
-
-
