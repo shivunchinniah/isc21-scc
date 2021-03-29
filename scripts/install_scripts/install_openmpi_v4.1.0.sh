@@ -48,6 +48,8 @@ make install
 echo "Adding Module File"
 mkdir --parents $APPS/modulefiles/openmpi
 cp $SCRIPTS/modulefiles/openmpi/4.1.0.lua $APPS/modulefiles/openmpi/
+# update ml cache
+module --ignore_cache avail > /dev/null
 
 echo "DONE!!!"
 
