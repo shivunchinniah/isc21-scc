@@ -11,11 +11,12 @@ if test -f $DOWNLOADS/patch_10Mar2021.tar.gz
 then
     echo "File downloaded"
 else
+    cd $DOWNLOADS
     echo "Downloading..."
     wget https://github.com/lammps/lammps/archive/refs/tags/patch_10Mar2021.tar.gz
 fi
 
-cd $orig_path
+cd $LAMMPS/Instances/test2
 
 tar xvaf $DOWNLOADS/patch_10Mar2021.tar.gz
 
