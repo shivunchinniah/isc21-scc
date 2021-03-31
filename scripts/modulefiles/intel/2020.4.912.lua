@@ -1,3 +1,4 @@
+setenv("INTEL_LICENSE_FILE", os.getenv("$SCRIPTS") .. "/licences/intel/intel_rchpc.lic")
 setenv("CLASSPATH","/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/mpi/intel64/lib/mpi.jar:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/daal/lib/daal.jar")
 setenv("CPATH","/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/ipp/include:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/mkl/include:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/pstl/include:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/pstl/stdlib:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/tbb/include:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/tbb/include:/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/daal/include")
 setenv("DAALROOT","/home/witsteam1/apps/intel/compilers_and_libraries_2020.4.304/linux/daal")
