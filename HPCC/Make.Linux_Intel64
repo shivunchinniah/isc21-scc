@@ -67,7 +67,7 @@ ARCH         = Linux_Intel64
 # - HPL Directory Structure / HPL library ------------------------------
 # ----------------------------------------------------------------------
 #
-TOPdir       = $(HOME)/HPCC/hpcc-1.5.0/hpl
+TOPdir       = $(HPCC)/hpcc-1.5.0/hpl
 INCdir       = $(TOPdir)/include
 BINdir       = $(TOPdir)/bin/$(ARCH)
 LIBdir       = $(TOPdir)/lib/$(ARCH)

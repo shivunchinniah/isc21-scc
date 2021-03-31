@@ -51,3 +51,13 @@ note: cmake v3, openmpi,  and libfabric dependancies
 3. Copy arh
 
 4. Build using <br><code>make --arch=Linux_Intel64
+
+
+## Provisional Setup Intel
+
+1. Download and extract tarball
+2. copy Make.Linux_Intel64 into {path to hpcc folder}/hpl folder
+3. Edit TOPdir in Make.Linux_Intel64 to point to {path to hpcc folder}/hpl
+4. Load intel compiler <code>ml purge; ml intel</code>
+5. Move to {path to hpcc folder} and run <code>make arch=Linux_Intel64 -j</code>
+6. Done.
