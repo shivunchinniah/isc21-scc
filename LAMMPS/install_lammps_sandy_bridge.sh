@@ -4,13 +4,14 @@
 ml purge
 ml intel
 
-$orig_path=$(pwd)
+orig_path=$(pwd)
 
 # download and extract
 if test -f $DOWNLOADS/patch_10Mar2021.tar.gz
 then
     echo "File downloaded"
 else
+    cd $DOWNLOADS
     echo "Downloading..."
     wget https://github.com/lammps/lammps/archive/refs/tags/patch_10Mar2021.tar.gz
 fi
