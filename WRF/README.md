@@ -14,13 +14,13 @@
 
 to install an instance of the requirements run ./create_test.sh
 then cd into tests/test_XXXXX and run in this order
-1. ./intall_hdf5.sh
-2. ./install_netcdf.sh
+1. <code>./intall_hdf5.sh</code>
+2. <code>./install_netcdf.sh</code>
 <!-- ./install_libz.sh
 ./install_libcurl.sh -->
-3. ./install_netcdf-fortran.sh
-4. ./install_netcdf-python.sh
-5. ./configure_wrf.sh (downloads source code and runs configuration script)
+3. <code>./install_netcdf-fortran.sh</code>
+4. <code>./install_netcdf-python.sh</code>
+5. <code>./configure_wrf.sh</code> → (downloads source code and runs configuration script)
 
 ### Building
 Once all dependancies have been installed and loaded
