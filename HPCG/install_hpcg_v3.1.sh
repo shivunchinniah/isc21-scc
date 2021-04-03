@@ -28,33 +28,6 @@ tar xvaf hpcg-3.1.tar.gz
 
 cd hpcg-3.1
 
-#echo "Loading Dependancies..."
-#ml libfabric
-
-#echo "Configuring..."
-#./configure --prefix=$APPS/openmpi/rchpc_v1/openmpi --with-verbs
-
-#echo "Building... May take a while"
-#sleep 3
-
-#Build
-#make -j
-
-#echo "Installing..."
-#sleep 2
-
-#make install
-
-#echo "Adding Module File"
-#mkdir --parents $APPS/modulefiles/openmpi
-#cp $SCRIPTS/modulefiles/openmpi/4.1.0.lua $APPS/modulefiles/openmpi/
-
-#echo "DONE!!!"
-
-#!/bin/bash
-
-# Download and extract tarball
-
 tarball=$DOWNLOADS/hpcg-3.1.tar.gz
 download=http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.gz
 appname=hpcg
@@ -100,7 +73,9 @@ echo "Creating directory"
 sleep 3
 mkdir $installdir
 
-echo "Configuring..."
+echo "Configur
+
+http://www.hpcg-benchmark.org/downloads/hpcg-3.1.tar.ging..."
 cd $installdir
 /$DOWNLOADS/$appversion/configure M
 
