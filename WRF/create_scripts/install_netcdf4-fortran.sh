@@ -39,7 +39,7 @@ CPPFLAGS=-I${NCDIR}/include \
 LDFLAGS=-L${NCDIR}/lib \
 ./configure --prefix=${NFDIR}
 
-make check
+make check -j
 make -j install
 
 echo "Installed netcdf-fortran"

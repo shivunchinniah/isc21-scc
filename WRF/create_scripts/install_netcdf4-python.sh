@@ -36,9 +36,11 @@ ml intelpython3
 
 # point to netcdf c path
 export NCDIR=$install_dir/deps/netcdf4
-export NETCDF_DIR=$NCDIR
+export NETCDF4_DIR=$NCDIR
 export LD_LIBRARY_PATH=$NCDIR/lib:$LD_LIBRARY_PATH
 export NFDIR=$NCDIR
+export FC=mpiifort
+export CC=mpiicc
 
 
 python setup.py build --prefix=$NCDIR

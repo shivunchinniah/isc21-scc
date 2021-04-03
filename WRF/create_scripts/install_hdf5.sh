@@ -26,16 +26,22 @@ cd hdf5-1.12.0
 # load modules
 ml purge
 ml intel
-ml cmake
+# ml cmake
 
-mkdir build_hdf
-cd build_hdf
+# mkdir build_hdf
+# cd build_hdf
 
-cmake .. -DCMAKE_INSTALL_PREFIX=$install_dir/deps/hdf5 \
--DHDF5_ENABLE_PARALLEL=1 -DHDF5_ENABLE_Z_LIB_SUPPORT=1 \
--DHDF5_ENABLE_SZIP_SUPPORT=1  -DHDF5_BUILD_CPP_LIB=0 \
--DCMAKE_C_COMPILER=mpiicc \
-&& make -j install
+# cmake .. -DCMAKE_INSTALL_PREFIX=$install_dir/deps/hdf5 \
+# -DHDF5_ENABLE_PARALLEL=1 -DHDF5_ENABLE_Z_LIB_SUPPORT=1 \
+# -DHDF5_ENABLE_SZIP_SUPPORT=1  -DHDF5_BUILD_CPP_LIB=0 \
+# -DCMAKE_C_COMPILER=mpiicc \
+# && make -j install
+
+CC=mpiicc ./configure --enable-parallel --with-zlib=$install_dir/deps \
+--prefix=$install_dir/deps/hdf5
+
+# make check -j
+make -j install
 
 echo "Installed hdf5 in $install_dir/deps"
 

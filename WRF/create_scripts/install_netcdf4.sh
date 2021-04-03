@@ -29,20 +29,18 @@ cd netcdf-c-4.7.4
 ml purge
 ml intel
 
-mkdir build
-cd build
 
 #export ZDIR=$install_dir/deps # for libz
 
 export H5DIR=$install_dir/deps/hdf5
-export LD_LIBRARY_PATH=$install_dir/deps/hdf5/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$install_dir/deps/lib:$install_dir/deps/hdf5/lib:$LD_LIBRARY_PATH
 
 CC=mpiicc \
-LDFLAGS=-I${H5DIR}/lib \
-CPPFLAGS=-L${H5DIR}/include \
-./configure --enable-parallel --prefix=$install_dir/deps/netcdf4
+LDFLAGS="-L${H5DIR}/lib -L${install_dir}/lib" \
+CPPFLAGS="-I${H5DIR}/include -I${install_dir}/include"  \
+./configure --prefix=$install_dir/deps/netcdf4 --disable-dap
 
-make check
+make check -j
 make -j install
 
 # not using cmake because error with libcurl and lib64 for some reason
