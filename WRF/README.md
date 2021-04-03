@@ -32,7 +32,9 @@ Note that building takes a long time +30 mins
 and be sure to load the appropriate modules E.g.
 <code>
 source $WRF/tests/test_XXXXXX/vars.sh
+
 ml intel
+
 ml intelpython3
 </code>
 
