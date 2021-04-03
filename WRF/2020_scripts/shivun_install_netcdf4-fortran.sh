@@ -30,6 +30,7 @@ cmake .. \
 -DNETCDF_C_LIBRARY=/home/witsteam1/fnemo/deps/netcdf4/lib64/libnetcdf.so \
 -DCMAKE_INSTALL_PREFIX=/home/witsteam1/fnemo/deps/netcdf4 \
 -DCMAKE_Fortran_COMPILER=mpifc \
+-DCMAKE_C_COMPILER=mpiicc \
  && make -j 40 install
 
  #-DNETCDF_C_LIBRARY=/home/witsteam1/fnemo/deps/netcdf4/lib64/libnetcdf.so 
