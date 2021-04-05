@@ -31,7 +31,7 @@ make no-lib
 
 make yes-manybody yes-molecule yes-replica yes-kspace yes-asphere yes-rigid yes-snap yes-user-omp yes-user-reaxc yes-user-omp
 make yes-user-intel
-make -j 32 $TARGET
+make -j $TARGET
 
 
 # cmake ../cmake -DCMAKE_INSTALL_PREFIX=$LAMMPS/Instances/Test1/lammps \
