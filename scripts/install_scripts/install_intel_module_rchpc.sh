@@ -18,6 +18,7 @@ mkdir --parent $APPS/$file_path
 mkdir --parent $APPS/$intelpython3_path
 cp $SCRIPTS/$file_path/$file_name $APPS/$file_path
 cp $SCRIPTS/$intelpython3_path/$intelpython3 $APPS/$intelpython3_path
+cp $SCRIPTS/modulefiles/mkl.lua $APPS/modulefiles/mkl.lua
 echo "Module files copied!"
 
 # update ml cache
