@@ -50,7 +50,7 @@ note: cmake v3, openmpi,  and libfabric dependancies
 
 3. Copy arh
 
-4. Build using <br><code>make --arch=Linux_Intel64
+4. Build using <br><code>make --arch=Linux_Intel64</code>
 
 
 ## Provisional Setup Intel
@@ -61,3 +61,39 @@ note: cmake v3, openmpi,  and libfabric dependancies
 4. Load intel compiler <code>ml purge; ml intel</code>
 5. Move to {path to hpcc folder} and run <code>make arch=Linux_Intel64 -j</code>
 6. Done.
+
+
+## Provisional Results
+
+For these first set of provisional results 2x Intel(R) Xeon(R) CPU E5-2695 v3 @ 2.30GHz were used. (k40 rchpc)
+28 cores with 128GB RAM each.
+
+hpccinf.txt: `Ns = 148224`, `NBs = 256`, and `P x Q = 4 x 14`
+
+### OpenMPI + OpenBLAS (v1 to be updated)
+| HPCCOUTF NAME                       | WEB NAME             | VALUE   | UNITS                   |
+|-------------------------------------|----------------------|---------|-------------------------|
+| HPL_Tflops                          | G-HPL                | 0.7332  | Tera Flops per Second   |
+| PTRANS_GBs                          | G-PTRANS             | 0.0016  | Tera Bytes per Second   |
+| MPIRandomAccess_GUPs                | G-RandomAccess       | 0.2235  | Giga Updates per Second |
+| MPIFFT_Gflops                       | G-FFT                | 0.0024  | Tera Flops per Second   |
+| StarSTREAM_Triad*CommWorldProcs     | EP-STREAM Sys        | 0.1693  | Tera Bytes per Second   |
+| StarSTREAM_Triad                    | EP-STREAM Triad      | 3.0224  | Giga Bytes per Second   |
+| StarDGEMM_Gflops                    | EP-DGEMM             | 14.2886 | Giga Flops per Second   |
+| RandomlyOrderedRingBandwidth_GBytes | RandomRing Bandwidth | 0.4825  | Giga Bytes per second   |
+| RandomlyOrderedRingLatency_usec     | RandomRing Latency   | 4.8072  | micro-seconds           |
+
+
+### Intel CC, MKL & MPI
+| HPCCOUTF NAME                       | WEB NAME             | VALUE   | UNITS                   |
+|-------------------------------------|----------------------|---------|-------------------------|
+| HPL_Tflops                          | G-HPL                | 1.3965  | Tera Flops per Second   |
+| PTRANS_GBs                          | G-PTRANS             | 0.0016  | Tera Bytes per Second   |
+| MPIRandomAccess_GUPs                | G-RandomAccess       | 0.1377  | Giga Updates per Second |
+| MPIFFT_Gflops                       | G-FFT                | 0.0022  | Tera Flops per Second   |
+| StarSTREAM_Triad*CommWorldProcs     | EP-STREAM Sys        | 0.1705  | Tera Bytes per Second   |
+| StarSTREAM_Triad                    | EP-STREAM Triad      | 3.0453  | Giga Bytes per Second   |
+| StarDGEMM_Gflops                    | EP-DGEMM             | 27.1468 | Giga Flops per Second   |
+| RandomlyOrderedRingBandwidth_GBytes | RandomRing Bandwidth | 0.4390  | Giga Bytes per second   |
+| RandomlyOrderedRingLatency_usec     | RandomRing Latency   | 3.4756  | micro-seconds           |
+
