@@ -71,17 +71,20 @@ For these first set of provisional results 2x Intel(R) Xeon(R) CPU E5-2695 v3 @ 
 hpccinf.txt: `Ns = 148224`, `NBs = 256`, and `P x Q = 4 x 14`
 
 ### OpenMPI + OpenBLAS (v1 to be updated)
+
 | HPCCOUTF NAME                       | WEB NAME             | VALUE   | UNITS                   |
 |-------------------------------------|----------------------|---------|-------------------------|
-| HPL_Tflops                          | G-HPL                | 0.7332  | Tera Flops per Second   |
+| HPL_Tflops                          | G-HPL                | 0.7326  | Tera Flops per Second   |
 | PTRANS_GBs                          | G-PTRANS             | 0.0016  | Tera Bytes per Second   |
-| MPIRandomAccess_GUPs                | G-RandomAccess       | 0.2235  | Giga Updates per Second |
+| MPIRandomAccess_GUPs                | G-RandomAccess       | 0.2196  | Giga Updates per Second |
 | MPIFFT_Gflops                       | G-FFT                | 0.0024  | Tera Flops per Second   |
-| StarSTREAM_Triad*CommWorldProcs     | EP-STREAM Sys        | 0.1693  | Tera Bytes per Second   |
-| StarSTREAM_Triad                    | EP-STREAM Triad      | 3.0224  | Giga Bytes per Second   |
-| StarDGEMM_Gflops                    | EP-DGEMM             | 14.2886 | Giga Flops per Second   |
-| RandomlyOrderedRingBandwidth_GBytes | RandomRing Bandwidth | 0.4825  | Giga Bytes per second   |
-| RandomlyOrderedRingLatency_usec     | RandomRing Latency   | 4.8072  | micro-seconds           |
+| StarSTREAM_Triad*CommWorldProcs     | EP-STREAM Sys        | 0.1696  | Tera Bytes per Second   |
+| StarSTREAM_Triad                    | EP-STREAM Triad      | 3.0280  | Giga Bytes per Second   |
+| StarDGEMM_Gflops                    | EP-DGEMM             | 14.2946 | Giga Flops per Second   |
+| RandomlyOrderedRingBandwidth_GBytes | RandomRing Bandwidth | 0.4266  | Giga Bytes per second   |
+| RandomlyOrderedRingLatency_usec     | RandomRing Latency   | 5.0146  | micro-seconds           |
+
+It was observed that only 70% of the memory was used for the HPL part performance could improve by using a larger Ns for the OMPI + OBLAS at least
 
 
 ### Intel CC, MKL & MPI
