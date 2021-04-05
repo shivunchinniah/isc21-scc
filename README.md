@@ -1,6 +1,4 @@
-# Challenges
-
-## Setting up your environment
+# Setting up your environment
 1. Clone this repos
 2. Edit ~/.bashrc and add line:
 <code>source ~isc21-scc/scripts/bashrc.append</code>
@@ -9,6 +7,8 @@ or run the script inject_bashrc.sh in scripts.
 3. That is it. Now you can use some environment variables and `ml`
 
 Be sure to check $SCRIPTS/install_scripts for additional programs and modules.
+
+# Challenges
 
 ## HPC Challenge
 http://icl.cs.utk.edu/hpcc/
