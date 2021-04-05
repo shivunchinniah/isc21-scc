@@ -8,6 +8,8 @@ or run the script inject_bashrc.sh in scripts.
 
 3. That is it. Now you can use some environment variables and `ml`
 
+Be sure to check $SCRIPTS/install_scripts for additional programs and modules.
+
 ## HPC Challenge
 http://icl.cs.utk.edu/hpcc/
 
