@@ -34,7 +34,7 @@ library_dirs += [mkldir]
 
 #icc libs
 libraries += ['imf']
-library_dirs += '/home/witsteam1/apps/intel/compilers_and_libraries/linux/lib/intel64'
+library_dirs += 'apps/intel/compilers_and_libraries/linux/lib/intel64'
 
 
 #libfabric for  IntelMPI
@@ -83,7 +83,7 @@ if 0:
 
 # - dynamic linking (requires rpath or setting LD_LIBRARY_PATH at runtime):
 if 1:
-    xc = '/home/schinniah/isc21-scc/GPAW/tests/test1/libxc/4.3.4/'
+    xc = '/home/witsteam1/apps/libxc-5.0.0/'
     include_dirs += [xc + 'include']
     library_dirs += [xc + 'lib']
     # You can use rpath to avoid changing LD_LIBRARY_PATH:
