@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: sb-cn05
+--------------------------------------------------------------------------
+Process 1, my values = 300, 400, 500.
+Process 0, my values = 0, 100, 200.
+Process 2, my value = 600.
+Values received on process 1: 100 200
+Values received on process 2: 300 400 500
+Values received on process 0: 600 0
+[sb-cn05:100814] 2 more processes have sent help message help-mpi-btl-openib.txt / no active ports found
+[sb-cn05:100814] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: sb-cn05
+--------------------------------------------------------------------------
+Process 1, my values = 300, 400, 500.
+Process 0, my values = 0, 100, 200.
+Process 2, my value = 600.
+Values received on process 1: 100 200
+Values received on process 2: 300 400 500
+Values received on process 0: 600 0
+[sb-cn05:100962] 2 more processes have sent help message help-mpi-btl-openib.txt / no active ports found
+[sb-cn05:100962] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: sb-cn05
+--------------------------------------------------------------------------
+Process 1, my values = 300, 400, 500.
+Process 0, my values = 0, 100, 200.
+Process 2, my value = 600.
+Values received on process 1: 100 200
+Values received on process 2: 300 400 500
+Values received on process 0: 600 0
+[sb-cn05:101110] 2 more processes have sent help message help-mpi-btl-openib.txt / no active ports found
+[sb-cn05:101110] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: sb-cn05
+--------------------------------------------------------------------------
+Process 1, my values = 300, 400, 500.
+Process 0, my values = 0, 100, 200.
+Values received on process 0: 600 0
+Process 2, my value = 600.
+Values received on process 2: 300 400 500
+Values received on process 1: 100 200
+[sb-cn05:101259] 2 more processes have sent help message help-mpi-btl-openib.txt / no active ports found
+[sb-cn05:101259] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: sb-cn05
+--------------------------------------------------------------------------
+Process 1, my values = 300, 400, 500.
+Process 0, my values = 0, 100, 200.
+Values received on process 0: 600 0
+Process 2, my value = 600.
+Values received on process 2: 300 400 500
+Values received on process 1: 100 200
+[sb-cn05:101407] 2 more processes have sent help message help-mpi-btl-openib.txt / no active ports found
+[sb-cn05:101407] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
