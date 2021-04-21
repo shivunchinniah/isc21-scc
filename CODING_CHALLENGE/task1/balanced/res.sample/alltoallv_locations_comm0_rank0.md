@@ -1,0 +1,63 @@
+FORMAT_VERSION: 9
+
+Communicator ID: 0
+Calls: 0-999
+COMM_WORLD ranks: 0-55
+PIDs: 41304-41310, 41312-41316, 41318-41319, 41321-41323, 41325-41327, 41329-41331, 41333-41336, 41339, 72554-72562, 72564-72572, 72575-72577, 72579-72584, 72586
+Hostnames:
+	Rank 0: gpu03
+	Rank 1: gpu03
+	Rank 2: gpu03
+	Rank 3: gpu03
+	Rank 4: gpu03
+	Rank 5: gpu03
+	Rank 6: gpu03
+	Rank 7: gpu03
+	Rank 8: gpu03
+	Rank 9: gpu03
+	Rank 10: gpu03
+	Rank 11: gpu03
+	Rank 12: gpu03
+	Rank 13: gpu03
+	Rank 14: gpu03
+	Rank 15: gpu03
+	Rank 16: gpu03
+	Rank 17: gpu03
+	Rank 18: gpu03
+	Rank 19: gpu03
+	Rank 20: gpu03
+	Rank 21: gpu03
+	Rank 22: gpu03
+	Rank 23: gpu03
+	Rank 24: gpu03
+	Rank 25: gpu03
+	Rank 26: gpu03
+	Rank 27: gpu03
+	Rank 28: gpu04
+	Rank 29: gpu04
+	Rank 30: gpu04
+	Rank 31: gpu04
+	Rank 32: gpu04
+	Rank 33: gpu04
+	Rank 34: gpu04
+	Rank 35: gpu04
+	Rank 36: gpu04
+	Rank 37: gpu04
+	Rank 38: gpu04
+	Rank 39: gpu04
+	Rank 40: gpu04
+	Rank 41: gpu04
+	Rank 42: gpu04
+	Rank 43: gpu04
+	Rank 44: gpu04
+	Rank 45: gpu04
+	Rank 46: gpu04
+	Rank 47: gpu04
+	Rank 48: gpu04
+	Rank 49: gpu04
+	Rank 50: gpu04
+	Rank 51: gpu04
+	Rank 52: gpu04
+	Rank 53: gpu04
+	Rank 54: gpu04
+	Rank 55: gpu04
