@@ -305,6 +305,11 @@ make install
 # Post build
 #======================================================================
 
+echo "Adding Module File"
+mkdir --parents $APPS/modulefiles/gcc
+cp $SCRIPTS/modulefiles/gcc/9.1.0.lua $APPS/modulefiles/gcc/
+# update ml cache
+module --ignore_cache avail > /dev/null
 
 # Create a shell script that users can source to bring gcc into shell
 # environment
