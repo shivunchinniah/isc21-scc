@@ -15,9 +15,12 @@ cd Instances/Test{x}</code>
 See slurm_provisional_v1.sh for running instructions
 
 ### Provisional Results:
-
+<code>
+Loop time of 0.0768569 on 56 procs for 100 steps with 32000 atoms
+ 
 Performance: 562083.771 tau/day, 1301.120 timesteps/s
 98.0% CPU use with 56 MPI tasks x 1 OpenMP threads
+</code>
 
 is 1,64 x faster than on a single node 
  
