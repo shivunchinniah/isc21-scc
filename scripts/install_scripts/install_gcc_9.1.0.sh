@@ -306,6 +306,7 @@ make install
 #======================================================================
 
 echo "Adding Module File"
+source ~/.bashrc
 mkdir --parents $APPS/modulefiles/gcc
 cp $SCRIPTS/modulefiles/gcc/9.1.0.lua $APPS/modulefiles/gcc/
 # update ml cache
