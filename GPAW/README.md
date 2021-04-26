@@ -9,7 +9,8 @@
 5. copy siteconfig.py and fix paths to point to new compiled libxc
 6. Activate a conda environment (intelpython3 has conda built in)
 7. load modules <code>ml intel intelpython3</code>
-8. run <code>python -m pip install .</code> in the gpaw folder
+8. Modify first: libxcVars.sh then <code>source libxcVars.sh</code>
+9. run <code>python -m pip install .</code> in the gpaw folder
 
 ### Provisional Results (Intel)
 
