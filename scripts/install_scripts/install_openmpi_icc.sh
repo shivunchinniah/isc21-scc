@@ -37,7 +37,7 @@ echo "Extracting tarball..."
 sleep 2
 tar xvaf $DOWNLOADS/$tarball
 
-cd $appversion
+cd openmpi-4.1.0
 
 echo "Loading Dependancies..."
 ml libfabric
