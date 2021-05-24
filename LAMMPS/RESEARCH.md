@@ -57,5 +57,14 @@ Niagra has newer CPUs with double core count, but does not have GPUs.
 It might be the case that the GPUs on NSCC are faster
 
 
+### Experiment 4
+Test single vs double precision
+
+### Experiment 5
+CUDA NEWTON
+
+### Experiment 6
+Re watch the video.
+
 ### Expermiment 4 
 Run the alltoallv profiler with LAMMPS see if there is anything interesting
