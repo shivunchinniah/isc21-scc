@@ -1,4 +1,5 @@
-# Setting up your environment
+
+ Setting up your environment
 1. Clone this repos
 2. Edit ~/.bashrc and add line:
 <code>source ~isc21-scc/scripts/bashrc.append</code>
