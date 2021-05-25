@@ -13,6 +13,32 @@ OpenMP Threads + Affinity
 
 Run test with intel build with OpenMP support test different processor dispositions for two nodes on Research cluster.
 
+#### Results
+Test with no OMP threads and no intel accelerator package:\
+<code>
+Loop time of 0.0898221 on 56 procs for 100 steps with 32000 atoms
+
+Performance: 480950.718 tau/day, 1113.312 timesteps/s\
+98.9% CPU use with 56 MPI tasks x 1 OpenMP threads\
+</code>
+
+Test with no OMP threads and intel accelerator package:\
+<code>
+Loop time of 0.0862444 on 56 procs for 100 steps with 32000 atoms
+
+Performance: 500901.853 tau/day, 1159.495 timesteps/s\
+97.6% CPU use with 56 MPI tasks x 1 OpenMP threads\
+</code>
+
+
+Test with OMP threads (2 for Hyperthreading) and intel accelerator package:\
+<code>
+Loop time of 0.081764 on 112 procs for 100 steps with 32000 atoms
+
+Performance: 528349.811 tau/day, 1223.032 timesteps/s\
+97.1% CPU use with 56 MPI tasks x 2 OpenMP threads\
+</code>
+
 ### Experiment 2
 Run GPU Accelerated runs.
 
@@ -31,9 +57,14 @@ Niagra has newer CPUs with double core count, but does not have GPUs.
 It might be the case that the GPUs on NSCC are faster
 
 
+### Experiment 4
+Test single vs double precision
+
+### Experiment 5
+CUDA NEWTON
+
+### Experiment 6
+Re watch the video.
+
 ### Expermiment 4 
 Run the alltoallv profiler with LAMMPS see if there is anything interesting
-
-
-## Results0
-The results from the experiments will be listed here.

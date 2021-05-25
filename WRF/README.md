@@ -2,7 +2,7 @@
 
 ## Provisional Build using Intel parallel XE
 
-### Dependancies
+### Dependencies
 - Fortran and C compilers (icc → mpiicc, ifort → mpiifort)
 - intelpython3
 - HDF5
@@ -28,7 +28,7 @@ then cd into tests/test_XXXXX and run in this order
 After step `6.` you will have to edit the configure.wrf file: see output from configure_wrf.sh
 
 ### Building
-Once all dependancies have been installed and loaded
+Once all dependencies have been installed and loaded
 you can finally build WRF by running 
 
 <code>./compile -j {num processes} em_real &> build_wrf.log</code>
