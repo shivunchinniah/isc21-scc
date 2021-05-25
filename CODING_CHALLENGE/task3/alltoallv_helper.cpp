@@ -76,3 +76,17 @@ void alltoallv_helper::loadPattern(char *buffer_send, int *counts_send, int *dis
         }
     }
 } 
+
+
+// To do implement these functions
+void alltoallv_helper::modulusPatternGenerator(Pattern *pattern, int a, int b, int * array, int size)
+{
+    // to do
+}
+
+    
+void alltoallv_helper::randomPatternGenerator(Pattern *pattern, int exchanges, int min, int max)
+{
+    //to do
+}
+
