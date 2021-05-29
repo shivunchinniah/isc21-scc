@@ -52,7 +52,7 @@ public:
      *  the integer value of the array at index<i,j> is the amount of data that i sends to j.
      * 
      ***/
-    static void loadPattern(char *buffer_send, int *counts_send, int *displacement_send, char *buffer_recv, int *counts_recv, int *displacement_recv, Pattern pattern, int rank);
+    static void loadPattern(char *buffer_send, int *counts_send, int *displacement_send, char *buffer_recv, int *counts_recv, int *displacement_recv, Pattern *pattern, int rank);
 
     /***
      * 
@@ -61,14 +61,14 @@ public:
      *  the index of the array is incremented (and rolls over when the end is reached) to create a 'random pattern'
      * 
      ***/
-    static void modulusPatternGenerator(Pattern *pattern, int a, int b, int * array, int size);
+    static void modulusPatternGenerator(Pattern *pattern, int a, int b, int * array, int size, int ranks);
 
     /***
      * simply sends a random amount of data from a random rank to a random rank, the number of exchanges is passed as a parameter.
      * The actual number of exchanges may be lower as a send-receive rank pair may be written to multible times
      * The data size ranges from min to max.
      ***/
-    static void randomPatternGenerator(Pattern *pattern, int exchanges, int min, int max);
+    static void randomPatternGenerator(Pattern *pattern, int exchanges, int min, int max, int ranks, unsigned int seed);
 
 };
 
