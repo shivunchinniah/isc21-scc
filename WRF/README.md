@@ -48,3 +48,18 @@ and be sure to load the appropriate modules before building E.g.
 
 The test is downloaded from https://hpcadvisorycouncil-my.sharepoint.com/:f:/p/ophir/EvOfQ0I6kfVMr9Iash9D9ykBM9-CGdf-51Ykg9dejADH8A?e=RJIobO
 
+
+## Things allowed to change
+- OpenMP + MPI mix
+- Compiler Types
+- Build Options
+- Flavours of External Libraries
+
+
+NOT Allowed:
+Source Code
+Run-time configuration script.
+
+NOTE: 
+- IO is not considered in judging. 
+- NO preprocessing.
