@@ -24,10 +24,10 @@ void alltoallv_helper::loadPattern(char *buffer_send, int *counts_send, int *dis
 {
 
     // delete exsisting buffers and counts
-    delete buffer_send;
-    delete buffer_recv;
-    delete counts_send;
-    delete counts_recv;
+    // delete buffer_send;
+    // delete buffer_recv;
+    // delete counts_send;
+    // delete counts_recv;
 
     counts_send = new int[pattern->ranks];
     counts_recv = new int[pattern->ranks];
@@ -91,7 +91,7 @@ void alltoallv_helper::modulusPatternGenerator(Pattern *pattern, int a, int b, i
 
     for (int i = a; i < ranks; i+=a) // ranks where i%a == 0 
     {
-        for(int j = b; j < ranks; i+=b) // ranks where j%b == 0
+        for(int j = b; j < ranks; j+=b) // ranks where j%b == 0
         {
             pattern->datamap[i][j] = size_index++ % size;
         }
