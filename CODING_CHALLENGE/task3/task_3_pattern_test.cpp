@@ -6,11 +6,6 @@
 
 /*****
 
-ranks 0-13  (Node1)
-ranks 14-27 (Node2)
-ranks 28-41 (Node3)
-ranks 42-55 (Node4)
-
 MPI_alltoallv:
 
 buffer_send --> the buffer to store the sending elements
@@ -42,22 +37,37 @@ const int RANKS = 160;
 
 struct alltoallv_params
 {
-    char *buffer_send;
-    int counts_send[RANKS] = {0};
-    int displacements_send[RANKS] = {0};
+    char *buffer_send = nullptr;
+    int *counts_send;
+    int *displacements_send;
     MPI_Datatype datatype_send = MPI_CHAR;
-    char *buffer_recv;
-    int counts_recv[RANKS] = {0};
-    int displacements_recv[RANKS] = {0};
+    char *buffer_recv = nullptr;
+    int *counts_recv;
+    int *displacements_recv;
     MPI_Datatype datatype_recv = MPI_CHAR;
     MPI_Comm communicator = MPI_COMM_WORLD;
+
+    alltoallv_params(){
+        counts_send = new int[RANKS];
+        displacements_send = new int[RANKS];
+        counts_recv = new int[RANKS];
+        displacements_recv = new int[RANKS];
+    }
+
+    ~alltoallv_params(){
+        if(buffer_send) delete[] buffer_send;
+        if(buffer_recv) delete[] buffer_recv;
+        if(counts_send) delete[] counts_send;
+        if(counts_recv) delete[] counts_recv;
+        if(displacements_recv) delete[] displacements_recv;
+        if(displacements_send) delete[] displacements_send;
+    }
 };
 
 int main(int argc, char *argv[])
 {
 
     MPI_Init(&argc, &argv);
-    // Get the number of processes must be 56
     int p;
     MPI_Comm_size(MPI_COMM_WORLD, &p);
 
@@ -74,33 +84,30 @@ int main(int argc, char *argv[])
 
     // For this test there are 6 patterns 4 random and
     // 2 modulus patterns
-    printf("Creating Patterns...\n");
-    alltoallv_helper::Pattern *pattern1 = new alltoallv_helper::Pattern(p_target);
-    alltoallv_helper::Pattern *pattern2 = new alltoallv_helper::Pattern(p_target);
-    alltoallv_helper::Pattern *pattern3 = new alltoallv_helper::Pattern(p_target);
-    alltoallv_helper::Pattern *pattern4 = new alltoallv_helper::Pattern(p_target);
-    alltoallv_helper::Pattern *pattern5 = new alltoallv_helper::Pattern(p_target);
-    alltoallv_helper::Pattern *pattern6 = new alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern1 = alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern2 = alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern3 = alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern4 = alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern5 = alltoallv_helper::Pattern(p_target);
+    alltoallv_helper::Pattern pattern6 = alltoallv_helper::Pattern(p_target);
+    
+    // generate random patterns
+    alltoallv_helper::randomPatternGenerator(pattern1, 20, 1, 100, p_target, 5114);
+    alltoallv_helper::randomPatternGenerator(pattern2, 25, 1, 100, p_target, 3417);
+    alltoallv_helper::randomPatternGenerator(pattern3, 30, 1, 100, p_target, 4598);
+    alltoallv_helper::randomPatternGenerator(pattern4, 40, 1, 100, p_target, 904);
     
 
-    printf("Generate random Patterns...\n");
-    // generate random patterns
-    alltoallv_helper::randomPatternGenerator(pattern1, 10, 1, 30, p_target, 5114);
-    alltoallv_helper::randomPatternGenerator(pattern2, 15, 1, 30, p_target, 3417);
-    alltoallv_helper::randomPatternGenerator(pattern3, 20, 1, 30, p_target, 4598);
-    alltoallv_helper::randomPatternGenerator(pattern4, 25, 1, 30, p_target, 904);
-    
-    printf("Generate modulus patterns... \n");
-    int x[10] = {23, 10, 20, 25, 34, 6, 11, 1, 34, 4};
+    int x[10] = {23, 10, 20, 25, 14, 6, 11, 1, 24, 4};
     // generate modulus patterns
     alltoallv_helper::modulusPatternGenerator(pattern5, 7, 13, &x[0], 10, p_target);
     alltoallv_helper::modulusPatternGenerator(pattern6, 17, 23, &x[0], 7, p_target);
     
 
-    printf("Load parameters for patterns...\n");
     // load the parameters for all the patterns
     alltoallv_params params1;
     alltoallv_helper::loadPattern(params1.buffer_send, params1.counts_send, params1.displacements_send, params1.buffer_recv, params1.counts_recv, params1.displacements_recv, pattern1, my_rank);
+    
 
     alltoallv_params params2;
     alltoallv_helper::loadPattern(params2.buffer_send, params2.counts_send, params2.displacements_send, params2.buffer_recv, params2.counts_recv, params2.displacements_recv, pattern2, my_rank);
@@ -117,25 +124,19 @@ int main(int argc, char *argv[])
     alltoallv_params params6;
     alltoallv_helper::loadPattern(params6.buffer_send, params6.counts_send, params6.displacements_send, params6.buffer_recv, params6.counts_recv, params6.displacements_recv, pattern6, my_rank);
 
-    // perform MPI_alltoallv calls. p1 x 10, p2 x 15, p3 x 5, p4 x 8, p5 x 19, p6 x 11
-    
-
-    printf("Performing MPI calls...\n");
     srand(697);
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 500; i++)
     {
-        printf("Call %d ...\n", i);
 
-        int index = 90 * rand() / RAND_MAX;
+        int index = rand() % 80;
 
-        if (index< 10)
-        {
-            MPI_Alltoallv(params1.buffer_send, params1.counts_send, params1.displacements_send, params1.datatype_send, params1.buffer_recv, params1.counts_recv, params1.displacements_recv, params1.datatype_recv, params1.communicator);
+        if(index < 10 ){
+        MPI_Alltoallv(params1.buffer_send, params1.counts_send, params1.displacements_send, params1.datatype_send, params1.buffer_recv, params1.counts_recv, params1.displacements_recv, params1.datatype_recv, params1.communicator);
         }
         else if (index>= 10 && index< 25)
         {
-            MPI_Alltoallv(params2.buffer_send, params2.counts_send, params2.displacements_send, params2.datatype_send, params2.buffer_recv, params2.counts_recv, params2.displacements_recv, params2.datatype_recv, params2.communicator);
+           MPI_Alltoallv(params2.buffer_send, params2.counts_send, params2.displacements_send, params2.datatype_send, params2.buffer_recv, params2.counts_recv, params2.displacements_recv, params2.datatype_recv, params2.communicator);
         }
         else if (index>= 25 && index< 35)
         {
@@ -147,39 +148,15 @@ int main(int argc, char *argv[])
         }
         else if (index<= 58 && index< 70)
         {
-            MPI_Alltoallv(params5.buffer_send, params5.counts_send, params5.displacements_send, params5.datatype_send, params5.buffer_recv, params5.counts_recv, params5.displacements_recv, params5.datatype_recv, params5.communicator);
+           MPI_Alltoallv(params5.buffer_send, params5.counts_send, params5.displacements_send, params5.datatype_send, params5.buffer_recv, params5.counts_recv, params5.displacements_recv, params5.datatype_recv, params5.communicator);
         }
-        else if (index>= 70)
+        else
         {
-            MPI_Alltoallv(params6.buffer_send, params6.counts_send, params6.displacements_send, params6.datatype_send, params6.buffer_recv, params6.counts_recv, params6.displacements_recv, params6.datatype_recv, params6.communicator);
+           MPI_Alltoallv(params6.buffer_send, params6.counts_send, params6.displacements_send, params6.datatype_send, params6.buffer_recv, params6.counts_recv, params6.displacements_recv, params6.datatype_recv, params6.communicator);
         }
     }
 
-    
     MPI_Finalize();
-
-    // delete all pointers.
-    delete pattern1;
-    delete pattern2;
-    delete pattern3;
-    delete pattern4;
-    delete pattern5;
-    delete pattern6;
-
-    delete params1.buffer_recv;
-    delete params1.buffer_send;
-    delete params2.buffer_recv;
-    delete params2.buffer_send;
-    delete params3.buffer_recv;
-    delete params3.buffer_send;
-    delete params4.buffer_recv;
-    delete params4.buffer_send;
-    delete params5.buffer_recv;
-    delete params5.buffer_send;
-    delete params6.buffer_recv;
-    delete params6.buffer_send;
-
-
 
     return EXIT_SUCCESS;
 }
