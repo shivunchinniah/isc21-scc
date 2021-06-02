@@ -33,4 +33,12 @@ UPC++ or GASNet options
 gasnet.lbl.gov/dist-ex/
 
 2/6  
-By default, uses 139Gb of 189Gb
+By default, uses 139Gb of 189Gb  
+
+Final assembly can be found at  mhm2-run-competition1-n160-N4-210602194032/final_assembly.fasta
+Overall time taken (including any restarts): 594.09 s
+
+Set max rpc to 70 and got 144gb used. job 5443011. 627.06s :(
+
+
+Ran on 80 threads per node with --pin=core and got 159Gb used. job 5443033.
