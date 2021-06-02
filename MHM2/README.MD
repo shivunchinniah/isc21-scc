@@ -40,7 +40,7 @@ Overall time taken (including any restarts): 594.09 s
 
 Set max rpc to 70 and got 144gb used. job 5443011. 627.06s :(
 Try 30. 5443140. 146GB. Proably not a parameter to tweak. 573.38. Reading the logs it starts at 30 then jumps to 128 for some reason.
-Try 1. 5443169.
+Try 1. 5443169. 615.16s.
 
 
 Ran on 80 threads per node with --pin=core and got 159Gb used. job 5443033. 594.59s.
@@ -48,5 +48,5 @@ Ran on 80 threads per node with --pin=core and got 159Gb used. job 5443033. 594.
 Default kmer store is 44MB?
 Set maxkmer to 50. 5443150. 582.67s.
 
-set kmer to 54 and rpcs to 1. 5443172
-kmer 54 rpcs to 30. 5443174
+set kmer to 54 and rpcs to 1. 5443172. 619.85s
+kmer 54 rpcs to 30. 5443174. 611.41s
