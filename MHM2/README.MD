@@ -32,5 +32,5 @@ Parameters that can be tweaked:
 UPC++ or GASNet options
 gasnet.lbl.gov/dist-ex/
 
-2/6
-uses 139Gb of 189Gb
+2/6  
+By default, uses 139Gb of 189Gb
