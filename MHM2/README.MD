@@ -46,6 +46,7 @@ Try 1. 5443169.
 Ran on 80 threads per node with --pin=core and got 159Gb used. job 5443033. 594.59s.
 
 Default kmer store is 44MB?
-Set maxkmer to 50. 5443150. 
+Set maxkmer to 50. 5443150. 582.67s.
 
-set kmer to 54 and rpcs to 30. 5443172
+set kmer to 54 and rpcs to 1. 5443172
+kmer 54 rpcs to 30. 5443174
