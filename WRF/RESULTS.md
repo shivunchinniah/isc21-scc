@@ -36,3 +36,27 @@ WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2 \
 Average Time for radiation:      32.8302 ± 0.143271 s (7 times) \
 Average Time for non-radiation:  16.8819 ± 0.0712411 s (88 times) \
 Total Time:                    1715.42 s (95 times)
+
+### AVX512 with 1 OMP Thread:
+WRF RUN COMPLETED \
+MPI ranks used: 10 x 16 = 160 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   1 \
+Average Time for radiation:      39.3032 ± 0.0132193 s (7 times) \
+Average Time for non-radiation:  17.7987 ± 0.0295895 s (88 times) \
+Total Time:                    1841.41 s (95 times)
+
+### AVX2 with 1 OMP Thread (running last step of alltoallv profiler): 
+WRF RUN COMPLETED \
+MPI ranks used: 10 x 16 = 160 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   1 \
+Average Time for radiation:      35.4383 ± 0.05705 s (7 times) \
+Average Time for non-radiation:  17.8406 ± 0.141185 s (88 times) \
+Total Time:                    1818.04 s (95 times)
