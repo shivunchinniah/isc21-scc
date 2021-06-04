@@ -39,5 +39,23 @@ NBs = 256
 
 Ps x Pq = 10 x 16
 
+### AVX2 (icc impi) 84% Mem use:
+HPCCOUTF NAME        |                WEB NAME         |            VALUE |  UNITS
+----------------------|---------------------------------|------------------|--------------------
+HPL_Tflops                         |  G-HPL               |         6.7175|   Tera Flops per Second
+PTRANS_GBs                         |  G-PTRANS            |         0.0041|   Tera Bytes per Second
+MPIRandomAccess_GUPs               |  G-RandomAccess      |         0.5280|   Giga Updates per Second
+MPIFFT_Gflops                      |  G-FFT               |         0.0067|   Tera Flops per Second
+StarSTREAM_Triad*CommWorldProcs    |  EP-STREAM Sys       |         0.5996|   Tera Bytes per Second
+StarSTREAM_Triad                   |  EP-STREAM Triad     |         3.7477|   Giga Bytes per Second
+StarDGEMM_Gflops                   |  EP-DGEMM            |        52.8247|   Giga Flops per Second
+RandomlyOrderedRingBandwidth_GBytes|  RandomRing Bandwidth|         0.4051|   Giga Bytes per second
+RandomlyOrderedRingLatency_usec    |  RandomRing Latency  |         2.5812|   micro-seconds
+
+Ns = 187382
+NBs = 256
+
+Ps x Pq = 10 x 16
+
 
 
