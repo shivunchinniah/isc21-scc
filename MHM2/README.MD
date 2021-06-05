@@ -50,3 +50,7 @@ Set maxkmer to 50. 5443150. 582.67s.
 
 set kmer to 54 and rpcs to 1. 5443172. 619.85s
 kmer 54 rpcs to 30. 5443174. 611.41s
+
+## NSCC
+
+This thing has a super old build of gcc so use the installer script in apps.
