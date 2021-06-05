@@ -54,3 +54,4 @@ kmer 54 rpcs to 30. 5443174. 611.41s
 ## NSCC
 
 This thing has a super old build of gcc so use the installer script in apps.
+It looks like the build script from Niagara should work on NSCC as well.
