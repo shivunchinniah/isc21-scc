@@ -40,7 +40,7 @@ echo "Loading Dependancies..."
 ml gcc
 
 echo "Configuring..."
-./configure --prefix=$installdir --with-cc=gcc --with-cxx='icpc -gxx-name=/app/gcc/4.9.3/bin/g++'
+./configure --prefix=$installdir --with-cc=gcc --with-cxx='icpc -gxx-name=/usr/bin/gcc/g++'
 #  --with-default-network=ibv needs to be added
 
 echo "Building... May take a while"
