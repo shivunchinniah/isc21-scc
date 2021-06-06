@@ -51,7 +51,7 @@ gmake -j 10 all
 echo "Installing..."
 sleep 2
 
-gmake install
+make install
 
 echo "Adding Module File"
 mkdir --parents $APPS/modulefiles/upcxx
