@@ -13,12 +13,20 @@
 
 ## Results 
 
-Using Intel Package wthout
-
+Using Intel Package without Coprocessor.
+Ran on 4 CPU's 
 # Baseline 
-# LJ
+
+## LJ
 <code>
  Loop time of 322.356 on 160 procs for 10000 steps with 16000000 atoms
  Performance: 13401.328 tau/day, 31.022 timesteps/s
+ 99.7% CPU use with 160 MPI tasks x 1 OpenMP threads
+<\code>
+
+## Rhodo
+<code>
+ Loop time of 309.135 on 160 procs for 6000 steps with 2048000 atoms
+ Performance: 3.354 ns/day, 7.156 hours/ns, 19.409 timesteps/s
  99.7% CPU use with 160 MPI tasks x 1 OpenMP threads
 <\code>
