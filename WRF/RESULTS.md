@@ -36,3 +36,52 @@ WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2 \
 Average Time for radiation:      32.8302 ± 0.143271 s (7 times) \
 Average Time for non-radiation:  16.8819 ± 0.0712411 s (88 times) \
 Total Time:                    1715.42 s (95 times)
+
+### AVX512 with 1 OMP Thread:
+WRF RUN COMPLETED \
+MPI ranks used: 10 x 16 = 160 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   1 \
+Average Time for radiation:      39.3032 ± 0.0132193 s (7 times) \
+Average Time for non-radiation:  17.7987 ± 0.0295895 s (88 times) \
+Total Time:                    1841.41 s (95 times)
+
+### AVX2 with 1 OMP Thread (running last step of alltoallv profiler): 
+WRF RUN COMPLETED \
+MPI ranks used: 10 x 16 = 160 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   1 \
+Average Time for radiation:      35.4383 ± 0.05705 s (7 times) \
+Average Time for non-radiation:  17.8406 ± 0.141185 s (88 times) \
+Total Time:                    1818.04 s (95 times)
+
+### AVX2 with 4 OMP Threads (80 MPI):
+WRF RUN COMPLETED \
+MPI ranks used: 8 x 10 = 80 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   4 \
+Average Time for radiation:      65.6785 ± 0.119139 s (7 times) \
+Average Time for non-radiation:  35.9413 ± 0.10064 s (88 times) \
+Total Time:                    3622.58 s (95 times) 
+
+
+### AVX2 with 1 OMP Thread (320MPI) --bind-to thread (none):
+WRF RUN COMPLETED \
+MPI ranks used: 16 x 20 = 320 \
+Domain size : \
+ ids,ide,jds,jde            1         793           1         853 \
+ ids,ide,jds,jde            1         805           1         805 \
+ ids,ide,jds,jde            1        1001           1        1001 \
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   1 \
+Average Time for radiation:      35.5593 ± 0.426923 s (7 times) \
+Average Time for non-radiation:  19.287 ± 0.608121 s (88 times) \
+Total Time:                    1946.17 s (95 times)
