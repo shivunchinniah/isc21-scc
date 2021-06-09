@@ -37,21 +37,23 @@ tar xvaf $tarball
 cd $appversion
 
 echo "Loading Dependancies..."
+ml python
 ml gcc
 
 echo "Configuring..."
-./configure --prefix=$installdir --with-cc=gcc --with-cxx=g++
+UPCXX_NETWORK=ibv
+./configure --prefix=$installdir --with-cc=gcc --with-cxx=g++ --disable-mpi-compat
 
 echo "Building... May take a while"
 sleep 3
 
 #Build
-gmake -j 10 all
+make -j 10 all
 
 echo "Installing..."
 sleep 2
 
-gmake install
+make install
 
 echo "Adding Module File"
 mkdir --parents $APPS/modulefiles/upcxx
