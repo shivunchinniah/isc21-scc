@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l select=4:ncpus=24
+#PBS -l walltime=1:00:00
+#PBS -P 50000008
+#PBS -o mhm.o
+#PBS -e mhm.e
+
+BASE=/home/users/industry/isc2020/iscst08/isc21-scc/MHM2/mhm2-2.0.1
+ulimit -s unlimited
+
+# OpenMP settings
+export OMP_NUM_THREADS=1
+
+ml upcxx
+
+
+export PATH=$BASE/bin:$PATH
+export GASNET_IBV_PORTS="mlx5_0:1"
+export GASNET_PHYSMEM_PROBE=0 
+export GASNET_ODP_VERBOSE=0
+
+input=$BASE/arctic_sample_0.fq
+mhm2.py -r $input --checkpoint=no -v  <-- You can add -v for verbosity
