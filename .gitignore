@@ -11,6 +11,8 @@ apps/lib/*
 apps/lib64/*
 apps/share/*
 
+#ignore niagara specific directories
+*_niagara
 
 #apps to include
 !apps/bin/memuse
@@ -21,5 +23,8 @@ apps/share/*
 !apps/src
 !apps/lib
 !apps/share
+
+# Misc
+GPAW/rchpc/shivun/*
 
 .vscode
