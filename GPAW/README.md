@@ -27,4 +27,6 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.txt
 This benchmark took 2 hours and 7 minutes to complete.
 See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 
+## Niagara (intel, intelmpi and python 3.8.5)
 
+## NSCC Intel (intel, intelmpi and python 3.8.5)
