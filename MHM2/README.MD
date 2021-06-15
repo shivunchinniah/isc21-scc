@@ -55,3 +55,5 @@ kmer 54 rpcs to 30. 5443174. 611.41s
 
 This thing has a super old build of gcc so use the installer script in apps.
 It looks like the build script from Niagara should work on NSCC as well.
+
+I had to reload python before compiling and Gasnet said it was building in debug mode for some reason. Still doesn’t run the final bench idk
