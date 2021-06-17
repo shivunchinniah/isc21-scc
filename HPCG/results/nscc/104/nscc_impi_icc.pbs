@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l select=4:ncpus=24:mpiprocs=24:mem=96g
+#PBS -l walltime=00:45:00
+#PBS -P 50000008
+#PBS -o outputfile.o
+#PBS -e errorfile.e
+
+ml purge
+ml intel
+
+cd $HOME/scratch/HPCG/104
+
+mpirun ./xhpcg
