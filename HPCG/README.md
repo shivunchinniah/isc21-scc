@@ -50,7 +50,7 @@ GFLOP/s value of: `175.012`
 
 ## Results:
 For these set of results 4x Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz were used.
-24 logical cores with 96GB RAM each.
+24 logical cores with 132GB RAM each.
 
 ### Optimised
 hpcg.dat:\
