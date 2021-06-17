@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l select=4:ncpus=24:mpiprocs=24:mem=96G
+#PBS -l walltime=01:30:00
+#PBS -P 50000008
+#PBS -o outputfile.o
+#PBS -e errorfile.e
+#PBS -M shivunchinniah27@gmail.com
+
+cat hostname
+
+module load intelmpi
+module load mkl
+module load intelcc
+
+cd $PBS_O_WORKDIR
+
+mpirun ./hpcc
