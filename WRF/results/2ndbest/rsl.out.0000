@@ -1,0 +1,1382 @@
+Quilting with   1 groups of   0 I/O tasks.
+ Ntasks in X           10 , ntasks in Y           16
+Domain # 1: dx =  3000.000 m
+Domain # 2: dx =  1000.000 m
+Domain # 3: dx =   500.000 m
+WRF V4.2.1 MODEL
+ *************************************
+ Parent domain
+ ids,ide,jds,jde            1         793           1         853
+ ims,ime,jms,jme           -4          87          -4          61
+ ips,ipe,jps,jpe            1          80           1          54
+ *************************************
+DYNAMICS OPTION: Eulerian Mass Coordinate
+ alloc_space_field: domain            1 ,              229864900  bytes allocated
+med_initialdata_input: calling input_input
+ Domain            1  Setting history stream           24  for u
+ Domain            1  Setting history stream           24  for v
+ Domain            1  Setting history stream           24  for t
+ Domain            1  Setting history stream           24  for qvapor
+ Domain            1  Setting history stream           24  for xlat
+ Domain            1  Setting history stream           24  for xlong
+ Domain            1  Setting history stream           24  for lu_index
+ Domain            1  Setting history stream           24  for hgt
+ Input data is acceptable to use: wrfinput_d01
+ CURRENT DATE          = 2016-08-29_09:00:00
+ SIMULATION START DATE = 2016-08-29_00:00:00
+Timing for processing wrfinput file (stream 0) for domain        1:   39.59874 elapsed seconds
+Max map factor in domain 1 =  1.08. Scale the dt in the model accordingly.
+ D01: Time step                              =    15.00000      (s)
+ D01: Grid Distance                          =    3.000000      (km)
+ D01: Grid Distance Ratio dt/dx              =    5.000000      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    5.392106      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+ThompMP: read qr_acr_qgV2.dat instead of computing
+ThompMP: read qr_acr_qsV2.dat instead of computing
+ThompMP: read freezeH2O.dat instead of computing
+ *************************************
+ Nesting domain
+ ids,ide,jds,jde            1         805           1         805
+ ims,ime,jms,jme           -4          93          -4          63
+ ips,ipe,jps,jpe            1          81           1          51
+ INTERMEDIATE domain
+ ids,ide,jds,jde          269         542         299         572
+ ims,ime,jms,jme          264         307         294         327
+ ips,ipe,jps,jpe          267         297         297         317
+ *************************************
+ alloc_space_field: domain            2 ,               20555040  bytes allocated
+ alloc_space_field: domain            2 ,              249987536  bytes allocated
+*** Initializing nest domain # 2 from an input file. ***
+med_initialdata_input: calling input_input
+ Domain            2  Setting history stream           24  for u
+ Domain            2  Setting history stream           24  for v
+ Domain            2  Setting history stream           24  for t
+ Domain            2  Setting history stream           24  for qvapor
+ Domain            2  Setting history stream           24  for xlat
+ Domain            2  Setting history stream           24  for xlong
+ Domain            2  Setting history stream           24  for lu_index
+ Domain            2  Setting history stream           24  for hgt
+ Input data is acceptable to use: wrfinput_d02
+Timing for processing wrfinput file (stream 0) for domain        2:   37.91220 elapsed seconds
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+Max map factor in domain 1 =  1.08. Scale the dt in the model accordingly.
+ D01: Time step                              =    15.00000      (s)
+ D01: Grid Distance                          =    3.000000      (km)
+ D01: Grid Distance Ratio dt/dx              =    5.000000      (s/km)
+ D01: Ratio Including Maximum Map Factor     =    5.392106      (s/km)
+ D01: NML defined reasonable_time_step_ratio =    6.000000
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:00:00 for domain        1:    2.28661 elapsed seconds
+ Input data is acceptable to use: wrfbdy_d01
+ THIS TIME 2016-08-29_00:00:00, NEXT TIME 2016-08-29_03:00:00
+ Input data is acceptable to use: wrfbdy_d01
+ THIS TIME 2016-08-29_03:00:00, NEXT TIME 2016-08-29_06:00:00
+ Input data is acceptable to use: wrfbdy_d01
+ THIS TIME 2016-08-29_06:00:00, NEXT TIME 2016-08-29_09:00:00
+ Input data is acceptable to use: wrfbdy_d01
+Timing for processing lateral boundary for domain        1:    0.98777 elapsed seconds
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     80 JS      1 JE     27
+WRF TILE   2 IS      1 IE     80 JS     28 JE     54
+WRF NUMBER OF TILES =   2
+ *************************************
+ Nesting domain
+ ids,ide,jds,jde            1        1001           1        1001
+ ims,ime,jms,jme           -4         110          -4          74
+ ips,ipe,jps,jpe            1         100           1          63
+ INTERMEDIATE domain
+ ids,ide,jds,jde          149         654         149         654
+ ims,ime,jms,jme          144         210         144         191
+ ips,ipe,jps,jpe          147         200         147         181
+ *************************************
+ alloc_space_field: domain            3 ,               44187840  bytes allocated
+ alloc_space_field: domain            3 ,              337182632  bytes allocated
+*** Initializing nest domain # 3 from an input file. ***
+med_initialdata_input: calling input_input
+ Domain            3  Setting history stream           24  for u
+ Domain            3  Setting history stream           24  for v
+ Domain            3  Setting history stream           24  for t
+ Domain            3  Setting history stream           24  for qvapor
+ Domain            3  Setting history stream           24  for xlat
+ Domain            3  Setting history stream           24  for xlong
+ Domain            3  Setting history stream           24  for lu_index
+ Domain            3  Setting history stream           24  for hgt
+ Input data is acceptable to use: wrfinput_d03
+Timing for processing wrfinput file (stream 0) for domain        3:   59.22045 elapsed seconds
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+INPUT LandUse = "MODIFIED_IGBP_MODIS_NOAH"
+ LANDUSE TYPE = "MODIFIED_IGBP_MODIS_NOAH" FOUND          33  CATEGORIES           2  SEASONS WATER CATEGORY =           17  SNOW CATEGORY =           15
+INITIALIZE THREE Noah LSM RELATED TABLES
+Skipping over LUTYPE = USGS
+ LANDUSE TYPE = MODIFIED_IGBP_MODIS_NOAH FOUND          20  CATEGORIES
+ INPUT SOIL TEXTURE CLASSIFICATION = STAS
+ SOIL TEXTURE CLASSIFICATION = STAS FOUND          19  CATEGORIES
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:00:00 for domain        2:    2.48458 elapsed seconds
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE     81 JS      1 JE     26
+WRF TILE   2 IS      1 IE     81 JS     27 JE     51
+WRF NUMBER OF TILES =   2
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:00:00 for domain        3:    3.36667 elapsed seconds
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2
+ Tile Strategy is not specified. Assuming 1D-Y
+WRF TILE   1 IS      1 IE    100 JS      1 JE     32
+WRF TILE   2 IS      1 IE    100 JS     33 JE     63
+WRF NUMBER OF TILES =   2
+Timing for main: time 2016-08-29_09:00:02 on domain   3:   11.46186 elapsed seconds
+Timing for main: time 2016-08-29_09:00:05 on domain   3:    1.55554 elapsed seconds
+Timing for main: time 2016-08-29_09:00:05 on domain   2:   84.38379 elapsed seconds
+Timing for main: time 2016-08-29_09:00:07 on domain   3:    1.53589 elapsed seconds
+Timing for main: time 2016-08-29_09:00:10 on domain   3:    1.55905 elapsed seconds
+Timing for main: time 2016-08-29_09:00:10 on domain   2:    5.07878 elapsed seconds
+Timing for main: time 2016-08-29_09:00:12 on domain   3:    1.50512 elapsed seconds
+Timing for main: time 2016-08-29_09:00:15 on domain   3:    1.57317 elapsed seconds
+Timing for main: time 2016-08-29_09:00:15 on domain   2:    5.06330 elapsed seconds
+Timing for main: time 2016-08-29_09:00:15 on domain   1:  145.59634 elapsed seconds
+Timing for main: time 2016-08-29_09:00:17 on domain   3:    1.51950 elapsed seconds
+Timing for main: time 2016-08-29_09:00:20 on domain   3:    1.57299 elapsed seconds
+Timing for main: time 2016-08-29_09:00:20 on domain   2:    5.03142 elapsed seconds
+Timing for main: time 2016-08-29_09:00:22 on domain   3:    1.51195 elapsed seconds
+Timing for main: time 2016-08-29_09:00:25 on domain   3:    1.56595 elapsed seconds
+Timing for main: time 2016-08-29_09:00:25 on domain   2:    5.05023 elapsed seconds
+Timing for main: time 2016-08-29_09:00:27 on domain   3:    1.54687 elapsed seconds
+Timing for main: time 2016-08-29_09:00:30 on domain   3:    1.54781 elapsed seconds
+Timing for main: time 2016-08-29_09:00:30 on domain   2:    5.08063 elapsed seconds
+Timing for main: time 2016-08-29_09:00:30 on domain   1:   17.07272 elapsed seconds
+Timing for main: time 2016-08-29_09:00:32 on domain   3:    1.51649 elapsed seconds
+Timing for main: time 2016-08-29_09:00:35 on domain   3:    1.58897 elapsed seconds
+Timing for main: time 2016-08-29_09:00:35 on domain   2:    5.06149 elapsed seconds
+Timing for main: time 2016-08-29_09:00:37 on domain   3:    1.50622 elapsed seconds
+Timing for main: time 2016-08-29_09:00:40 on domain   3:    1.57524 elapsed seconds
+Timing for main: time 2016-08-29_09:00:40 on domain   2:    5.06506 elapsed seconds
+Timing for main: time 2016-08-29_09:00:42 on domain   3:    1.51553 elapsed seconds
+Timing for main: time 2016-08-29_09:00:45 on domain   3:    1.55928 elapsed seconds
+Timing for main: time 2016-08-29_09:00:45 on domain   2:    5.06908 elapsed seconds
+Timing for main: time 2016-08-29_09:00:45 on domain   1:   17.12408 elapsed seconds
+Timing for main: time 2016-08-29_09:00:47 on domain   3:    1.51076 elapsed seconds
+Timing for main: time 2016-08-29_09:00:50 on domain   3:    1.55776 elapsed seconds
+Timing for main: time 2016-08-29_09:00:50 on domain   2:    5.00985 elapsed seconds
+Timing for main: time 2016-08-29_09:00:52 on domain   3:    1.51176 elapsed seconds
+Timing for main: time 2016-08-29_09:00:55 on domain   3:    1.56162 elapsed seconds
+Timing for main: time 2016-08-29_09:00:55 on domain   2:    5.06041 elapsed seconds
+Timing for main: time 2016-08-29_09:00:57 on domain   3:    1.50557 elapsed seconds
+Timing for main: time 2016-08-29_09:01:00 on domain   3:    1.56495 elapsed seconds
+Timing for main: time 2016-08-29_09:01:00 on domain   2:    5.05441 elapsed seconds
+Timing for main: time 2016-08-29_09:01:00 on domain   1:   17.03077 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:01:00 for domain        1:    2.25902 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:01:00 for domain        2:    2.48958 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:01:00 for domain        3:    3.14424 elapsed seconds
+Timing for main: time 2016-08-29_09:01:02 on domain   3:    4.65026 elapsed seconds
+Timing for main: time 2016-08-29_09:01:05 on domain   3:    1.57077 elapsed seconds
+Timing for main: time 2016-08-29_09:01:05 on domain   2:   10.71393 elapsed seconds
+Timing for main: time 2016-08-29_09:01:07 on domain   3:    1.51399 elapsed seconds
+Timing for main: time 2016-08-29_09:01:10 on domain   3:    1.56361 elapsed seconds
+Timing for main: time 2016-08-29_09:01:10 on domain   2:    5.05671 elapsed seconds
+Timing for main: time 2016-08-29_09:01:12 on domain   3:    1.51443 elapsed seconds
+Timing for main: time 2016-08-29_09:01:15 on domain   3:    1.55426 elapsed seconds
+Timing for main: time 2016-08-29_09:01:15 on domain   2:    5.04217 elapsed seconds
+Timing for main: time 2016-08-29_09:01:15 on domain   1:   24.90945 elapsed seconds
+Timing for main: time 2016-08-29_09:01:17 on domain   3:    1.53524 elapsed seconds
+Timing for main: time 2016-08-29_09:01:20 on domain   3:    1.55471 elapsed seconds
+Timing for main: time 2016-08-29_09:01:20 on domain   2:    5.02884 elapsed seconds
+Timing for main: time 2016-08-29_09:01:22 on domain   3:    1.50834 elapsed seconds
+Timing for main: time 2016-08-29_09:01:25 on domain   3:    1.56541 elapsed seconds
+Timing for main: time 2016-08-29_09:01:25 on domain   2:    5.06847 elapsed seconds
+Timing for main: time 2016-08-29_09:01:27 on domain   3:    1.51148 elapsed seconds
+Timing for main: time 2016-08-29_09:01:30 on domain   3:    1.55928 elapsed seconds
+Timing for main: time 2016-08-29_09:01:30 on domain   2:    5.10077 elapsed seconds
+Timing for main: time 2016-08-29_09:01:30 on domain   1:   17.10803 elapsed seconds
+Timing for main: time 2016-08-29_09:01:32 on domain   3:    1.50313 elapsed seconds
+Timing for main: time 2016-08-29_09:01:35 on domain   3:    1.56381 elapsed seconds
+Timing for main: time 2016-08-29_09:01:35 on domain   2:    5.00659 elapsed seconds
+Timing for main: time 2016-08-29_09:01:37 on domain   3:    1.50720 elapsed seconds
+Timing for main: time 2016-08-29_09:01:40 on domain   3:    1.56853 elapsed seconds
+Timing for main: time 2016-08-29_09:01:40 on domain   2:    5.06097 elapsed seconds
+Timing for main: time 2016-08-29_09:01:42 on domain   3:    1.50395 elapsed seconds
+Timing for main: time 2016-08-29_09:01:45 on domain   3:    1.56958 elapsed seconds
+Timing for main: time 2016-08-29_09:01:45 on domain   2:    5.06898 elapsed seconds
+Timing for main: time 2016-08-29_09:01:45 on domain   1:   17.03555 elapsed seconds
+Timing for main: time 2016-08-29_09:01:47 on domain   3:    1.51735 elapsed seconds
+Timing for main: time 2016-08-29_09:01:50 on domain   3:    1.56302 elapsed seconds
+Timing for main: time 2016-08-29_09:01:50 on domain   2:    5.05923 elapsed seconds
+Timing for main: time 2016-08-29_09:01:52 on domain   3:    1.51043 elapsed seconds
+Timing for main: time 2016-08-29_09:01:55 on domain   3:    1.56108 elapsed seconds
+Timing for main: time 2016-08-29_09:01:55 on domain   2:    5.05548 elapsed seconds
+Timing for main: time 2016-08-29_09:01:57 on domain   3:    1.50678 elapsed seconds
+Timing for main: time 2016-08-29_09:02:00 on domain   3:    1.55948 elapsed seconds
+Timing for main: time 2016-08-29_09:02:00 on domain   2:    5.04820 elapsed seconds
+Timing for main: time 2016-08-29_09:02:00 on domain   1:   17.06500 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:02:00 for domain        1:    2.23229 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:02:00 for domain        2:    2.50263 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:02:00 for domain        3:    3.15183 elapsed seconds
+Timing for main: time 2016-08-29_09:02:02 on domain   3:    4.66477 elapsed seconds
+Timing for main: time 2016-08-29_09:02:05 on domain   3:    1.56259 elapsed seconds
+Timing for main: time 2016-08-29_09:02:05 on domain   2:   10.67498 elapsed seconds
+Timing for main: time 2016-08-29_09:02:07 on domain   3:    1.50869 elapsed seconds
+Timing for main: time 2016-08-29_09:02:10 on domain   3:    1.56046 elapsed seconds
+Timing for main: time 2016-08-29_09:02:10 on domain   2:    5.13494 elapsed seconds
+Timing for main: time 2016-08-29_09:02:12 on domain   3:    1.51923 elapsed seconds
+Timing for main: time 2016-08-29_09:02:15 on domain   3:    1.56123 elapsed seconds
+Timing for main: time 2016-08-29_09:02:15 on domain   2:    5.06658 elapsed seconds
+Timing for main: time 2016-08-29_09:02:15 on domain   1:   24.93641 elapsed seconds
+Timing for main: time 2016-08-29_09:02:17 on domain   3:    1.50774 elapsed seconds
+Timing for main: time 2016-08-29_09:02:20 on domain   3:    1.56989 elapsed seconds
+Timing for main: time 2016-08-29_09:02:20 on domain   2:    5.01741 elapsed seconds
+Timing for main: time 2016-08-29_09:02:22 on domain   3:    1.50434 elapsed seconds
+Timing for main: time 2016-08-29_09:02:25 on domain   3:    1.55963 elapsed seconds
+Timing for main: time 2016-08-29_09:02:25 on domain   2:    5.06154 elapsed seconds
+Timing for main: time 2016-08-29_09:02:27 on domain   3:    1.50060 elapsed seconds
+Timing for main: time 2016-08-29_09:02:30 on domain   3:    1.56237 elapsed seconds
+Timing for main: time 2016-08-29_09:02:30 on domain   2:    5.04686 elapsed seconds
+Timing for main: time 2016-08-29_09:02:30 on domain   1:   17.03592 elapsed seconds
+Timing for main: time 2016-08-29_09:02:32 on domain   3:    1.50731 elapsed seconds
+Timing for main: time 2016-08-29_09:02:35 on domain   3:    1.57139 elapsed seconds
+Timing for main: time 2016-08-29_09:02:35 on domain   2:    5.01285 elapsed seconds
+Timing for main: time 2016-08-29_09:02:37 on domain   3:    1.49777 elapsed seconds
+Timing for main: time 2016-08-29_09:02:40 on domain   3:    1.54275 elapsed seconds
+Timing for main: time 2016-08-29_09:02:40 on domain   2:    5.17507 elapsed seconds
+Timing for main: time 2016-08-29_09:02:42 on domain   3:    1.50096 elapsed seconds
+Timing for main: time 2016-08-29_09:02:45 on domain   3:    1.58521 elapsed seconds
+Timing for main: time 2016-08-29_09:02:45 on domain   2:    5.05914 elapsed seconds
+Timing for main: time 2016-08-29_09:02:45 on domain   1:   17.14655 elapsed seconds
+Timing for main: time 2016-08-29_09:02:47 on domain   3:    1.51068 elapsed seconds
+Timing for main: time 2016-08-29_09:02:50 on domain   3:    1.55343 elapsed seconds
+Timing for main: time 2016-08-29_09:02:50 on domain   2:    5.00455 elapsed seconds
+Timing for main: time 2016-08-29_09:02:52 on domain   3:    1.52213 elapsed seconds
+Timing for main: time 2016-08-29_09:02:55 on domain   3:    1.55333 elapsed seconds
+Timing for main: time 2016-08-29_09:02:55 on domain   2:    5.04801 elapsed seconds
+Timing for main: time 2016-08-29_09:02:57 on domain   3:    1.50365 elapsed seconds
+Timing for main: time 2016-08-29_09:03:00 on domain   3:    1.56349 elapsed seconds
+Timing for main: time 2016-08-29_09:03:00 on domain   2:    5.06180 elapsed seconds
+Timing for main: time 2016-08-29_09:03:00 on domain   1:   17.00657 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:03:00 for domain        1:    3.87721 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:03:00 for domain        2:    2.48720 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:03:00 for domain        3:    3.13396 elapsed seconds
+Timing for main: time 2016-08-29_09:03:02 on domain   3:   11.24683 elapsed seconds
+Timing for main: time 2016-08-29_09:03:05 on domain   3:    1.57035 elapsed seconds
+Timing for main: time 2016-08-29_09:03:05 on domain   2:   21.74792 elapsed seconds
+Timing for main: time 2016-08-29_09:03:07 on domain   3:    1.54870 elapsed seconds
+Timing for main: time 2016-08-29_09:03:10 on domain   3:    1.57060 elapsed seconds
+Timing for main: time 2016-08-29_09:03:10 on domain   2:    5.10843 elapsed seconds
+Timing for main: time 2016-08-29_09:03:12 on domain   3:    1.52040 elapsed seconds
+Timing for main: time 2016-08-29_09:03:15 on domain   3:    1.57017 elapsed seconds
+Timing for main: time 2016-08-29_09:03:15 on domain   2:    5.06820 elapsed seconds
+Timing for main: time 2016-08-29_09:03:15 on domain   1:   42.67612 elapsed seconds
+Timing for main: time 2016-08-29_09:03:17 on domain   3:    1.50965 elapsed seconds
+Timing for main: time 2016-08-29_09:03:20 on domain   3:    1.56158 elapsed seconds
+Timing for main: time 2016-08-29_09:03:20 on domain   2:    5.01165 elapsed seconds
+Timing for main: time 2016-08-29_09:03:22 on domain   3:    1.51142 elapsed seconds
+Timing for main: time 2016-08-29_09:03:25 on domain   3:    1.56255 elapsed seconds
+Timing for main: time 2016-08-29_09:03:25 on domain   2:    5.05625 elapsed seconds
+Timing for main: time 2016-08-29_09:03:27 on domain   3:    1.50021 elapsed seconds
+Timing for main: time 2016-08-29_09:03:30 on domain   3:    1.55652 elapsed seconds
+Timing for main: time 2016-08-29_09:03:30 on domain   2:    5.08917 elapsed seconds
+Timing for main: time 2016-08-29_09:03:30 on domain   1:   17.05700 elapsed seconds
+Timing for main: time 2016-08-29_09:03:32 on domain   3:    1.53418 elapsed seconds
+Timing for main: time 2016-08-29_09:03:35 on domain   3:    1.59300 elapsed seconds
+Timing for main: time 2016-08-29_09:03:35 on domain   2:    5.06780 elapsed seconds
+Timing for main: time 2016-08-29_09:03:37 on domain   3:    1.50767 elapsed seconds
+Timing for main: time 2016-08-29_09:03:40 on domain   3:    1.55488 elapsed seconds
+Timing for main: time 2016-08-29_09:03:40 on domain   2:    5.04971 elapsed seconds
+Timing for main: time 2016-08-29_09:03:42 on domain   3:    1.50656 elapsed seconds
+Timing for main: time 2016-08-29_09:03:45 on domain   3:    1.56480 elapsed seconds
+Timing for main: time 2016-08-29_09:03:45 on domain   2:    5.05444 elapsed seconds
+Timing for main: time 2016-08-29_09:03:45 on domain   1:   17.07112 elapsed seconds
+Timing for main: time 2016-08-29_09:03:47 on domain   3:    1.52582 elapsed seconds
+Timing for main: time 2016-08-29_09:03:50 on domain   3:    1.55767 elapsed seconds
+Timing for main: time 2016-08-29_09:03:50 on domain   2:    5.02774 elapsed seconds
+Timing for main: time 2016-08-29_09:03:52 on domain   3:    1.50654 elapsed seconds
+Timing for main: time 2016-08-29_09:03:55 on domain   3:    1.55744 elapsed seconds
+Timing for main: time 2016-08-29_09:03:55 on domain   2:    5.05478 elapsed seconds
+Timing for main: time 2016-08-29_09:03:57 on domain   3:    1.51088 elapsed seconds
+Timing for main: time 2016-08-29_09:04:00 on domain   3:    1.55904 elapsed seconds
+Timing for main: time 2016-08-29_09:04:00 on domain   2:    5.08593 elapsed seconds
+Timing for main: time 2016-08-29_09:04:00 on domain   1:   17.08053 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:04:00 for domain        1:    2.27673 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:04:00 for domain        2:    2.48615 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:04:00 for domain        3:    3.13191 elapsed seconds
+Timing for main: time 2016-08-29_09:04:02 on domain   3:    4.64304 elapsed seconds
+Timing for main: time 2016-08-29_09:04:05 on domain   3:    1.60208 elapsed seconds
+Timing for main: time 2016-08-29_09:04:05 on domain   2:   10.63591 elapsed seconds
+Timing for main: time 2016-08-29_09:04:07 on domain   3:    1.56903 elapsed seconds
+Timing for main: time 2016-08-29_09:04:10 on domain   3:    1.57757 elapsed seconds
+Timing for main: time 2016-08-29_09:04:10 on domain   2:    5.32889 elapsed seconds
+Timing for main: time 2016-08-29_09:04:12 on domain   3:    1.54865 elapsed seconds
+Timing for main: time 2016-08-29_09:04:15 on domain   3:    1.55143 elapsed seconds
+Timing for main: time 2016-08-29_09:04:15 on domain   2:    5.23121 elapsed seconds
+Timing for main: time 2016-08-29_09:04:15 on domain   1:   25.30904 elapsed seconds
+Timing for main: time 2016-08-29_09:04:17 on domain   3:    1.54483 elapsed seconds
+Timing for main: time 2016-08-29_09:04:20 on domain   3:    1.56381 elapsed seconds
+Timing for main: time 2016-08-29_09:04:20 on domain   2:    5.19065 elapsed seconds
+Timing for main: time 2016-08-29_09:04:22 on domain   3:    1.55418 elapsed seconds
+Timing for main: time 2016-08-29_09:04:25 on domain   3:    1.52881 elapsed seconds
+Timing for main: time 2016-08-29_09:04:25 on domain   2:    5.07329 elapsed seconds
+Timing for main: time 2016-08-29_09:04:27 on domain   3:    1.51044 elapsed seconds
+Timing for main: time 2016-08-29_09:04:30 on domain   3:    1.55063 elapsed seconds
+Timing for main: time 2016-08-29_09:04:30 on domain   2:    5.04004 elapsed seconds
+Timing for main: time 2016-08-29_09:04:30 on domain   1:   17.24397 elapsed seconds
+Timing for main: time 2016-08-29_09:04:32 on domain   3:    1.51048 elapsed seconds
+Timing for main: time 2016-08-29_09:04:35 on domain   3:    1.55976 elapsed seconds
+Timing for main: time 2016-08-29_09:04:35 on domain   2:    5.00707 elapsed seconds
+Timing for main: time 2016-08-29_09:04:37 on domain   3:    1.50294 elapsed seconds
+Timing for main: time 2016-08-29_09:04:40 on domain   3:    1.56196 elapsed seconds
+Timing for main: time 2016-08-29_09:04:40 on domain   2:    5.30968 elapsed seconds
+Timing for main: time 2016-08-29_09:04:42 on domain   3:    1.52285 elapsed seconds
+Timing for main: time 2016-08-29_09:04:45 on domain   3:    1.55650 elapsed seconds
+Timing for main: time 2016-08-29_09:04:45 on domain   2:    5.09619 elapsed seconds
+Timing for main: time 2016-08-29_09:04:45 on domain   1:   17.42155 elapsed seconds
+Timing for main: time 2016-08-29_09:04:47 on domain   3:    1.50609 elapsed seconds
+Timing for main: time 2016-08-29_09:04:50 on domain   3:    1.56124 elapsed seconds
+Timing for main: time 2016-08-29_09:04:50 on domain   2:    5.01178 elapsed seconds
+Timing for main: time 2016-08-29_09:04:52 on domain   3:    1.53104 elapsed seconds
+Timing for main: time 2016-08-29_09:04:55 on domain   3:    1.54237 elapsed seconds
+Timing for main: time 2016-08-29_09:04:55 on domain   2:    5.06060 elapsed seconds
+Timing for main: time 2016-08-29_09:04:57 on domain   3:    1.50368 elapsed seconds
+Timing for main: time 2016-08-29_09:05:00 on domain   3:    1.55359 elapsed seconds
+Timing for main: time 2016-08-29_09:05:00 on domain   2:    5.04408 elapsed seconds
+Timing for main: time 2016-08-29_09:05:00 on domain   1:   17.08465 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_01_2016-08-29_09:05:00 for domain        1:    2.25357 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_02_2016-08-29_09:05:00 for domain        2:    2.48376 elapsed seconds
+Timing for Writing ISC2021_WRF_VALIDATION_OUTPUT_03_2016-08-29_09:05:00 for domain        3:    3.11795 elapsed seconds
+Timing for main: time 2016-08-29_09:05:02 on domain   3:    4.63236 elapsed seconds
+Timing for main: time 2016-08-29_09:05:05 on domain   3:    1.56307 elapsed seconds
+Timing for main: time 2016-08-29_09:05:05 on domain   2:   10.61704 elapsed seconds
+Timing for main: time 2016-08-29_09:05:07 on domain   3:    1.50877 elapsed seconds
+Timing for main: time 2016-08-29_09:05:10 on domain   3:    1.55412 elapsed seconds
+Timing for main: time 2016-08-29_09:05:10 on domain   2:    5.03923 elapsed seconds
+Timing for main: time 2016-08-29_09:05:12 on domain   3:    1.50742 elapsed seconds
+Timing for main: time 2016-08-29_09:05:15 on domain   3:    1.55186 elapsed seconds
+Timing for main: time 2016-08-29_09:05:15 on domain   2:    5.04862 elapsed seconds
+Timing for main: time 2016-08-29_09:05:15 on domain   1:   24.78673 elapsed seconds
+Timing for main: time 2016-08-29_09:05:17 on domain   3:    1.50612 elapsed seconds
+Timing for main: time 2016-08-29_09:05:20 on domain   3:    1.56501 elapsed seconds
+Timing for main: time 2016-08-29_09:05:20 on domain   2:    5.00977 elapsed seconds
+Timing for main: time 2016-08-29_09:05:22 on domain   3:    1.49783 elapsed seconds
+Timing for main: time 2016-08-29_09:05:25 on domain   3:    1.56295 elapsed seconds
+Timing for main: time 2016-08-29_09:05:25 on domain   2:    5.03416 elapsed seconds
+Timing for main: time 2016-08-29_09:05:27 on domain   3:    1.51962 elapsed seconds
+Timing for main: time 2016-08-29_09:05:30 on domain   3:    1.55594 elapsed seconds
+Timing for main: time 2016-08-29_09:05:30 on domain   2:    5.05302 elapsed seconds
+Timing for main: time 2016-08-29_09:05:30 on domain   1:   17.02047 elapsed seconds
+Timing for main: time 2016-08-29_09:05:32 on domain   3:    1.51584 elapsed seconds
+Timing for main: time 2016-08-29_09:05:35 on domain   3:    1.56416 elapsed seconds
+Timing for main: time 2016-08-29_09:05:35 on domain   2:    5.09350 elapsed seconds
+Timing for main: time 2016-08-29_09:05:37 on domain   3:    1.51097 elapsed seconds
+Timing for main: time 2016-08-29_09:05:40 on domain   3:    1.56448 elapsed seconds
+Timing for main: time 2016-08-29_09:05:40 on domain   2:    5.05212 elapsed seconds
+Timing for main: time 2016-08-29_09:05:42 on domain   3:    1.50528 elapsed seconds
+Timing for main: time 2016-08-29_09:05:45 on domain   3:    1.56365 elapsed seconds
+Timing for main: time 2016-08-29_09:05:45 on domain   2:    5.05946 elapsed seconds
+Timing for main: time 2016-08-29_09:05:45 on domain   1:   17.10886 elapsed seconds
+Timing for main: time 2016-08-29_09:05:47 on domain   3:    1.50442 elapsed seconds
+Timing for main: time 2016-08-29_09:05:50 on domain   3:    1.56779 elapsed seconds
+Timing for main: time 2016-08-29_09:05:50 on domain   2:    5.02039 elapsed seconds
+Timing for main: time 2016-08-29_09:05:52 on domain   3:    1.51226 elapsed seconds
+Timing for main: time 2016-08-29_09:05:55 on domain   3:    1.56218 elapsed seconds
+Timing for main: time 2016-08-29_09:05:55 on domain   2:    5.05863 elapsed seconds
+Timing for main: time 2016-08-29_09:05:57 on domain   3:    1.52177 elapsed seconds
+Timing for main: time 2016-08-29_09:06:00 on domain   3:    1.56194 elapsed seconds
+Timing for main: time 2016-08-29_09:06:00 on domain   2:    5.06399 elapsed seconds
+Timing for main: time 2016-08-29_09:06:00 on domain   1:   17.02585 elapsed seconds
+Timing for main: time 2016-08-29_09:06:02 on domain   3:    8.09462 elapsed seconds
+Timing for main: time 2016-08-29_09:06:05 on domain   3:    1.56431 elapsed seconds
+Timing for main: time 2016-08-29_09:06:05 on domain   2:   16.06760 elapsed seconds
+Timing for main: time 2016-08-29_09:06:07 on domain   3:    1.50810 elapsed seconds
+Timing for main: time 2016-08-29_09:06:10 on domain   3:    1.56214 elapsed seconds
+Timing for main: time 2016-08-29_09:06:10 on domain   2:    5.05675 elapsed seconds
+Timing for main: time 2016-08-29_09:06:12 on domain   3:    1.51589 elapsed seconds
+Timing for main: time 2016-08-29_09:06:15 on domain   3:    1.55538 elapsed seconds
+Timing for main: time 2016-08-29_09:06:15 on domain   2:    5.09241 elapsed seconds
+Timing for main: time 2016-08-29_09:06:15 on domain   1:   33.17532 elapsed seconds
+Timing for main: time 2016-08-29_09:06:17 on domain   3:    1.51226 elapsed seconds
+Timing for main: time 2016-08-29_09:06:20 on domain   3:    1.56618 elapsed seconds
+Timing for main: time 2016-08-29_09:06:20 on domain   2:    5.01528 elapsed seconds
+Timing for main: time 2016-08-29_09:06:22 on domain   3:    1.50563 elapsed seconds
+Timing for main: time 2016-08-29_09:06:25 on domain   3:    1.59815 elapsed seconds
+Timing for main: time 2016-08-29_09:06:25 on domain   2:    5.07073 elapsed seconds
+Timing for main: time 2016-08-29_09:06:27 on domain   3:    1.51435 elapsed seconds
+Timing for main: time 2016-08-29_09:06:30 on domain   3:    1.56513 elapsed seconds
+Timing for main: time 2016-08-29_09:06:30 on domain   2:    5.06196 elapsed seconds
+Timing for main: time 2016-08-29_09:06:30 on domain   1:   17.04766 elapsed seconds
+Timing for main: time 2016-08-29_09:06:32 on domain   3:    1.50425 elapsed seconds
+Timing for main: time 2016-08-29_09:06:35 on domain   3:    1.57002 elapsed seconds
+Timing for main: time 2016-08-29_09:06:35 on domain   2:    5.08619 elapsed seconds
+Timing for main: time 2016-08-29_09:06:37 on domain   3:    1.54186 elapsed seconds
+Timing for main: time 2016-08-29_09:06:40 on domain   3:    1.55249 elapsed seconds
+Timing for main: time 2016-08-29_09:06:40 on domain   2:    5.09504 elapsed seconds
+Timing for main: time 2016-08-29_09:06:42 on domain   3:    1.51332 elapsed seconds
+Timing for main: time 2016-08-29_09:06:45 on domain   3:    1.55903 elapsed seconds
+Timing for main: time 2016-08-29_09:06:45 on domain   2:    5.05507 elapsed seconds
+Timing for main: time 2016-08-29_09:06:45 on domain   1:   17.13591 elapsed seconds
+Timing for main: time 2016-08-29_09:06:47 on domain   3:    1.51720 elapsed seconds
+Timing for main: time 2016-08-29_09:06:50 on domain   3:    1.55517 elapsed seconds
+Timing for main: time 2016-08-29_09:06:50 on domain   2:    5.01316 elapsed seconds
+Timing for main: time 2016-08-29_09:06:52 on domain   3:    1.51193 elapsed seconds
+Timing for main: time 2016-08-29_09:06:55 on domain   3:    1.56114 elapsed seconds
+Timing for main: time 2016-08-29_09:06:55 on domain   2:    5.05600 elapsed seconds
+Timing for main: time 2016-08-29_09:06:57 on domain   3:    1.49951 elapsed seconds
+Timing for main: time 2016-08-29_09:07:00 on domain   3:    1.56423 elapsed seconds
+Timing for main: time 2016-08-29_09:07:00 on domain   2:    5.04515 elapsed seconds
+Timing for main: time 2016-08-29_09:07:00 on domain   1:   17.01600 elapsed seconds
+Timing for main: time 2016-08-29_09:07:02 on domain   3:    1.57010 elapsed seconds
+Timing for main: time 2016-08-29_09:07:05 on domain   3:    1.56111 elapsed seconds
+Timing for main: time 2016-08-29_09:07:05 on domain   2:    5.08188 elapsed seconds
+Timing for main: time 2016-08-29_09:07:07 on domain   3:    1.50920 elapsed seconds
+Timing for main: time 2016-08-29_09:07:10 on domain   3:    1.56304 elapsed seconds
+Timing for main: time 2016-08-29_09:07:10 on domain   2:    5.06309 elapsed seconds
+Timing for main: time 2016-08-29_09:07:12 on domain   3:    1.51932 elapsed seconds
+Timing for main: time 2016-08-29_09:07:15 on domain   3:    1.56336 elapsed seconds
+Timing for main: time 2016-08-29_09:07:15 on domain   2:    5.06597 elapsed seconds
+Timing for main: time 2016-08-29_09:07:15 on domain   1:   17.12112 elapsed seconds
+Timing for main: time 2016-08-29_09:07:17 on domain   3:    1.51769 elapsed seconds
+Timing for main: time 2016-08-29_09:07:20 on domain   3:    1.56162 elapsed seconds
+Timing for main: time 2016-08-29_09:07:20 on domain   2:    5.02627 elapsed seconds
+Timing for main: time 2016-08-29_09:07:22 on domain   3:    1.51313 elapsed seconds
+Timing for main: time 2016-08-29_09:07:25 on domain   3:    1.56717 elapsed seconds
+Timing for main: time 2016-08-29_09:07:25 on domain   2:    5.05527 elapsed seconds
+Timing for main: time 2016-08-29_09:07:27 on domain   3:    1.53555 elapsed seconds
+Timing for main: time 2016-08-29_09:07:30 on domain   3:    1.56273 elapsed seconds
+Timing for main: time 2016-08-29_09:07:30 on domain   2:    5.07763 elapsed seconds
+Timing for main: time 2016-08-29_09:07:30 on domain   1:   17.05729 elapsed seconds
+Timing for main: time 2016-08-29_09:07:32 on domain   3:    1.51017 elapsed seconds
+Timing for main: time 2016-08-29_09:07:35 on domain   3:    1.56571 elapsed seconds
+Timing for main: time 2016-08-29_09:07:35 on domain   2:    5.01828 elapsed seconds
+Timing for main: time 2016-08-29_09:07:37 on domain   3:    1.51263 elapsed seconds
+Timing for main: time 2016-08-29_09:07:40 on domain   3:    1.56223 elapsed seconds
+Timing for main: time 2016-08-29_09:07:40 on domain   2:    5.06309 elapsed seconds
+Timing for main: time 2016-08-29_09:07:42 on domain   3:    1.51479 elapsed seconds
+Timing for main: time 2016-08-29_09:07:45 on domain   3:    1.56403 elapsed seconds
+Timing for main: time 2016-08-29_09:07:45 on domain   2:    5.05238 elapsed seconds
+Timing for main: time 2016-08-29_09:07:45 on domain   1:   17.04154 elapsed seconds
+Timing for main: time 2016-08-29_09:07:47 on domain   3:    1.51268 elapsed seconds
+Timing for main: time 2016-08-29_09:07:50 on domain   3:    1.56610 elapsed seconds
+Timing for main: time 2016-08-29_09:07:50 on domain   2:    5.02494 elapsed seconds
+Timing for main: time 2016-08-29_09:07:52 on domain   3:    1.52101 elapsed seconds
+Timing for main: time 2016-08-29_09:07:55 on domain   3:    1.54944 elapsed seconds
+Timing for main: time 2016-08-29_09:07:55 on domain   2:    5.07751 elapsed seconds
+Timing for main: time 2016-08-29_09:07:57 on domain   3:    1.51196 elapsed seconds
+Timing for main: time 2016-08-29_09:08:00 on domain   3:    1.57080 elapsed seconds
+Timing for main: time 2016-08-29_09:08:00 on domain   2:    5.07062 elapsed seconds
+Timing for main: time 2016-08-29_09:08:00 on domain   1:   17.07891 elapsed seconds
+Timing for main: time 2016-08-29_09:08:02 on domain   3:    1.51248 elapsed seconds
+Timing for main: time 2016-08-29_09:08:05 on domain   3:    1.55994 elapsed seconds
+Timing for main: time 2016-08-29_09:08:05 on domain   2:    5.01600 elapsed seconds
+Timing for main: time 2016-08-29_09:08:07 on domain   3:    1.51247 elapsed seconds
+Timing for main: time 2016-08-29_09:08:10 on domain   3:    1.61471 elapsed seconds
+Timing for main: time 2016-08-29_09:08:10 on domain   2:    5.06215 elapsed seconds
+Timing for main: time 2016-08-29_09:08:12 on domain   3:    1.50695 elapsed seconds
+Timing for main: time 2016-08-29_09:08:15 on domain   3:    1.57321 elapsed seconds
+Timing for main: time 2016-08-29_09:08:15 on domain   2:    5.05972 elapsed seconds
+Timing for main: time 2016-08-29_09:08:15 on domain   1:   17.03457 elapsed seconds
+Timing for main: time 2016-08-29_09:08:17 on domain   3:    1.50259 elapsed seconds
+Timing for main: time 2016-08-29_09:08:20 on domain   3:    1.57325 elapsed seconds
+Timing for main: time 2016-08-29_09:08:20 on domain   2:    5.01597 elapsed seconds
+Timing for main: time 2016-08-29_09:08:22 on domain   3:    1.52918 elapsed seconds
+Timing for main: time 2016-08-29_09:08:25 on domain   3:    1.55958 elapsed seconds
+Timing for main: time 2016-08-29_09:08:25 on domain   2:    5.07662 elapsed seconds
+Timing for main: time 2016-08-29_09:08:27 on domain   3:    1.51138 elapsed seconds
+Timing for main: time 2016-08-29_09:08:30 on domain   3:    1.56846 elapsed seconds
+Timing for main: time 2016-08-29_09:08:30 on domain   2:    5.05546 elapsed seconds
+Timing for main: time 2016-08-29_09:08:30 on domain   1:   17.04584 elapsed seconds
+Timing for main: time 2016-08-29_09:08:32 on domain   3:    1.50861 elapsed seconds
+Timing for main: time 2016-08-29_09:08:35 on domain   3:    1.55308 elapsed seconds
+Timing for main: time 2016-08-29_09:08:35 on domain   2:    4.99272 elapsed seconds
+Timing for main: time 2016-08-29_09:08:37 on domain   3:    1.50572 elapsed seconds
+Timing for main: time 2016-08-29_09:08:40 on domain   3:    1.55700 elapsed seconds
+Timing for main: time 2016-08-29_09:08:40 on domain   2:    5.04690 elapsed seconds
+Timing for main: time 2016-08-29_09:08:42 on domain   3:    1.50896 elapsed seconds
+Timing for main: time 2016-08-29_09:08:45 on domain   3:    1.59962 elapsed seconds
+Timing for main: time 2016-08-29_09:08:45 on domain   2:    5.07655 elapsed seconds
+Timing for main: time 2016-08-29_09:08:45 on domain   1:   17.01842 elapsed seconds
+Timing for main: time 2016-08-29_09:08:47 on domain   3:    1.54501 elapsed seconds
+Timing for main: time 2016-08-29_09:08:50 on domain   3:    1.55464 elapsed seconds
+Timing for main: time 2016-08-29_09:08:50 on domain   2:    5.03502 elapsed seconds
+Timing for main: time 2016-08-29_09:08:52 on domain   3:    1.51166 elapsed seconds
+Timing for main: time 2016-08-29_09:08:55 on domain   3:    1.56066 elapsed seconds
+Timing for main: time 2016-08-29_09:08:55 on domain   2:    5.05332 elapsed seconds
+Timing for main: time 2016-08-29_09:08:57 on domain   3:    1.50912 elapsed seconds
+Timing for main: time 2016-08-29_09:09:00 on domain   3:    1.56399 elapsed seconds
+Timing for main: time 2016-08-29_09:09:00 on domain   2:    5.05345 elapsed seconds
+Timing for main: time 2016-08-29_09:09:00 on domain   1:   17.03324 elapsed seconds
+Timing for main: time 2016-08-29_09:09:02 on domain   3:    8.09770 elapsed seconds
+Timing for main: time 2016-08-29_09:09:05 on domain   3:    1.56327 elapsed seconds
+Timing for main: time 2016-08-29_09:09:05 on domain   2:   16.12113 elapsed seconds
+Timing for main: time 2016-08-29_09:09:07 on domain   3:    1.51043 elapsed seconds
+Timing for main: time 2016-08-29_09:09:10 on domain   3:    1.56897 elapsed seconds
+Timing for main: time 2016-08-29_09:09:10 on domain   2:    5.06643 elapsed seconds
+Timing for main: time 2016-08-29_09:09:12 on domain   3:    1.50397 elapsed seconds
+Timing for main: time 2016-08-29_09:09:15 on domain   3:    1.56288 elapsed seconds
+Timing for main: time 2016-08-29_09:09:15 on domain   2:    5.04950 elapsed seconds
+Timing for main: time 2016-08-29_09:09:15 on domain   1:   33.20597 elapsed seconds
+Timing for main: time 2016-08-29_09:09:17 on domain   3:    1.51454 elapsed seconds
+Timing for main: time 2016-08-29_09:09:20 on domain   3:    1.55949 elapsed seconds
+Timing for main: time 2016-08-29_09:09:20 on domain   2:    5.01282 elapsed seconds
+Timing for main: time 2016-08-29_09:09:22 on domain   3:    1.51841 elapsed seconds
+Timing for main: time 2016-08-29_09:09:25 on domain   3:    1.56465 elapsed seconds
+Timing for main: time 2016-08-29_09:09:25 on domain   2:    5.07101 elapsed seconds
+Timing for main: time 2016-08-29_09:09:27 on domain   3:    1.52794 elapsed seconds
+Timing for main: time 2016-08-29_09:09:30 on domain   3:    1.55639 elapsed seconds
+Timing for main: time 2016-08-29_09:09:30 on domain   2:    5.06176 elapsed seconds
+Timing for main: time 2016-08-29_09:09:30 on domain   1:   17.07794 elapsed seconds
+Timing for main: time 2016-08-29_09:09:32 on domain   3:    1.51322 elapsed seconds
+Timing for main: time 2016-08-29_09:09:35 on domain   3:    1.56553 elapsed seconds
+Timing for main: time 2016-08-29_09:09:35 on domain   2:    5.02026 elapsed seconds
+Timing for main: time 2016-08-29_09:09:37 on domain   3:    1.51287 elapsed seconds
+Timing for main: time 2016-08-29_09:09:40 on domain   3:    1.55944 elapsed seconds
+Timing for main: time 2016-08-29_09:09:40 on domain   2:    5.04286 elapsed seconds
+Timing for main: time 2016-08-29_09:09:42 on domain   3:    1.51267 elapsed seconds
+Timing for main: time 2016-08-29_09:09:45 on domain   3:    1.55608 elapsed seconds
+Timing for main: time 2016-08-29_09:09:45 on domain   2:    5.05668 elapsed seconds
+Timing for main: time 2016-08-29_09:09:45 on domain   1:   17.03378 elapsed seconds
+Timing for main: time 2016-08-29_09:09:47 on domain   3:    1.58436 elapsed seconds
+Timing for main: time 2016-08-29_09:09:50 on domain   3:    1.50962 elapsed seconds
+Timing for main: time 2016-08-29_09:09:50 on domain   2:    5.04689 elapsed seconds
+Timing for main: time 2016-08-29_09:09:52 on domain   3:    1.51596 elapsed seconds
+Timing for main: time 2016-08-29_09:09:55 on domain   3:    1.58708 elapsed seconds
+Timing for main: time 2016-08-29_09:09:55 on domain   2:    5.09608 elapsed seconds
+Timing for main: time 2016-08-29_09:09:57 on domain   3:    1.51360 elapsed seconds
+Timing for main: time 2016-08-29_09:10:00 on domain   3:    1.56064 elapsed seconds
+Timing for main: time 2016-08-29_09:10:00 on domain   2:    5.06115 elapsed seconds
+Timing for main: time 2016-08-29_09:10:00 on domain   1:   17.09121 elapsed seconds
+Timing for main: time 2016-08-29_09:10:02 on domain   3:    1.51390 elapsed seconds
+Timing for main: time 2016-08-29_09:10:05 on domain   3:    1.55787 elapsed seconds
+Timing for main: time 2016-08-29_09:10:05 on domain   2:    5.00932 elapsed seconds
+Timing for main: time 2016-08-29_09:10:07 on domain   3:    1.54097 elapsed seconds
+Timing for main: time 2016-08-29_09:10:10 on domain   3:    1.56490 elapsed seconds
+Timing for main: time 2016-08-29_09:10:10 on domain   2:    5.06785 elapsed seconds
+Timing for main: time 2016-08-29_09:10:12 on domain   3:    1.51137 elapsed seconds
+Timing for main: time 2016-08-29_09:10:15 on domain   3:    1.56049 elapsed seconds
+Timing for main: time 2016-08-29_09:10:15 on domain   2:    5.05388 elapsed seconds
+Timing for main: time 2016-08-29_09:10:15 on domain   1:   17.04288 elapsed seconds
+Timing for main: time 2016-08-29_09:10:17 on domain   3:    1.51717 elapsed seconds
+Timing for main: time 2016-08-29_09:10:20 on domain   3:    1.57274 elapsed seconds
+Timing for main: time 2016-08-29_09:10:20 on domain   2:    5.00981 elapsed seconds
+Timing for main: time 2016-08-29_09:10:22 on domain   3:    1.50851 elapsed seconds
+Timing for main: time 2016-08-29_09:10:25 on domain   3:    1.55790 elapsed seconds
+Timing for main: time 2016-08-29_09:10:25 on domain   2:    5.04681 elapsed seconds
+Timing for main: time 2016-08-29_09:10:27 on domain   3:    1.50949 elapsed seconds
+Timing for main: time 2016-08-29_09:10:30 on domain   3:    1.56374 elapsed seconds
+Timing for main: time 2016-08-29_09:10:30 on domain   2:    5.06165 elapsed seconds
+Timing for main: time 2016-08-29_09:10:30 on domain   1:   17.02953 elapsed seconds
+Timing for main: time 2016-08-29_09:10:32 on domain   3:    1.51000 elapsed seconds
+Timing for main: time 2016-08-29_09:10:35 on domain   3:    1.56831 elapsed seconds
+Timing for main: time 2016-08-29_09:10:35 on domain   2:    5.01589 elapsed seconds
+Timing for main: time 2016-08-29_09:10:37 on domain   3:    1.55973 elapsed seconds
+Timing for main: time 2016-08-29_09:10:40 on domain   3:    1.54493 elapsed seconds
+Timing for main: time 2016-08-29_09:10:40 on domain   2:    5.08448 elapsed seconds
+Timing for main: time 2016-08-29_09:10:42 on domain   3:    1.50462 elapsed seconds
+Timing for main: time 2016-08-29_09:10:45 on domain   3:    1.56631 elapsed seconds
+Timing for main: time 2016-08-29_09:10:45 on domain   2:    5.04529 elapsed seconds
+Timing for main: time 2016-08-29_09:10:45 on domain   1:   17.05439 elapsed seconds
+Timing for main: time 2016-08-29_09:10:47 on domain   3:    1.52625 elapsed seconds
+Timing for main: time 2016-08-29_09:10:50 on domain   3:    1.55509 elapsed seconds
+Timing for main: time 2016-08-29_09:10:50 on domain   2:    5.04430 elapsed seconds
+Timing for main: time 2016-08-29_09:10:52 on domain   3:    1.50962 elapsed seconds
+Timing for main: time 2016-08-29_09:10:55 on domain   3:    1.55673 elapsed seconds
+Timing for main: time 2016-08-29_09:10:55 on domain   2:    5.05324 elapsed seconds
+Timing for main: time 2016-08-29_09:10:57 on domain   3:    1.51841 elapsed seconds
+Timing for main: time 2016-08-29_09:11:00 on domain   3:    1.59381 elapsed seconds
+Timing for main: time 2016-08-29_09:11:00 on domain   2:    5.09535 elapsed seconds
+Timing for main: time 2016-08-29_09:11:00 on domain   1:   17.10291 elapsed seconds
+Timing for main: time 2016-08-29_09:11:02 on domain   3:    1.51870 elapsed seconds
+Timing for main: time 2016-08-29_09:11:05 on domain   3:    1.56407 elapsed seconds
+Timing for main: time 2016-08-29_09:11:05 on domain   2:    5.01900 elapsed seconds
+Timing for main: time 2016-08-29_09:11:07 on domain   3:    1.55016 elapsed seconds
+Timing for main: time 2016-08-29_09:11:10 on domain   3:    1.55881 elapsed seconds
+Timing for main: time 2016-08-29_09:11:10 on domain   2:    5.10077 elapsed seconds
+Timing for main: time 2016-08-29_09:11:12 on domain   3:    1.51654 elapsed seconds
+Timing for main: time 2016-08-29_09:11:15 on domain   3:    1.56223 elapsed seconds
+Timing for main: time 2016-08-29_09:11:15 on domain   2:    5.06211 elapsed seconds
+Timing for main: time 2016-08-29_09:11:15 on domain   1:   17.10263 elapsed seconds
+Timing for main: time 2016-08-29_09:11:17 on domain   3:    1.51761 elapsed seconds
+Timing for main: time 2016-08-29_09:11:20 on domain   3:    1.55998 elapsed seconds
+Timing for main: time 2016-08-29_09:11:20 on domain   2:    5.02223 elapsed seconds
+Timing for main: time 2016-08-29_09:11:22 on domain   3:    1.51159 elapsed seconds
+Timing for main: time 2016-08-29_09:11:25 on domain   3:    1.56273 elapsed seconds
+Timing for main: time 2016-08-29_09:11:25 on domain   2:    5.05616 elapsed seconds
+Timing for main: time 2016-08-29_09:11:27 on domain   3:    1.52861 elapsed seconds
+Timing for main: time 2016-08-29_09:11:30 on domain   3:    1.54310 elapsed seconds
+Timing for main: time 2016-08-29_09:11:30 on domain   2:    5.05547 elapsed seconds
+Timing for main: time 2016-08-29_09:11:30 on domain   1:   17.03551 elapsed seconds
+Timing for main: time 2016-08-29_09:11:32 on domain   3:    1.51940 elapsed seconds
+Timing for main: time 2016-08-29_09:11:35 on domain   3:    1.61346 elapsed seconds
+Timing for main: time 2016-08-29_09:11:35 on domain   2:    5.07001 elapsed seconds
+Timing for main: time 2016-08-29_09:11:37 on domain   3:    1.51986 elapsed seconds
+Timing for main: time 2016-08-29_09:11:40 on domain   3:    1.55722 elapsed seconds
+Timing for main: time 2016-08-29_09:11:40 on domain   2:    5.06124 elapsed seconds
+Timing for main: time 2016-08-29_09:11:42 on domain   3:    1.51705 elapsed seconds
+Timing for main: time 2016-08-29_09:11:45 on domain   3:    1.56260 elapsed seconds
+Timing for main: time 2016-08-29_09:11:45 on domain   2:    5.05241 elapsed seconds
+Timing for main: time 2016-08-29_09:11:45 on domain   1:   17.07925 elapsed seconds
+Timing for main: time 2016-08-29_09:11:47 on domain   3:    1.51146 elapsed seconds
+Timing for main: time 2016-08-29_09:11:50 on domain   3:    1.56262 elapsed seconds
+Timing for main: time 2016-08-29_09:11:50 on domain   2:    5.01605 elapsed seconds
+Timing for main: time 2016-08-29_09:11:52 on domain   3:    1.51416 elapsed seconds
+Timing for main: time 2016-08-29_09:11:55 on domain   3:    1.56349 elapsed seconds
+Timing for main: time 2016-08-29_09:11:55 on domain   2:    5.05038 elapsed seconds
+Timing for main: time 2016-08-29_09:11:57 on domain   3:    1.51366 elapsed seconds
+Timing for main: time 2016-08-29_09:12:00 on domain   3:    1.56250 elapsed seconds
+Timing for main: time 2016-08-29_09:12:00 on domain   2:    5.05189 elapsed seconds
+Timing for main: time 2016-08-29_09:12:00 on domain   1:   17.01983 elapsed seconds
+Timing for main: time 2016-08-29_09:12:02 on domain   3:    8.19241 elapsed seconds
+Timing for main: time 2016-08-29_09:12:05 on domain   3:    1.60576 elapsed seconds
+Timing for main: time 2016-08-29_09:12:05 on domain   2:   16.15373 elapsed seconds
+Timing for main: time 2016-08-29_09:12:07 on domain   3:    1.50630 elapsed seconds
+Timing for main: time 2016-08-29_09:12:10 on domain   3:    1.57585 elapsed seconds
+Timing for main: time 2016-08-29_09:12:10 on domain   2:    5.06063 elapsed seconds
+Timing for main: time 2016-08-29_09:12:12 on domain   3:    1.58542 elapsed seconds
+Timing for main: time 2016-08-29_09:12:15 on domain   3:    1.54535 elapsed seconds
+Timing for main: time 2016-08-29_09:12:15 on domain   2:    5.16188 elapsed seconds
+Timing for main: time 2016-08-29_09:12:15 on domain   1:   33.40113 elapsed seconds
+Timing for main: time 2016-08-29_09:12:17 on domain   3:    1.50966 elapsed seconds
+Timing for main: time 2016-08-29_09:12:20 on domain   3:    1.57613 elapsed seconds
+Timing for main: time 2016-08-29_09:12:20 on domain   2:    5.04413 elapsed seconds
+Timing for main: time 2016-08-29_09:12:22 on domain   3:    1.53575 elapsed seconds
+Timing for main: time 2016-08-29_09:12:25 on domain   3:    1.56403 elapsed seconds
+Timing for main: time 2016-08-29_09:12:25 on domain   2:    5.15393 elapsed seconds
+Timing for main: time 2016-08-29_09:12:27 on domain   3:    1.59516 elapsed seconds
+Timing for main: time 2016-08-29_09:12:30 on domain   3:    1.60022 elapsed seconds
+Timing for main: time 2016-08-29_09:12:30 on domain   2:    5.18854 elapsed seconds
+Timing for main: time 2016-08-29_09:12:30 on domain   1:   17.28554 elapsed seconds
+Timing for main: time 2016-08-29_09:12:32 on domain   3:    1.54629 elapsed seconds
+Timing for main: time 2016-08-29_09:12:35 on domain   3:    1.55551 elapsed seconds
+Timing for main: time 2016-08-29_09:12:35 on domain   2:    5.04231 elapsed seconds
+Timing for main: time 2016-08-29_09:12:37 on domain   3:    1.51539 elapsed seconds
+Timing for main: time 2016-08-29_09:12:40 on domain   3:    1.57619 elapsed seconds
+Timing for main: time 2016-08-29_09:12:40 on domain   2:    5.07341 elapsed seconds
+Timing for main: time 2016-08-29_09:12:42 on domain   3:    1.51038 elapsed seconds
+Timing for main: time 2016-08-29_09:12:45 on domain   3:    1.57417 elapsed seconds
+Timing for main: time 2016-08-29_09:12:45 on domain   2:    5.07026 elapsed seconds
+Timing for main: time 2016-08-29_09:12:45 on domain   1:   17.08803 elapsed seconds
+Timing for main: time 2016-08-29_09:12:47 on domain   3:    1.51752 elapsed seconds
+Timing for main: time 2016-08-29_09:12:50 on domain   3:    1.56156 elapsed seconds
+Timing for main: time 2016-08-29_09:12:50 on domain   2:    5.01830 elapsed seconds
+Timing for main: time 2016-08-29_09:12:52 on domain   3:    1.51250 elapsed seconds
+Timing for main: time 2016-08-29_09:12:55 on domain   3:    1.55831 elapsed seconds
+Timing for main: time 2016-08-29_09:12:55 on domain   2:    5.05178 elapsed seconds
+Timing for main: time 2016-08-29_09:12:57 on domain   3:    1.51388 elapsed seconds
+Timing for main: time 2016-08-29_09:13:00 on domain   3:    1.56221 elapsed seconds
+Timing for main: time 2016-08-29_09:13:00 on domain   2:    5.05394 elapsed seconds
+Timing for main: time 2016-08-29_09:13:00 on domain   1:   17.04400 elapsed seconds
+Timing for main: time 2016-08-29_09:13:02 on domain   3:    1.52447 elapsed seconds
+Timing for main: time 2016-08-29_09:13:05 on domain   3:    1.56764 elapsed seconds
+Timing for main: time 2016-08-29_09:13:05 on domain   2:    5.06626 elapsed seconds
+Timing for main: time 2016-08-29_09:13:07 on domain   3:    1.50993 elapsed seconds
+Timing for main: time 2016-08-29_09:13:10 on domain   3:    1.56375 elapsed seconds
+Timing for main: time 2016-08-29_09:13:10 on domain   2:    5.09060 elapsed seconds
+Timing for main: time 2016-08-29_09:13:12 on domain   3:    1.51725 elapsed seconds
+Timing for main: time 2016-08-29_09:13:15 on domain   3:    1.55294 elapsed seconds
+Timing for main: time 2016-08-29_09:13:15 on domain   2:    5.12394 elapsed seconds
+Timing for main: time 2016-08-29_09:13:15 on domain   1:   17.17051 elapsed seconds
+Timing for main: time 2016-08-29_09:13:17 on domain   3:    1.51047 elapsed seconds
+Timing for main: time 2016-08-29_09:13:20 on domain   3:    1.55517 elapsed seconds
+Timing for main: time 2016-08-29_09:13:20 on domain   2:    5.00250 elapsed seconds
+Timing for main: time 2016-08-29_09:13:22 on domain   3:    1.51607 elapsed seconds
+Timing for main: time 2016-08-29_09:13:25 on domain   3:    1.55881 elapsed seconds
+Timing for main: time 2016-08-29_09:13:25 on domain   2:    5.07182 elapsed seconds
+Timing for main: time 2016-08-29_09:13:27 on domain   3:    1.51715 elapsed seconds
+Timing for main: time 2016-08-29_09:13:30 on domain   3:    1.55684 elapsed seconds
+Timing for main: time 2016-08-29_09:13:30 on domain   2:    5.04366 elapsed seconds
+Timing for main: time 2016-08-29_09:13:30 on domain   1:   17.02428 elapsed seconds
+Timing for main: time 2016-08-29_09:13:32 on domain   3:    1.51117 elapsed seconds
+Timing for main: time 2016-08-29_09:13:35 on domain   3:    1.55724 elapsed seconds
+Timing for main: time 2016-08-29_09:13:35 on domain   2:    5.03967 elapsed seconds
+Timing for main: time 2016-08-29_09:13:37 on domain   3:    1.51453 elapsed seconds
+Timing for main: time 2016-08-29_09:13:40 on domain   3:    1.56537 elapsed seconds
+Timing for main: time 2016-08-29_09:13:40 on domain   2:    5.06362 elapsed seconds
+Timing for main: time 2016-08-29_09:13:42 on domain   3:    1.51795 elapsed seconds
+Timing for main: time 2016-08-29_09:13:45 on domain   3:    1.56035 elapsed seconds
+Timing for main: time 2016-08-29_09:13:45 on domain   2:    5.05903 elapsed seconds
+Timing for main: time 2016-08-29_09:13:45 on domain   1:   17.06939 elapsed seconds
+Timing for main: time 2016-08-29_09:13:47 on domain   3:    1.51458 elapsed seconds
+Timing for main: time 2016-08-29_09:13:50 on domain   3:    1.56066 elapsed seconds
+Timing for main: time 2016-08-29_09:13:50 on domain   2:    5.01526 elapsed seconds
+Timing for main: time 2016-08-29_09:13:52 on domain   3:    1.51026 elapsed seconds
+Timing for main: time 2016-08-29_09:13:55 on domain   3:    1.57325 elapsed seconds
+Timing for main: time 2016-08-29_09:13:55 on domain   2:    5.08367 elapsed seconds
+Timing for main: time 2016-08-29_09:13:57 on domain   3:    1.51627 elapsed seconds
+Timing for main: time 2016-08-29_09:14:00 on domain   3:    1.56593 elapsed seconds
+Timing for main: time 2016-08-29_09:14:00 on domain   2:    5.04593 elapsed seconds
+Timing for main: time 2016-08-29_09:14:00 on domain   1:   17.04564 elapsed seconds
+Timing for main: time 2016-08-29_09:14:02 on domain   3:    1.53108 elapsed seconds
+Timing for main: time 2016-08-29_09:14:05 on domain   3:    1.56353 elapsed seconds
+Timing for main: time 2016-08-29_09:14:05 on domain   2:    5.02942 elapsed seconds
+Timing for main: time 2016-08-29_09:14:07 on domain   3:    1.52275 elapsed seconds
+Timing for main: time 2016-08-29_09:14:10 on domain   3:    1.56111 elapsed seconds
+Timing for main: time 2016-08-29_09:14:10 on domain   2:    5.06259 elapsed seconds
+Timing for main: time 2016-08-29_09:14:12 on domain   3:    1.51593 elapsed seconds
+Timing for main: time 2016-08-29_09:14:15 on domain   3:    1.55815 elapsed seconds
+Timing for main: time 2016-08-29_09:14:15 on domain   2:    5.05382 elapsed seconds
+Timing for main: time 2016-08-29_09:14:15 on domain   1:   17.03788 elapsed seconds
+Timing for main: time 2016-08-29_09:14:17 on domain   3:    1.51544 elapsed seconds
+Timing for main: time 2016-08-29_09:14:20 on domain   3:    1.55827 elapsed seconds
+Timing for main: time 2016-08-29_09:14:20 on domain   2:    5.01540 elapsed seconds
+Timing for main: time 2016-08-29_09:14:22 on domain   3:    1.50878 elapsed seconds
+Timing for main: time 2016-08-29_09:14:25 on domain   3:    1.55784 elapsed seconds
+Timing for main: time 2016-08-29_09:14:25 on domain   2:    5.05786 elapsed seconds
+Timing for main: time 2016-08-29_09:14:27 on domain   3:    1.50655 elapsed seconds
+Timing for main: time 2016-08-29_09:14:30 on domain   3:    1.58267 elapsed seconds
+Timing for main: time 2016-08-29_09:14:30 on domain   2:    5.06132 elapsed seconds
+Timing for main: time 2016-08-29_09:14:30 on domain   1:   17.04188 elapsed seconds
+Timing for main: time 2016-08-29_09:14:32 on domain   3:    1.51436 elapsed seconds
+Timing for main: time 2016-08-29_09:14:35 on domain   3:    1.56332 elapsed seconds
+Timing for main: time 2016-08-29_09:14:35 on domain   2:    5.02175 elapsed seconds
+Timing for main: time 2016-08-29_09:14:37 on domain   3:    1.50874 elapsed seconds
+Timing for main: time 2016-08-29_09:14:40 on domain   3:    1.58809 elapsed seconds
+Timing for main: time 2016-08-29_09:14:40 on domain   2:    5.04525 elapsed seconds
+Timing for main: time 2016-08-29_09:14:42 on domain   3:    1.51245 elapsed seconds
+Timing for main: time 2016-08-29_09:14:45 on domain   3:    1.57900 elapsed seconds
+Timing for main: time 2016-08-29_09:14:45 on domain   2:    5.05188 elapsed seconds
+Timing for main: time 2016-08-29_09:14:45 on domain   1:   17.03818 elapsed seconds
+Timing for main: time 2016-08-29_09:14:47 on domain   3:    1.51846 elapsed seconds
+Timing for main: time 2016-08-29_09:14:50 on domain   3:    1.56211 elapsed seconds
+Timing for main: time 2016-08-29_09:14:50 on domain   2:    5.02314 elapsed seconds
+Timing for main: time 2016-08-29_09:14:52 on domain   3:    1.51689 elapsed seconds
+Timing for main: time 2016-08-29_09:14:55 on domain   3:    1.55595 elapsed seconds
+Timing for main: time 2016-08-29_09:14:55 on domain   2:    5.13984 elapsed seconds
+Timing for main: time 2016-08-29_09:14:57 on domain   3:    1.51369 elapsed seconds
+Timing for main: time 2016-08-29_09:15:00 on domain   3:    1.56657 elapsed seconds
+Timing for main: time 2016-08-29_09:15:00 on domain   2:    5.05274 elapsed seconds
+Timing for main: time 2016-08-29_09:15:00 on domain   1:   17.10903 elapsed seconds
+Timing for main: time 2016-08-29_09:15:02 on domain   3:    8.12916 elapsed seconds
+Timing for main: time 2016-08-29_09:15:05 on domain   3:    1.56607 elapsed seconds
+Timing for main: time 2016-08-29_09:15:05 on domain   2:   16.08201 elapsed seconds
+Timing for main: time 2016-08-29_09:15:07 on domain   3:    1.54619 elapsed seconds
+Timing for main: time 2016-08-29_09:15:10 on domain   3:    1.55633 elapsed seconds
+Timing for main: time 2016-08-29_09:15:10 on domain   2:    5.08569 elapsed seconds
+Timing for main: time 2016-08-29_09:15:12 on domain   3:    1.51425 elapsed seconds
+Timing for main: time 2016-08-29_09:15:15 on domain   3:    1.56598 elapsed seconds
+Timing for main: time 2016-08-29_09:15:15 on domain   2:    5.06366 elapsed seconds
+Timing for main: time 2016-08-29_09:15:15 on domain   1:   33.22453 elapsed seconds
+Timing for main: time 2016-08-29_09:15:17 on domain   3:    1.51163 elapsed seconds
+Timing for main: time 2016-08-29_09:15:20 on domain   3:    1.55950 elapsed seconds
+Timing for main: time 2016-08-29_09:15:20 on domain   2:    5.01702 elapsed seconds
+Timing for main: time 2016-08-29_09:15:22 on domain   3:    1.60148 elapsed seconds
+Timing for main: time 2016-08-29_09:15:25 on domain   3:    1.51588 elapsed seconds
+Timing for main: time 2016-08-29_09:15:25 on domain   2:    5.10161 elapsed seconds
+Timing for main: time 2016-08-29_09:15:27 on domain   3:    1.56084 elapsed seconds
+Timing for main: time 2016-08-29_09:15:30 on domain   3:    1.53092 elapsed seconds
+Timing for main: time 2016-08-29_09:15:30 on domain   2:    5.08165 elapsed seconds
+Timing for main: time 2016-08-29_09:15:30 on domain   1:   17.09977 elapsed seconds
+Timing for main: time 2016-08-29_09:15:32 on domain   3:    1.53549 elapsed seconds
+Timing for main: time 2016-08-29_09:15:35 on domain   3:    1.55551 elapsed seconds
+Timing for main: time 2016-08-29_09:15:35 on domain   2:    5.02005 elapsed seconds
+Timing for main: time 2016-08-29_09:15:37 on domain   3:    1.53643 elapsed seconds
+Timing for main: time 2016-08-29_09:15:40 on domain   3:    1.55413 elapsed seconds
+Timing for main: time 2016-08-29_09:15:40 on domain   2:    5.06660 elapsed seconds
+Timing for main: time 2016-08-29_09:15:42 on domain   3:    1.51652 elapsed seconds
+Timing for main: time 2016-08-29_09:15:45 on domain   3:    1.57047 elapsed seconds
+Timing for main: time 2016-08-29_09:15:45 on domain   2:    5.05844 elapsed seconds
+Timing for main: time 2016-08-29_09:15:45 on domain   1:   17.06471 elapsed seconds
+Timing for main: time 2016-08-29_09:15:47 on domain   3:    1.52506 elapsed seconds
+Timing for main: time 2016-08-29_09:15:50 on domain   3:    1.56076 elapsed seconds
+Timing for main: time 2016-08-29_09:15:50 on domain   2:    5.03471 elapsed seconds
+Timing for main: time 2016-08-29_09:15:52 on domain   3:    1.51139 elapsed seconds
+Timing for main: time 2016-08-29_09:15:55 on domain   3:    1.55801 elapsed seconds
+Timing for main: time 2016-08-29_09:15:55 on domain   2:    5.05249 elapsed seconds
+Timing for main: time 2016-08-29_09:15:57 on domain   3:    1.51348 elapsed seconds
+Timing for main: time 2016-08-29_09:16:00 on domain   3:    1.56184 elapsed seconds
+Timing for main: time 2016-08-29_09:16:00 on domain   2:    5.07427 elapsed seconds
+Timing for main: time 2016-08-29_09:16:00 on domain   1:   17.07517 elapsed seconds
+Timing for main: time 2016-08-29_09:16:02 on domain   3:    1.51648 elapsed seconds
+Timing for main: time 2016-08-29_09:16:05 on domain   3:    1.54989 elapsed seconds
+Timing for main: time 2016-08-29_09:16:05 on domain   2:    5.02028 elapsed seconds
+Timing for main: time 2016-08-29_09:16:07 on domain   3:    1.50887 elapsed seconds
+Timing for main: time 2016-08-29_09:16:10 on domain   3:    1.55386 elapsed seconds
+Timing for main: time 2016-08-29_09:16:10 on domain   2:    5.05234 elapsed seconds
+Timing for main: time 2016-08-29_09:16:12 on domain   3:    1.50383 elapsed seconds
+Timing for main: time 2016-08-29_09:16:15 on domain   3:    1.55869 elapsed seconds
+Timing for main: time 2016-08-29_09:16:15 on domain   2:    5.04195 elapsed seconds
+Timing for main: time 2016-08-29_09:16:15 on domain   1:   17.03868 elapsed seconds
+Timing for main: time 2016-08-29_09:16:17 on domain   3:    1.51966 elapsed seconds
+Timing for main: time 2016-08-29_09:16:20 on domain   3:    1.56429 elapsed seconds
+Timing for main: time 2016-08-29_09:16:20 on domain   2:    5.02853 elapsed seconds
+Timing for main: time 2016-08-29_09:16:22 on domain   3:    1.55225 elapsed seconds
+Timing for main: time 2016-08-29_09:16:25 on domain   3:    1.55554 elapsed seconds
+Timing for main: time 2016-08-29_09:16:25 on domain   2:    5.09131 elapsed seconds
+Timing for main: time 2016-08-29_09:16:27 on domain   3:    1.52842 elapsed seconds
+Timing for main: time 2016-08-29_09:16:30 on domain   3:    1.56234 elapsed seconds
+Timing for main: time 2016-08-29_09:16:30 on domain   2:    5.06433 elapsed seconds
+Timing for main: time 2016-08-29_09:16:30 on domain   1:   17.08551 elapsed seconds
+Timing for main: time 2016-08-29_09:16:32 on domain   3:    1.52371 elapsed seconds
+Timing for main: time 2016-08-29_09:16:35 on domain   3:    1.56164 elapsed seconds
+Timing for main: time 2016-08-29_09:16:35 on domain   2:    5.01720 elapsed seconds
+Timing for main: time 2016-08-29_09:16:37 on domain   3:    1.52055 elapsed seconds
+Timing for main: time 2016-08-29_09:16:40 on domain   3:    1.56652 elapsed seconds
+Timing for main: time 2016-08-29_09:16:40 on domain   2:    5.07295 elapsed seconds
+Timing for main: time 2016-08-29_09:16:42 on domain   3:    1.51556 elapsed seconds
+Timing for main: time 2016-08-29_09:16:45 on domain   3:    1.56153 elapsed seconds
+Timing for main: time 2016-08-29_09:16:45 on domain   2:    5.06394 elapsed seconds
+Timing for main: time 2016-08-29_09:16:45 on domain   1:   17.05034 elapsed seconds
+Timing for main: time 2016-08-29_09:16:47 on domain   3:    1.52883 elapsed seconds
+Timing for main: time 2016-08-29_09:16:50 on domain   3:    1.55358 elapsed seconds
+Timing for main: time 2016-08-29_09:16:50 on domain   2:    5.03433 elapsed seconds
+Timing for main: time 2016-08-29_09:16:52 on domain   3:    1.50994 elapsed seconds
+Timing for main: time 2016-08-29_09:16:55 on domain   3:    1.59710 elapsed seconds
+Timing for main: time 2016-08-29_09:16:55 on domain   2:    5.08426 elapsed seconds
+Timing for main: time 2016-08-29_09:16:57 on domain   3:    1.52016 elapsed seconds
+Timing for main: time 2016-08-29_09:17:00 on domain   3:    1.56530 elapsed seconds
+Timing for main: time 2016-08-29_09:17:00 on domain   2:    5.05298 elapsed seconds
+Timing for main: time 2016-08-29_09:17:00 on domain   1:   17.07774 elapsed seconds
+Timing for main: time 2016-08-29_09:17:02 on domain   3:    1.51372 elapsed seconds
+Timing for main: time 2016-08-29_09:17:05 on domain   3:    1.56233 elapsed seconds
+Timing for main: time 2016-08-29_09:17:05 on domain   2:    5.01745 elapsed seconds
+Timing for main: time 2016-08-29_09:17:07 on domain   3:    1.53519 elapsed seconds
+Timing for main: time 2016-08-29_09:17:10 on domain   3:    1.56240 elapsed seconds
+Timing for main: time 2016-08-29_09:17:10 on domain   2:    5.06594 elapsed seconds
+Timing for main: time 2016-08-29_09:17:12 on domain   3:    1.51848 elapsed seconds
+Timing for main: time 2016-08-29_09:17:15 on domain   3:    1.59621 elapsed seconds
+Timing for main: time 2016-08-29_09:17:15 on domain   2:    5.09296 elapsed seconds
+Timing for main: time 2016-08-29_09:17:15 on domain   1:   17.08005 elapsed seconds
+Timing for main: time 2016-08-29_09:17:17 on domain   3:    1.52062 elapsed seconds
+Timing for main: time 2016-08-29_09:17:20 on domain   3:    1.56519 elapsed seconds
+Timing for main: time 2016-08-29_09:17:20 on domain   2:    5.05639 elapsed seconds
+Timing for main: time 2016-08-29_09:17:22 on domain   3:    1.50659 elapsed seconds
+Timing for main: time 2016-08-29_09:17:25 on domain   3:    1.56287 elapsed seconds
+Timing for main: time 2016-08-29_09:17:25 on domain   2:    5.05540 elapsed seconds
+Timing for main: time 2016-08-29_09:17:27 on domain   3:    1.50614 elapsed seconds
+Timing for main: time 2016-08-29_09:17:30 on domain   3:    1.56361 elapsed seconds
+Timing for main: time 2016-08-29_09:17:30 on domain   2:    5.05809 elapsed seconds
+Timing for main: time 2016-08-29_09:17:30 on domain   1:   17.11329 elapsed seconds
+Timing for main: time 2016-08-29_09:17:32 on domain   3:    1.52079 elapsed seconds
+Timing for main: time 2016-08-29_09:17:35 on domain   3:    1.56559 elapsed seconds
+Timing for main: time 2016-08-29_09:17:35 on domain   2:    5.01772 elapsed seconds
+Timing for main: time 2016-08-29_09:17:37 on domain   3:    1.51461 elapsed seconds
+Timing for main: time 2016-08-29_09:17:40 on domain   3:    1.56704 elapsed seconds
+Timing for main: time 2016-08-29_09:17:40 on domain   2:    5.05224 elapsed seconds
+Timing for main: time 2016-08-29_09:17:42 on domain   3:    1.51879 elapsed seconds
+Timing for main: time 2016-08-29_09:17:45 on domain   3:    1.56470 elapsed seconds
+Timing for main: time 2016-08-29_09:17:45 on domain   2:    5.05908 elapsed seconds
+Timing for main: time 2016-08-29_09:17:45 on domain   1:   17.03213 elapsed seconds
+Timing for main: time 2016-08-29_09:17:47 on domain   3:    1.51874 elapsed seconds
+Timing for main: time 2016-08-29_09:17:50 on domain   3:    1.56830 elapsed seconds
+Timing for main: time 2016-08-29_09:17:50 on domain   2:    5.01396 elapsed seconds
+Timing for main: time 2016-08-29_09:17:52 on domain   3:    1.51611 elapsed seconds
+Timing for main: time 2016-08-29_09:17:55 on domain   3:    1.56136 elapsed seconds
+Timing for main: time 2016-08-29_09:17:55 on domain   2:    5.06063 elapsed seconds
+Timing for main: time 2016-08-29_09:17:57 on domain   3:    1.50331 elapsed seconds
+Timing for main: time 2016-08-29_09:18:00 on domain   3:    1.56505 elapsed seconds
+Timing for main: time 2016-08-29_09:18:00 on domain   2:    5.05595 elapsed seconds
+Timing for main: time 2016-08-29_09:18:00 on domain   1:   17.08802 elapsed seconds
+Timing for main: time 2016-08-29_09:18:02 on domain   3:    8.14719 elapsed seconds
+Timing for main: time 2016-08-29_09:18:05 on domain   3:    1.56176 elapsed seconds
+Timing for main: time 2016-08-29_09:18:05 on domain   2:   16.10445 elapsed seconds
+Timing for main: time 2016-08-29_09:18:07 on domain   3:    1.51934 elapsed seconds
+Timing for main: time 2016-08-29_09:18:10 on domain   3:    1.55887 elapsed seconds
+Timing for main: time 2016-08-29_09:18:10 on domain   2:    5.05441 elapsed seconds
+Timing for main: time 2016-08-29_09:18:12 on domain   3:    1.51335 elapsed seconds
+Timing for main: time 2016-08-29_09:18:15 on domain   3:    1.57185 elapsed seconds
+Timing for main: time 2016-08-29_09:18:15 on domain   2:    5.05045 elapsed seconds
+Timing for main: time 2016-08-29_09:18:15 on domain   1:   33.19272 elapsed seconds
+Timing for main: time 2016-08-29_09:18:17 on domain   3:    1.51479 elapsed seconds
+Timing for main: time 2016-08-29_09:18:20 on domain   3:    1.56647 elapsed seconds
+Timing for main: time 2016-08-29_09:18:20 on domain   2:    5.00379 elapsed seconds
+Timing for main: time 2016-08-29_09:18:22 on domain   3:    1.51873 elapsed seconds
+Timing for main: time 2016-08-29_09:18:25 on domain   3:    1.55999 elapsed seconds
+Timing for main: time 2016-08-29_09:18:25 on domain   2:    5.05594 elapsed seconds
+Timing for main: time 2016-08-29_09:18:27 on domain   3:    1.51554 elapsed seconds
+Timing for main: time 2016-08-29_09:18:30 on domain   3:    1.56213 elapsed seconds
+Timing for main: time 2016-08-29_09:18:30 on domain   2:    5.06428 elapsed seconds
+Timing for main: time 2016-08-29_09:18:30 on domain   1:   17.04004 elapsed seconds
+Timing for main: time 2016-08-29_09:18:32 on domain   3:    1.51114 elapsed seconds
+Timing for main: time 2016-08-29_09:18:35 on domain   3:    1.56757 elapsed seconds
+Timing for main: time 2016-08-29_09:18:35 on domain   2:    5.01953 elapsed seconds
+Timing for main: time 2016-08-29_09:18:37 on domain   3:    1.51163 elapsed seconds
+Timing for main: time 2016-08-29_09:18:40 on domain   3:    1.57835 elapsed seconds
+Timing for main: time 2016-08-29_09:18:40 on domain   2:    5.05047 elapsed seconds
+Timing for main: time 2016-08-29_09:18:42 on domain   3:    1.53475 elapsed seconds
+Timing for main: time 2016-08-29_09:18:45 on domain   3:    1.55511 elapsed seconds
+Timing for main: time 2016-08-29_09:18:45 on domain   2:    5.07660 elapsed seconds
+Timing for main: time 2016-08-29_09:18:45 on domain   1:   17.05558 elapsed seconds
+Timing for main: time 2016-08-29_09:18:47 on domain   3:    1.51567 elapsed seconds
+Timing for main: time 2016-08-29_09:18:50 on domain   3:    1.56221 elapsed seconds
+Timing for main: time 2016-08-29_09:18:50 on domain   2:    5.02094 elapsed seconds
+Timing for main: time 2016-08-29_09:18:52 on domain   3:    1.53361 elapsed seconds
+Timing for main: time 2016-08-29_09:18:55 on domain   3:    1.55340 elapsed seconds
+Timing for main: time 2016-08-29_09:18:55 on domain   2:    5.07343 elapsed seconds
+Timing for main: time 2016-08-29_09:18:57 on domain   3:    1.52006 elapsed seconds
+Timing for main: time 2016-08-29_09:19:00 on domain   3:    1.55736 elapsed seconds
+Timing for main: time 2016-08-29_09:19:00 on domain   2:    5.05273 elapsed seconds
+Timing for main: time 2016-08-29_09:19:00 on domain   1:   17.04510 elapsed seconds
+Timing for main: time 2016-08-29_09:19:02 on domain   3:    1.48869 elapsed seconds
+Timing for main: time 2016-08-29_09:19:05 on domain   3:    1.54543 elapsed seconds
+Timing for main: time 2016-08-29_09:19:05 on domain   2:    5.03677 elapsed seconds
+Timing for main: time 2016-08-29_09:19:07 on domain   3:    1.51698 elapsed seconds
+Timing for main: time 2016-08-29_09:19:10 on domain   3:    1.56643 elapsed seconds
+Timing for main: time 2016-08-29_09:19:10 on domain   2:    5.05661 elapsed seconds
+Timing for main: time 2016-08-29_09:19:12 on domain   3:    1.51518 elapsed seconds
+Timing for main: time 2016-08-29_09:19:15 on domain   3:    1.59108 elapsed seconds
+Timing for main: time 2016-08-29_09:19:15 on domain   2:    5.08375 elapsed seconds
+Timing for main: time 2016-08-29_09:19:15 on domain   1:   17.07939 elapsed seconds
+Timing for main: time 2016-08-29_09:19:17 on domain   3:    1.51004 elapsed seconds
+Timing for main: time 2016-08-29_09:19:20 on domain   3:    1.56293 elapsed seconds
+Timing for main: time 2016-08-29_09:19:20 on domain   2:    5.03253 elapsed seconds
+Timing for main: time 2016-08-29_09:19:22 on domain   3:    1.50968 elapsed seconds
+Timing for main: time 2016-08-29_09:19:25 on domain   3:    1.55253 elapsed seconds
+Timing for main: time 2016-08-29_09:19:25 on domain   2:    5.04303 elapsed seconds
+Timing for main: time 2016-08-29_09:19:27 on domain   3:    1.52396 elapsed seconds
+Timing for main: time 2016-08-29_09:19:30 on domain   3:    1.55486 elapsed seconds
+Timing for main: time 2016-08-29_09:19:30 on domain   2:    5.05025 elapsed seconds
+Timing for main: time 2016-08-29_09:19:30 on domain   1:   17.04242 elapsed seconds
+Timing for main: time 2016-08-29_09:19:32 on domain   3:    1.51361 elapsed seconds
+Timing for main: time 2016-08-29_09:19:35 on domain   3:    1.55554 elapsed seconds
+Timing for main: time 2016-08-29_09:19:35 on domain   2:    5.01632 elapsed seconds
+Timing for main: time 2016-08-29_09:19:37 on domain   3:    1.52220 elapsed seconds
+Timing for main: time 2016-08-29_09:19:40 on domain   3:    1.58478 elapsed seconds
+Timing for main: time 2016-08-29_09:19:40 on domain   2:    5.07667 elapsed seconds
+Timing for main: time 2016-08-29_09:19:42 on domain   3:    1.51909 elapsed seconds
+Timing for main: time 2016-08-29_09:19:45 on domain   3:    1.55874 elapsed seconds
+Timing for main: time 2016-08-29_09:19:45 on domain   2:    5.05388 elapsed seconds
+Timing for main: time 2016-08-29_09:19:45 on domain   1:   17.05406 elapsed seconds
+Timing for main: time 2016-08-29_09:19:47 on domain   3:    1.51711 elapsed seconds
+Timing for main: time 2016-08-29_09:19:50 on domain   3:    1.56744 elapsed seconds
+Timing for main: time 2016-08-29_09:19:50 on domain   2:    5.01293 elapsed seconds
+Timing for main: time 2016-08-29_09:19:52 on domain   3:    1.52397 elapsed seconds
+Timing for main: time 2016-08-29_09:19:55 on domain   3:    1.56533 elapsed seconds
+Timing for main: time 2016-08-29_09:19:55 on domain   2:    5.06599 elapsed seconds
+Timing for main: time 2016-08-29_09:19:57 on domain   3:    1.51282 elapsed seconds
+Timing for main: time 2016-08-29_09:20:00 on domain   3:    1.57576 elapsed seconds
+Timing for main: time 2016-08-29_09:20:00 on domain   2:    5.06762 elapsed seconds
+Timing for main: time 2016-08-29_09:20:00 on domain   1:   17.04326 elapsed seconds
+Timing for main: time 2016-08-29_09:20:02 on domain   3:    1.52038 elapsed seconds
+Timing for main: time 2016-08-29_09:20:05 on domain   3:    1.56068 elapsed seconds
+Timing for main: time 2016-08-29_09:20:05 on domain   2:    5.00897 elapsed seconds
+Timing for main: time 2016-08-29_09:20:07 on domain   3:    1.51900 elapsed seconds
+Timing for main: time 2016-08-29_09:20:10 on domain   3:    1.56218 elapsed seconds
+Timing for main: time 2016-08-29_09:20:10 on domain   2:    5.27234 elapsed seconds
+Timing for main: time 2016-08-29_09:20:12 on domain   3:    1.52128 elapsed seconds
+Timing for main: time 2016-08-29_09:20:15 on domain   3:    1.56258 elapsed seconds
+Timing for main: time 2016-08-29_09:20:15 on domain   2:    5.09754 elapsed seconds
+Timing for main: time 2016-08-29_09:20:15 on domain   1:   17.35733 elapsed seconds
+Timing for main: time 2016-08-29_09:20:17 on domain   3:    1.58352 elapsed seconds
+Timing for main: time 2016-08-29_09:20:20 on domain   3:    1.56209 elapsed seconds
+Timing for main: time 2016-08-29_09:20:20 on domain   2:    5.08480 elapsed seconds
+Timing for main: time 2016-08-29_09:20:22 on domain   3:    1.62519 elapsed seconds
+Timing for main: time 2016-08-29_09:20:25 on domain   3:    1.63893 elapsed seconds
+Timing for main: time 2016-08-29_09:20:25 on domain   2:    5.24605 elapsed seconds
+Timing for main: time 2016-08-29_09:20:27 on domain   3:    1.54423 elapsed seconds
+Timing for main: time 2016-08-29_09:20:30 on domain   3:    1.57605 elapsed seconds
+Timing for main: time 2016-08-29_09:20:30 on domain   2:    5.10743 elapsed seconds
+Timing for main: time 2016-08-29_09:20:30 on domain   1:   17.35239 elapsed seconds
+Timing for main: time 2016-08-29_09:20:32 on domain   3:    1.60201 elapsed seconds
+Timing for main: time 2016-08-29_09:20:35 on domain   3:    1.58866 elapsed seconds
+Timing for main: time 2016-08-29_09:20:35 on domain   2:    5.10932 elapsed seconds
+Timing for main: time 2016-08-29_09:20:37 on domain   3:    1.53370 elapsed seconds
+Timing for main: time 2016-08-29_09:20:40 on domain   3:    1.56008 elapsed seconds
+Timing for main: time 2016-08-29_09:20:40 on domain   2:    5.07137 elapsed seconds
+Timing for main: time 2016-08-29_09:20:42 on domain   3:    1.52128 elapsed seconds
+Timing for main: time 2016-08-29_09:20:45 on domain   3:    1.55871 elapsed seconds
+Timing for main: time 2016-08-29_09:20:45 on domain   2:    5.24978 elapsed seconds
+Timing for main: time 2016-08-29_09:20:45 on domain   1:   17.32145 elapsed seconds
+Timing for main: time 2016-08-29_09:20:47 on domain   3:    1.51441 elapsed seconds
+Timing for main: time 2016-08-29_09:20:50 on domain   3:    1.56662 elapsed seconds
+Timing for main: time 2016-08-29_09:20:50 on domain   2:    5.01204 elapsed seconds
+Timing for main: time 2016-08-29_09:20:52 on domain   3:    1.51830 elapsed seconds
+Timing for main: time 2016-08-29_09:20:55 on domain   3:    1.55807 elapsed seconds
+Timing for main: time 2016-08-29_09:20:55 on domain   2:    5.05436 elapsed seconds
+Timing for main: time 2016-08-29_09:20:57 on domain   3:    1.51803 elapsed seconds
+Timing for main: time 2016-08-29_09:21:00 on domain   3:    1.59460 elapsed seconds
+Timing for main: time 2016-08-29_09:21:00 on domain   2:    5.08589 elapsed seconds
+Timing for main: time 2016-08-29_09:21:00 on domain   1:   17.05503 elapsed seconds
+Timing for main: time 2016-08-29_09:21:02 on domain   3:    8.10478 elapsed seconds
+Timing for main: time 2016-08-29_09:21:05 on domain   3:    1.55928 elapsed seconds
+Timing for main: time 2016-08-29_09:21:05 on domain   2:   16.05690 elapsed seconds
+Timing for main: time 2016-08-29_09:21:07 on domain   3:    1.51848 elapsed seconds
+Timing for main: time 2016-08-29_09:21:10 on domain   3:    1.57133 elapsed seconds
+Timing for main: time 2016-08-29_09:21:10 on domain   2:    5.08646 elapsed seconds
+Timing for main: time 2016-08-29_09:21:12 on domain   3:    1.52210 elapsed seconds
+Timing for main: time 2016-08-29_09:21:15 on domain   3:    1.56141 elapsed seconds
+Timing for main: time 2016-08-29_09:21:15 on domain   2:    5.15051 elapsed seconds
+Timing for main: time 2016-08-29_09:21:15 on domain   1:   33.33443 elapsed seconds
+Timing for main: time 2016-08-29_09:21:17 on domain   3:    1.52208 elapsed seconds
+Timing for main: time 2016-08-29_09:21:20 on domain   3:    1.56642 elapsed seconds
+Timing for main: time 2016-08-29_09:21:20 on domain   2:    5.02955 elapsed seconds
+Timing for main: time 2016-08-29_09:21:22 on domain   3:    1.51601 elapsed seconds
+Timing for main: time 2016-08-29_09:21:25 on domain   3:    1.56826 elapsed seconds
+Timing for main: time 2016-08-29_09:21:25 on domain   2:    5.05346 elapsed seconds
+Timing for main: time 2016-08-29_09:21:27 on domain   3:    1.51709 elapsed seconds
+Timing for main: time 2016-08-29_09:21:30 on domain   3:    1.57476 elapsed seconds
+Timing for main: time 2016-08-29_09:21:30 on domain   2:    5.05942 elapsed seconds
+Timing for main: time 2016-08-29_09:21:30 on domain   1:   17.08404 elapsed seconds
+Timing for main: time 2016-08-29_09:21:32 on domain   3:    1.51500 elapsed seconds
+Timing for main: time 2016-08-29_09:21:35 on domain   3:    1.55501 elapsed seconds
+Timing for main: time 2016-08-29_09:21:35 on domain   2:    4.99568 elapsed seconds
+Timing for main: time 2016-08-29_09:21:37 on domain   3:    1.51248 elapsed seconds
+Timing for main: time 2016-08-29_09:21:40 on domain   3:    1.56301 elapsed seconds
+Timing for main: time 2016-08-29_09:21:40 on domain   2:    5.04785 elapsed seconds
+Timing for main: time 2016-08-29_09:21:42 on domain   3:    1.54019 elapsed seconds
+Timing for main: time 2016-08-29_09:21:45 on domain   3:    1.55915 elapsed seconds
+Timing for main: time 2016-08-29_09:21:45 on domain   2:    5.08203 elapsed seconds
+Timing for main: time 2016-08-29_09:21:45 on domain   1:   17.02671 elapsed seconds
+Timing for main: time 2016-08-29_09:21:47 on domain   3:    1.51701 elapsed seconds
+Timing for main: time 2016-08-29_09:21:50 on domain   3:    1.56603 elapsed seconds
+Timing for main: time 2016-08-29_09:21:50 on domain   2:    5.01532 elapsed seconds
+Timing for main: time 2016-08-29_09:21:52 on domain   3:    1.52193 elapsed seconds
+Timing for main: time 2016-08-29_09:21:55 on domain   3:    1.58403 elapsed seconds
+Timing for main: time 2016-08-29_09:21:55 on domain   2:    5.06804 elapsed seconds
+Timing for main: time 2016-08-29_09:21:57 on domain   3:    1.51959 elapsed seconds
+Timing for main: time 2016-08-29_09:22:00 on domain   3:    1.58597 elapsed seconds
+Timing for main: time 2016-08-29_09:22:00 on domain   2:    5.08567 elapsed seconds
+Timing for main: time 2016-08-29_09:22:00 on domain   1:   17.08969 elapsed seconds
+Timing for main: time 2016-08-29_09:22:02 on domain   3:    1.55545 elapsed seconds
+Timing for main: time 2016-08-29_09:22:05 on domain   3:    1.52306 elapsed seconds
+Timing for main: time 2016-08-29_09:22:05 on domain   2:    5.01527 elapsed seconds
+Timing for main: time 2016-08-29_09:22:07 on domain   3:    1.57168 elapsed seconds
+Timing for main: time 2016-08-29_09:22:10 on domain   3:    1.56236 elapsed seconds
+Timing for main: time 2016-08-29_09:22:10 on domain   2:    5.10654 elapsed seconds
+Timing for main: time 2016-08-29_09:22:12 on domain   3:    1.52583 elapsed seconds
+Timing for main: time 2016-08-29_09:22:15 on domain   3:    1.56799 elapsed seconds
+Timing for main: time 2016-08-29_09:22:15 on domain   2:    5.06519 elapsed seconds
+Timing for main: time 2016-08-29_09:22:15 on domain   1:   17.08184 elapsed seconds
+Timing for main: time 2016-08-29_09:22:17 on domain   3:    1.51359 elapsed seconds
+Timing for main: time 2016-08-29_09:22:20 on domain   3:    1.55655 elapsed seconds
+Timing for main: time 2016-08-29_09:22:20 on domain   2:    5.00755 elapsed seconds
+Timing for main: time 2016-08-29_09:22:22 on domain   3:    1.51579 elapsed seconds
+Timing for main: time 2016-08-29_09:22:25 on domain   3:    1.55807 elapsed seconds
+Timing for main: time 2016-08-29_09:22:25 on domain   2:    5.05176 elapsed seconds
+Timing for main: time 2016-08-29_09:22:27 on domain   3:    1.52292 elapsed seconds
+Timing for main: time 2016-08-29_09:22:30 on domain   3:    1.54518 elapsed seconds
+Timing for main: time 2016-08-29_09:22:30 on domain   2:    5.05291 elapsed seconds
+Timing for main: time 2016-08-29_09:22:30 on domain   1:   17.01442 elapsed seconds
+Timing for main: time 2016-08-29_09:22:32 on domain   3:    1.51460 elapsed seconds
+Timing for main: time 2016-08-29_09:22:35 on domain   3:    1.56667 elapsed seconds
+Timing for main: time 2016-08-29_09:22:35 on domain   2:    5.00929 elapsed seconds
+Timing for main: time 2016-08-29_09:22:37 on domain   3:    1.51417 elapsed seconds
+Timing for main: time 2016-08-29_09:22:40 on domain   3:    1.55551 elapsed seconds
+Timing for main: time 2016-08-29_09:22:40 on domain   2:    5.04551 elapsed seconds
+Timing for main: time 2016-08-29_09:22:42 on domain   3:    1.51901 elapsed seconds
+Timing for main: time 2016-08-29_09:22:45 on domain   3:    1.55518 elapsed seconds
+Timing for main: time 2016-08-29_09:22:45 on domain   2:    5.04359 elapsed seconds
+Timing for main: time 2016-08-29_09:22:45 on domain   1:   17.02588 elapsed seconds
+Timing for main: time 2016-08-29_09:22:47 on domain   3:    1.54840 elapsed seconds
+Timing for main: time 2016-08-29_09:22:50 on domain   3:    1.53456 elapsed seconds
+Timing for main: time 2016-08-29_09:22:50 on domain   2:    5.01667 elapsed seconds
+Timing for main: time 2016-08-29_09:22:52 on domain   3:    1.51045 elapsed seconds
+Timing for main: time 2016-08-29_09:22:55 on domain   3:    1.56054 elapsed seconds
+Timing for main: time 2016-08-29_09:22:55 on domain   2:    5.06271 elapsed seconds
+Timing for main: time 2016-08-29_09:22:57 on domain   3:    1.51459 elapsed seconds
+Timing for main: time 2016-08-29_09:23:00 on domain   3:    1.56563 elapsed seconds
+Timing for main: time 2016-08-29_09:23:00 on domain   2:    5.07628 elapsed seconds
+Timing for main: time 2016-08-29_09:23:00 on domain   1:   17.06031 elapsed seconds
+Timing for main: time 2016-08-29_09:23:02 on domain   3:    1.51946 elapsed seconds
+Timing for main: time 2016-08-29_09:23:05 on domain   3:    1.56229 elapsed seconds
+Timing for main: time 2016-08-29_09:23:05 on domain   2:    5.02346 elapsed seconds
+Timing for main: time 2016-08-29_09:23:07 on domain   3:    1.51903 elapsed seconds
+Timing for main: time 2016-08-29_09:23:10 on domain   3:    1.56198 elapsed seconds
+Timing for main: time 2016-08-29_09:23:10 on domain   2:    5.05265 elapsed seconds
+Timing for main: time 2016-08-29_09:23:12 on domain   3:    1.51148 elapsed seconds
+Timing for main: time 2016-08-29_09:23:15 on domain   3:    1.56625 elapsed seconds
+Timing for main: time 2016-08-29_09:23:15 on domain   2:    5.04071 elapsed seconds
+Timing for main: time 2016-08-29_09:23:15 on domain   1:   17.07557 elapsed seconds
+Timing for main: time 2016-08-29_09:23:17 on domain   3:    1.52550 elapsed seconds
+Timing for main: time 2016-08-29_09:23:20 on domain   3:    1.54677 elapsed seconds
+Timing for main: time 2016-08-29_09:23:20 on domain   2:    5.00564 elapsed seconds
+Timing for main: time 2016-08-29_09:23:22 on domain   3:    1.52366 elapsed seconds
+Timing for main: time 2016-08-29_09:23:25 on domain   3:    1.55690 elapsed seconds
+Timing for main: time 2016-08-29_09:23:25 on domain   2:    5.05349 elapsed seconds
+Timing for main: time 2016-08-29_09:23:27 on domain   3:    1.55276 elapsed seconds
+Timing for main: time 2016-08-29_09:23:30 on domain   3:    1.56730 elapsed seconds
+Timing for main: time 2016-08-29_09:23:30 on domain   2:    5.09197 elapsed seconds
+Timing for main: time 2016-08-29_09:23:30 on domain   1:   17.06258 elapsed seconds
+Timing for main: time 2016-08-29_09:23:32 on domain   3:    1.51836 elapsed seconds
+Timing for main: time 2016-08-29_09:23:35 on domain   3:    1.55548 elapsed seconds
+Timing for main: time 2016-08-29_09:23:35 on domain   2:    5.00605 elapsed seconds
+Timing for main: time 2016-08-29_09:23:37 on domain   3:    1.52052 elapsed seconds
+Timing for main: time 2016-08-29_09:23:40 on domain   3:    1.56242 elapsed seconds
+Timing for main: time 2016-08-29_09:23:40 on domain   2:    5.06612 elapsed seconds
+Timing for main: time 2016-08-29_09:23:42 on domain   3:    1.51625 elapsed seconds
+Timing for main: time 2016-08-29_09:23:45 on domain   3:    1.54807 elapsed seconds
+Timing for main: time 2016-08-29_09:23:45 on domain   2:    5.03664 elapsed seconds
+Timing for main: time 2016-08-29_09:23:45 on domain   1:   17.00927 elapsed seconds
+Timing for main: time 2016-08-29_09:23:47 on domain   3:    1.55491 elapsed seconds
+Timing for main: time 2016-08-29_09:23:50 on domain   3:    1.55261 elapsed seconds
+Timing for main: time 2016-08-29_09:23:50 on domain   2:    5.03691 elapsed seconds
+Timing for main: time 2016-08-29_09:23:52 on domain   3:    1.52175 elapsed seconds
+Timing for main: time 2016-08-29_09:23:55 on domain   3:    1.56509 elapsed seconds
+Timing for main: time 2016-08-29_09:23:55 on domain   2:    5.06599 elapsed seconds
+Timing for main: time 2016-08-29_09:23:57 on domain   3:    1.51347 elapsed seconds
+Timing for main: time 2016-08-29_09:24:00 on domain   3:    1.56209 elapsed seconds
+Timing for main: time 2016-08-29_09:24:00 on domain   2:    5.05352 elapsed seconds
+Timing for main: time 2016-08-29_09:24:00 on domain   1:   17.05523 elapsed seconds
+Timing for main: time 2016-08-29_09:24:02 on domain   3:    8.12434 elapsed seconds
+Timing for main: time 2016-08-29_09:24:05 on domain   3:    1.57142 elapsed seconds
+Timing for main: time 2016-08-29_09:24:05 on domain   2:   16.06030 elapsed seconds
+Timing for main: time 2016-08-29_09:24:07 on domain   3:    1.50896 elapsed seconds
+Timing for main: time 2016-08-29_09:24:10 on domain   3:    1.55904 elapsed seconds
+Timing for main: time 2016-08-29_09:24:10 on domain   2:    5.08216 elapsed seconds
+Timing for main: time 2016-08-29_09:24:12 on domain   3:    1.51643 elapsed seconds
+Timing for main: time 2016-08-29_09:24:15 on domain   3:    1.56370 elapsed seconds
+Timing for main: time 2016-08-29_09:24:15 on domain   2:    5.05880 elapsed seconds
+Timing for main: time 2016-08-29_09:24:15 on domain   1:   33.21824 elapsed seconds
+Timing for main: time 2016-08-29_09:24:17 on domain   3:    1.52885 elapsed seconds
+Timing for main: time 2016-08-29_09:24:20 on domain   3:    1.57933 elapsed seconds
+Timing for main: time 2016-08-29_09:24:20 on domain   2:    5.02955 elapsed seconds
+Timing for main: time 2016-08-29_09:24:22 on domain   3:    1.53466 elapsed seconds
+Timing for main: time 2016-08-29_09:24:25 on domain   3:    1.56766 elapsed seconds
+Timing for main: time 2016-08-29_09:24:25 on domain   2:    5.08060 elapsed seconds
+Timing for main: time 2016-08-29_09:24:27 on domain   3:    1.54140 elapsed seconds
+Timing for main: time 2016-08-29_09:24:30 on domain   3:    1.56082 elapsed seconds
+Timing for main: time 2016-08-29_09:24:30 on domain   2:    5.08122 elapsed seconds
+Timing for main: time 2016-08-29_09:24:30 on domain   1:   17.09731 elapsed seconds
+Timing for main: time 2016-08-29_09:24:32 on domain   3:    1.52138 elapsed seconds
+Timing for main: time 2016-08-29_09:24:35 on domain   3:    1.56483 elapsed seconds
+Timing for main: time 2016-08-29_09:24:35 on domain   2:    5.01958 elapsed seconds
+Timing for main: time 2016-08-29_09:24:37 on domain   3:    1.51024 elapsed seconds
+Timing for main: time 2016-08-29_09:24:40 on domain   3:    1.55965 elapsed seconds
+Timing for main: time 2016-08-29_09:24:40 on domain   2:    5.04390 elapsed seconds
+Timing for main: time 2016-08-29_09:24:42 on domain   3:    1.51398 elapsed seconds
+Timing for main: time 2016-08-29_09:24:45 on domain   3:    1.55996 elapsed seconds
+Timing for main: time 2016-08-29_09:24:45 on domain   2:    5.05934 elapsed seconds
+Timing for main: time 2016-08-29_09:24:45 on domain   1:   17.04098 elapsed seconds
+Timing for main: time 2016-08-29_09:24:47 on domain   3:    1.52099 elapsed seconds
+Timing for main: time 2016-08-29_09:24:50 on domain   3:    1.55665 elapsed seconds
+Timing for main: time 2016-08-29_09:24:50 on domain   2:    5.00640 elapsed seconds
+Timing for main: time 2016-08-29_09:24:52 on domain   3:    1.51481 elapsed seconds
+Timing for main: time 2016-08-29_09:24:55 on domain   3:    1.58679 elapsed seconds
+Timing for main: time 2016-08-29_09:24:55 on domain   2:    5.07149 elapsed seconds
+Timing for main: time 2016-08-29_09:24:57 on domain   3:    1.52056 elapsed seconds
+Timing for main: time 2016-08-29_09:25:00 on domain   3:    1.58198 elapsed seconds
+Timing for main: time 2016-08-29_09:25:00 on domain   2:    5.07784 elapsed seconds
+Timing for main: time 2016-08-29_09:25:00 on domain   1:   17.06508 elapsed seconds
+Timing for main: time 2016-08-29_09:25:02 on domain   3:    1.51754 elapsed seconds
+Timing for main: time 2016-08-29_09:25:05 on domain   3:    1.55793 elapsed seconds
+Timing for main: time 2016-08-29_09:25:05 on domain   2:    5.01309 elapsed seconds
+Timing for main: time 2016-08-29_09:25:07 on domain   3:    1.51549 elapsed seconds
+Timing for main: time 2016-08-29_09:25:10 on domain   3:    1.55921 elapsed seconds
+Timing for main: time 2016-08-29_09:25:10 on domain   2:    5.04798 elapsed seconds
+Timing for main: time 2016-08-29_09:25:12 on domain   3:    1.53596 elapsed seconds
+Timing for main: time 2016-08-29_09:25:15 on domain   3:    1.55594 elapsed seconds
+Timing for main: time 2016-08-29_09:25:15 on domain   2:    5.07176 elapsed seconds
+Timing for main: time 2016-08-29_09:25:15 on domain   1:   17.03750 elapsed seconds
+Timing for main: time 2016-08-29_09:25:17 on domain   3:    1.54742 elapsed seconds
+Timing for main: time 2016-08-29_09:25:20 on domain   3:    1.59420 elapsed seconds
+Timing for main: time 2016-08-29_09:25:20 on domain   2:    5.08043 elapsed seconds
+Timing for main: time 2016-08-29_09:25:22 on domain   3:    1.52255 elapsed seconds
+Timing for main: time 2016-08-29_09:25:25 on domain   3:    1.57316 elapsed seconds
+Timing for main: time 2016-08-29_09:25:25 on domain   2:    5.06861 elapsed seconds
+Timing for main: time 2016-08-29_09:25:27 on domain   3:    1.51631 elapsed seconds
+Timing for main: time 2016-08-29_09:25:30 on domain   3:    1.56104 elapsed seconds
+Timing for main: time 2016-08-29_09:25:30 on domain   2:    5.09511 elapsed seconds
+Timing for main: time 2016-08-29_09:25:30 on domain   1:   17.15825 elapsed seconds
+Timing for main: time 2016-08-29_09:25:32 on domain   3:    1.52256 elapsed seconds
+Timing for main: time 2016-08-29_09:25:35 on domain   3:    1.55034 elapsed seconds
+Timing for main: time 2016-08-29_09:25:35 on domain   2:    5.00616 elapsed seconds
+Timing for main: time 2016-08-29_09:25:37 on domain   3:    1.52158 elapsed seconds
+Timing for main: time 2016-08-29_09:25:40 on domain   3:    1.56108 elapsed seconds
+Timing for main: time 2016-08-29_09:25:40 on domain   2:    5.06221 elapsed seconds
+Timing for main: time 2016-08-29_09:25:42 on domain   3:    1.51232 elapsed seconds
+Timing for main: time 2016-08-29_09:25:45 on domain   3:    1.55909 elapsed seconds
+Timing for main: time 2016-08-29_09:25:45 on domain   2:    5.04271 elapsed seconds
+Timing for main: time 2016-08-29_09:25:45 on domain   1:   17.02190 elapsed seconds
+Timing for main: time 2016-08-29_09:25:47 on domain   3:    1.52399 elapsed seconds
+Timing for main: time 2016-08-29_09:25:50 on domain   3:    1.56505 elapsed seconds
+Timing for main: time 2016-08-29_09:25:50 on domain   2:    5.02727 elapsed seconds
+Timing for main: time 2016-08-29_09:25:52 on domain   3:    1.53435 elapsed seconds
+Timing for main: time 2016-08-29_09:25:55 on domain   3:    1.55594 elapsed seconds
+Timing for main: time 2016-08-29_09:25:55 on domain   2:    5.08937 elapsed seconds
+Timing for main: time 2016-08-29_09:25:57 on domain   3:    1.52180 elapsed seconds
+Timing for main: time 2016-08-29_09:26:00 on domain   3:    1.55499 elapsed seconds
+Timing for main: time 2016-08-29_09:26:00 on domain   2:    5.06186 elapsed seconds
+Timing for main: time 2016-08-29_09:26:00 on domain   1:   17.08620 elapsed seconds
+Timing for main: time 2016-08-29_09:26:02 on domain   3:    1.51164 elapsed seconds
+Timing for main: time 2016-08-29_09:26:05 on domain   3:    1.59872 elapsed seconds
+Timing for main: time 2016-08-29_09:26:05 on domain   2:    5.00331 elapsed seconds
+Timing for main: time 2016-08-29_09:26:07 on domain   3:    1.53053 elapsed seconds
+Timing for main: time 2016-08-29_09:26:10 on domain   3:    1.55890 elapsed seconds
+Timing for main: time 2016-08-29_09:26:10 on domain   2:    5.07302 elapsed seconds
+Timing for main: time 2016-08-29_09:26:12 on domain   3:    1.56516 elapsed seconds
+Timing for main: time 2016-08-29_09:26:15 on domain   3:    1.51623 elapsed seconds
+Timing for main: time 2016-08-29_09:26:15 on domain   2:    5.06051 elapsed seconds
+Timing for main: time 2016-08-29_09:26:15 on domain   1:   17.04013 elapsed seconds
+Timing for main: time 2016-08-29_09:26:17 on domain   3:    1.54299 elapsed seconds
+Timing for main: time 2016-08-29_09:26:20 on domain   3:    1.56069 elapsed seconds
+Timing for main: time 2016-08-29_09:26:20 on domain   2:    5.04336 elapsed seconds
+Timing for main: time 2016-08-29_09:26:22 on domain   3:    1.52146 elapsed seconds
+Timing for main: time 2016-08-29_09:26:25 on domain   3:    1.55228 elapsed seconds
+Timing for main: time 2016-08-29_09:26:25 on domain   2:    5.04268 elapsed seconds
+Timing for main: time 2016-08-29_09:26:27 on domain   3:    1.52257 elapsed seconds
+Timing for main: time 2016-08-29_09:26:30 on domain   3:    1.56339 elapsed seconds
+Timing for main: time 2016-08-29_09:26:30 on domain   2:    5.06669 elapsed seconds
+Timing for main: time 2016-08-29_09:26:30 on domain   1:   17.05444 elapsed seconds
+Timing for main: time 2016-08-29_09:26:32 on domain   3:    1.51737 elapsed seconds
+Timing for main: time 2016-08-29_09:26:35 on domain   3:    1.55611 elapsed seconds
+Timing for main: time 2016-08-29_09:26:35 on domain   2:    5.02243 elapsed seconds
+Timing for main: time 2016-08-29_09:26:37 on domain   3:    1.52350 elapsed seconds
+Timing for main: time 2016-08-29_09:26:40 on domain   3:    1.67846 elapsed seconds
+Timing for main: time 2016-08-29_09:26:40 on domain   2:    5.13500 elapsed seconds
+Timing for main: time 2016-08-29_09:26:42 on domain   3:    1.52109 elapsed seconds
+Timing for main: time 2016-08-29_09:26:45 on domain   3:    1.57359 elapsed seconds
+Timing for main: time 2016-08-29_09:26:45 on domain   2:    5.12417 elapsed seconds
+Timing for main: time 2016-08-29_09:26:45 on domain   1:   17.19506 elapsed seconds
+Timing for main: time 2016-08-29_09:26:47 on domain   3:    1.51794 elapsed seconds
+Timing for main: time 2016-08-29_09:26:50 on domain   3:    1.57133 elapsed seconds
+Timing for main: time 2016-08-29_09:26:50 on domain   2:    5.01704 elapsed seconds
+Timing for main: time 2016-08-29_09:26:52 on domain   3:    1.52138 elapsed seconds
+Timing for main: time 2016-08-29_09:26:55 on domain   3:    1.55846 elapsed seconds
+Timing for main: time 2016-08-29_09:26:55 on domain   2:    5.05713 elapsed seconds
+Timing for main: time 2016-08-29_09:26:57 on domain   3:    1.52861 elapsed seconds
+Timing for main: time 2016-08-29_09:27:00 on domain   3:    1.56143 elapsed seconds
+Timing for main: time 2016-08-29_09:27:00 on domain   2:    5.06566 elapsed seconds
+Timing for main: time 2016-08-29_09:27:00 on domain   1:   17.04321 elapsed seconds
+Timing for main: time 2016-08-29_09:27:02 on domain   3:    8.10830 elapsed seconds
+Timing for main: time 2016-08-29_09:27:05 on domain   3:    1.57048 elapsed seconds
+Timing for main: time 2016-08-29_09:27:05 on domain   2:   16.07338 elapsed seconds
+Timing for main: time 2016-08-29_09:27:07 on domain   3:    1.51591 elapsed seconds
+Timing for main: time 2016-08-29_09:27:10 on domain   3:    1.56740 elapsed seconds
+Timing for main: time 2016-08-29_09:27:10 on domain   2:    5.15063 elapsed seconds
+Timing for main: time 2016-08-29_09:27:12 on domain   3:    1.51547 elapsed seconds
+Timing for main: time 2016-08-29_09:27:15 on domain   3:    1.55814 elapsed seconds
+Timing for main: time 2016-08-29_09:27:15 on domain   2:    5.04703 elapsed seconds
+Timing for main: time 2016-08-29_09:27:15 on domain   1:   33.27102 elapsed seconds
+Timing for main: time 2016-08-29_09:27:17 on domain   3:    1.52338 elapsed seconds
+Timing for main: time 2016-08-29_09:27:20 on domain   3:    1.55632 elapsed seconds
+Timing for main: time 2016-08-29_09:27:20 on domain   2:    5.01715 elapsed seconds
+Timing for main: time 2016-08-29_09:27:22 on domain   3:    1.55125 elapsed seconds
+Timing for main: time 2016-08-29_09:27:25 on domain   3:    1.54503 elapsed seconds
+Timing for main: time 2016-08-29_09:27:25 on domain   2:    5.06486 elapsed seconds
+Timing for main: time 2016-08-29_09:27:27 on domain   3:    1.52076 elapsed seconds
+Timing for main: time 2016-08-29_09:27:30 on domain   3:    1.56605 elapsed seconds
+Timing for main: time 2016-08-29_09:27:30 on domain   2:    5.06117 elapsed seconds
+Timing for main: time 2016-08-29_09:27:30 on domain   1:   17.05487 elapsed seconds
+Timing for main: time 2016-08-29_09:27:32 on domain   3:    1.51316 elapsed seconds
+Timing for main: time 2016-08-29_09:27:35 on domain   3:    1.56014 elapsed seconds
+Timing for main: time 2016-08-29_09:27:35 on domain   2:    5.00040 elapsed seconds
+Timing for main: time 2016-08-29_09:27:37 on domain   3:    1.52679 elapsed seconds
+Timing for main: time 2016-08-29_09:27:40 on domain   3:    1.57238 elapsed seconds
+Timing for main: time 2016-08-29_09:27:40 on domain   2:    5.11854 elapsed seconds
+Timing for main: time 2016-08-29_09:27:42 on domain   3:    1.51789 elapsed seconds
+Timing for main: time 2016-08-29_09:27:45 on domain   3:    1.57911 elapsed seconds
+Timing for main: time 2016-08-29_09:27:45 on domain   2:    5.06570 elapsed seconds
+Timing for main: time 2016-08-29_09:27:45 on domain   1:   17.09760 elapsed seconds
+Timing for main: time 2016-08-29_09:27:47 on domain   3:    1.53949 elapsed seconds
+Timing for main: time 2016-08-29_09:27:50 on domain   3:    1.58143 elapsed seconds
+Timing for main: time 2016-08-29_09:27:50 on domain   2:    5.07120 elapsed seconds
+Timing for main: time 2016-08-29_09:27:52 on domain   3:    1.55284 elapsed seconds
+Timing for main: time 2016-08-29_09:27:55 on domain   3:    1.58361 elapsed seconds
+Timing for main: time 2016-08-29_09:27:55 on domain   2:    5.11363 elapsed seconds
+Timing for main: time 2016-08-29_09:27:57 on domain   3:    1.54546 elapsed seconds
+Timing for main: time 2016-08-29_09:28:00 on domain   3:    1.78741 elapsed seconds
+Timing for main: time 2016-08-29_09:28:00 on domain   2:    5.39743 elapsed seconds
+Timing for main: time 2016-08-29_09:28:00 on domain   1:   17.50611 elapsed seconds
+Timing for main: time 2016-08-29_09:28:02 on domain   3:    1.54048 elapsed seconds
+Timing for main: time 2016-08-29_09:28:05 on domain   3:    1.54117 elapsed seconds
+Timing for main: time 2016-08-29_09:28:05 on domain   2:    5.20243 elapsed seconds
+Timing for main: time 2016-08-29_09:28:07 on domain   3:    1.53999 elapsed seconds
+Timing for main: time 2016-08-29_09:28:10 on domain   3:    1.55768 elapsed seconds
+Timing for main: time 2016-08-29_09:28:10 on domain   2:    5.07375 elapsed seconds
+Timing for main: time 2016-08-29_09:28:12 on domain   3:    1.51574 elapsed seconds
+Timing for main: time 2016-08-29_09:28:15 on domain   3:    1.56307 elapsed seconds
+Timing for main: time 2016-08-29_09:28:15 on domain   2:    5.04891 elapsed seconds
+Timing for main: time 2016-08-29_09:28:15 on domain   1:   17.22640 elapsed seconds
+Timing for main: time 2016-08-29_09:28:17 on domain   3:    1.51738 elapsed seconds
+Timing for main: time 2016-08-29_09:28:20 on domain   3:    1.56912 elapsed seconds
+Timing for main: time 2016-08-29_09:28:20 on domain   2:    5.02210 elapsed seconds
+Timing for main: time 2016-08-29_09:28:22 on domain   3:    1.52081 elapsed seconds
+Timing for main: time 2016-08-29_09:28:25 on domain   3:    1.56166 elapsed seconds
+Timing for main: time 2016-08-29_09:28:25 on domain   2:    5.05362 elapsed seconds
+Timing for main: time 2016-08-29_09:28:27 on domain   3:    1.54414 elapsed seconds
+Timing for main: time 2016-08-29_09:28:30 on domain   3:    1.58186 elapsed seconds
+Timing for main: time 2016-08-29_09:28:30 on domain   2:    5.07601 elapsed seconds
+Timing for main: time 2016-08-29_09:28:30 on domain   1:   17.07096 elapsed seconds
+Timing for main: time 2016-08-29_09:28:32 on domain   3:    1.52817 elapsed seconds
+Timing for main: time 2016-08-29_09:28:35 on domain   3:    1.54815 elapsed seconds
+Timing for main: time 2016-08-29_09:28:35 on domain   2:    5.14995 elapsed seconds
+Timing for main: time 2016-08-29_09:28:37 on domain   3:    1.52326 elapsed seconds
+Timing for main: time 2016-08-29_09:28:40 on domain   3:    1.55533 elapsed seconds
+Timing for main: time 2016-08-29_09:28:40 on domain   2:    5.06558 elapsed seconds
+Timing for main: time 2016-08-29_09:28:42 on domain   3:    1.53168 elapsed seconds
+Timing for main: time 2016-08-29_09:28:45 on domain   3:    1.55249 elapsed seconds
+Timing for main: time 2016-08-29_09:28:45 on domain   2:    5.06643 elapsed seconds
+Timing for main: time 2016-08-29_09:28:45 on domain   1:   17.17991 elapsed seconds
+Timing for main: time 2016-08-29_09:28:47 on domain   3:    1.52020 elapsed seconds
+Timing for main: time 2016-08-29_09:28:50 on domain   3:    1.57653 elapsed seconds
+Timing for main: time 2016-08-29_09:28:50 on domain   2:    5.02514 elapsed seconds
+Timing for main: time 2016-08-29_09:28:52 on domain   3:    1.53381 elapsed seconds
+Timing for main: time 2016-08-29_09:28:55 on domain   3:    1.56235 elapsed seconds
+Timing for main: time 2016-08-29_09:28:55 on domain   2:    5.14837 elapsed seconds
+Timing for main: time 2016-08-29_09:28:57 on domain   3:    1.54306 elapsed seconds
+Timing for main: time 2016-08-29_09:29:00 on domain   3:    1.53398 elapsed seconds
+Timing for main: time 2016-08-29_09:29:00 on domain   2:    5.05285 elapsed seconds
+Timing for main: time 2016-08-29_09:29:00 on domain   1:   17.16296 elapsed seconds
+Timing for main: time 2016-08-29_09:29:02 on domain   3:    1.51915 elapsed seconds
+Timing for main: time 2016-08-29_09:29:05 on domain   3:    1.55282 elapsed seconds
+Timing for main: time 2016-08-29_09:29:05 on domain   2:    5.00310 elapsed seconds
+Timing for main: time 2016-08-29_09:29:07 on domain   3:    1.53088 elapsed seconds
+Timing for main: time 2016-08-29_09:29:10 on domain   3:    1.56361 elapsed seconds
+Timing for main: time 2016-08-29_09:29:10 on domain   2:    5.07222 elapsed seconds
+Timing for main: time 2016-08-29_09:29:12 on domain   3:    1.51483 elapsed seconds
+Timing for main: time 2016-08-29_09:29:15 on domain   3:    1.54797 elapsed seconds
+Timing for main: time 2016-08-29_09:29:15 on domain   2:    5.04016 elapsed seconds
+Timing for main: time 2016-08-29_09:29:15 on domain   1:   17.01884 elapsed seconds
+Timing for main: time 2016-08-29_09:29:17 on domain   3:    1.51995 elapsed seconds
+Timing for main: time 2016-08-29_09:29:20 on domain   3:    1.55513 elapsed seconds
+Timing for main: time 2016-08-29_09:29:20 on domain   2:    5.00900 elapsed seconds
+Timing for main: time 2016-08-29_09:29:22 on domain   3:    1.52210 elapsed seconds
+Timing for main: time 2016-08-29_09:29:25 on domain   3:    1.56979 elapsed seconds
+Timing for main: time 2016-08-29_09:29:25 on domain   2:    5.06840 elapsed seconds
+Timing for main: time 2016-08-29_09:29:27 on domain   3:    1.53618 elapsed seconds
+Timing for main: time 2016-08-29_09:29:30 on domain   3:    1.58526 elapsed seconds
+Timing for main: time 2016-08-29_09:29:30 on domain   2:    5.08506 elapsed seconds
+Timing for main: time 2016-08-29_09:29:30 on domain   1:   17.07248 elapsed seconds
+Timing for main: time 2016-08-29_09:29:32 on domain   3:    1.56396 elapsed seconds
+Timing for main: time 2016-08-29_09:29:35 on domain   3:    1.57479 elapsed seconds
+Timing for main: time 2016-08-29_09:29:35 on domain   2:    5.06598 elapsed seconds
+Timing for main: time 2016-08-29_09:29:37 on domain   3:    1.51613 elapsed seconds
+Timing for main: time 2016-08-29_09:29:40 on domain   3:    1.56288 elapsed seconds
+Timing for main: time 2016-08-29_09:29:40 on domain   2:    5.05776 elapsed seconds
+Timing for main: time 2016-08-29_09:29:42 on domain   3:    1.52863 elapsed seconds
+Timing for main: time 2016-08-29_09:29:45 on domain   3:    1.57124 elapsed seconds
+Timing for main: time 2016-08-29_09:29:45 on domain   2:    5.07780 elapsed seconds
+Timing for main: time 2016-08-29_09:29:45 on domain   1:   17.10758 elapsed seconds
+Timing for main: time 2016-08-29_09:29:47 on domain   3:    1.52371 elapsed seconds
+Timing for main: time 2016-08-29_09:29:50 on domain   3:    1.55617 elapsed seconds
+Timing for main: time 2016-08-29_09:29:50 on domain   2:    5.04708 elapsed seconds
+Timing for main: time 2016-08-29_09:29:52 on domain   3:    1.52734 elapsed seconds
+Timing for main: time 2016-08-29_09:29:55 on domain   3:    1.55469 elapsed seconds
+Timing for main: time 2016-08-29_09:29:55 on domain   2:    5.02277 elapsed seconds
+Timing for main: time 2016-08-29_09:29:57 on domain   3:    1.51793 elapsed seconds
+Timing for main: time 2016-08-29_09:30:00 on domain   3:    1.56010 elapsed seconds
+Timing for main: time 2016-08-29_09:30:00 on domain   2:    5.09194 elapsed seconds
+Timing for main: time 2016-08-29_09:30:00 on domain   1:   17.06078 elapsed seconds
+wrf: SUCCESS COMPLETE WRF
+taskid: 0 hostname: nia0088.scinet.local

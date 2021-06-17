@@ -1,0 +1,77 @@
+
+running python script to construct differences, takes about 1 minute
+
+compiler comparison for theta
+Input, F-statistic: 4.306474373724413e-06
+Input, df factor: 1
+Input, df error: 2736
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.0016556212803925086
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
+
+compiler comparison for qv
+Input, F-statistic: 6.243899559247013e-07
+Input, df factor: 1
+Input, df error: 2736
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.0006304175387329506
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
+
+compiler comparison for u
+Input, F-statistic: 5.360956563295015e-07
+Input, df factor: 1
+Input, df error: 2736
+p-value probability = 1.0 means 100% reject null hypothesis that means are same
+p-value probability = 0.0005841461027154919
+
+We are pretty darn confident that the vendor vs exemplar comparisons are OK
+ 
+            ▕▔▔▔╲ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕ 
+             ▏  ▕▂▂▂▂
+      ▂▂▂▂▂▂╱┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉┈┈┈▕      ▏
+      ▉▉▉▉▉┈┈┈▕▂▂▂▂▂▂▏
+      ▉▉▉▉▉╲┈┈▕      ▏
+      ▔▔▔▔▔▔╲▂▕▂▂▂▂▂▂▏
+ 
+ 
