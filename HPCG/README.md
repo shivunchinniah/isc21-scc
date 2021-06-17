@@ -18,6 +18,34 @@ Sandia National Laboratories; University of Tennessee, Knoxville\
 
 GFLOP/s value of: `51.7859`
 
+# Niagara Intel MPI + ICC 2019.4.243
+
+## Results:
+For these set of results 4x Intel(R) Xeon(R) Gold 5115 CPU @ 2.40GHz were used.
+40 logical cores with 96GB RAM each.
+
+### Default
+hpcg.dat:\
+<code>
+HPCG benchmark input file\
+Sandia National Laboratories; University of Tennessee, Knoxville\
+104 104 104\
+1800
+</code>
+
+GFLOP/s value of: `97.4203`
+
+### Optimised
+hpcg.dat:\
+<code>
+HPCG benchmark input file\
+Sandia National Laboratories; University of Tennessee, Knoxville\
+16 16 16
+1800
+</code>
+
+GFLOP/s value of: `175.012`
+
 # Provisional NVIDIA Precompiled
 
 To do.
