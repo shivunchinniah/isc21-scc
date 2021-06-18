@@ -75,6 +75,23 @@ NBs = 384
 
 Ps x Pq = 10 x 16
 
+### final push
+HPCCOUTF NAME        |                WEB NAME         |            VALUE |  UNITS
+----------------------|---------------------------------|------------------|--------------------
+HPL_Tflops                         |  G-HPL               |         6.8986|   Tera Flops per Second
+PTRANS_GBs                         |  G-PTRANS            |         0.0042|   Tera Bytes per Second
+MPIRandomAccess_GUPs               |  G-RandomAccess      |         0.5284|   Giga Updates per Second
+MPIFFT_Gflops                      |  G-FFT               |         0.0072|   Tera Flops per Second
+StarSTREAM_Triad*CommWorldProcs    |  EP-STREAM Sys       |         0.6433|   Tera Bytes per Second
+StarSTREAM_Triad                   |  EP-STREAM Triad     |         4.0209|   Giga Bytes per Second
+StarDGEMM_Gflops                   |  EP-DGEMM            |        52.6284|   Giga Flops per Second
+RandomlyOrderedRingBandwidth_GBytes|  RandomRing Bandwidth|         0.3962|   Giga Bytes per second
+RandomlyOrderedRingLatency_usec    |  RandomRing Latency  |         2.4658|   micro-seconds
+
+Ns = 230400
+NBs = 384
+
+Ps x Pq = 10 x 16
 
 
 ## NSCC
