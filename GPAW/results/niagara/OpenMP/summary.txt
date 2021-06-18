@@ -1,0 +1,18 @@
+1omp40mpi:
+SCF-cycle:                         257.392     4.195   1.6% ||
+1omp80mpi:
+SCF-cycle:                         344.852     2.394   0.7% |
+2omp20mpi:
+SCF-cycle:                         362.997     4.092   1.1% |
+2omp40mpi:
+SCF-cycle:                         272.410     1.631   0.6% |
+4omp10mpi:
+SCF-cycle:                         493.161    30.749   6.1% |-|
+4omp20mpi:
+SCF-cycle:                         329.448     3.253   1.0% |
+5omp16mpi:
+SCF-cycle:                         370.111     6.753   1.8% ||
+5omp8mpi:
+SCF-cycle:                         532.032     7.319   1.3% ||
+8omp5mpi:
+SCF-cycle:                         858.572    35.131   4.0% |-|
