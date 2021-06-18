@@ -1,0 +1,29 @@
+lj-4x19x2-slurm-5505546.out:
+Loop time of 347.356 on 152 procs for 10000 steps with 16000000 atoms
+lj-4x7x2-slurm-5481491.out:
+Loop time of 965.834 on 56 procs for 10000 steps with 16000000 atoms
+lj-5x5x4-slurm-5505548.out:
+Loop time of 515.364 on 100 procs for 10000 steps with 16000000 atoms
+lj-5x6x5-slurm-5483817.out:
+Loop time of 402.015 on 150 procs for 10000 steps with 16000000 atoms
+lj-5x6x5-slurm-5483852.out:
+Loop time of 580.214 on 150 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5456759.out:
+Loop time of 356.048 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5456998.out:
+Loop time of 322.356 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5457979.out:
+Loop time of 359.204 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5458000.out:
+Loop time of 379.157 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5458008.out:
+Loop time of 377.813 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5458013.out:
+Loop time of 379.72 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5458031.out:
+Loop time of 378.48 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5458057.out:
+Loop time of 378.629 on 160 procs for 10000 steps with 16000000 atoms
+lj-5x8x4-slurm-5481483.out:
+Loop time of 602.844 on 160 procs for 10000 steps with 16000000 atoms
+lj.txt:

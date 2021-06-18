@@ -1,0 +1,12 @@
+rhodo-2x5x4-slurm-5471026.out:
+Loop time of 1131.57 on 40 procs for 6000 steps with 2048000 atoms
+rhodo-2x7x4-slurm-5471035.out:
+Loop time of 816.112 on 56 procs for 6000 steps with 2048000 atoms
+rhodo-4x5x5-slurm-5506998.out:
+Loop time of 468.753 on 100 procs for 6000 steps with 2048000 atoms
+rhodo-4x8x5-slurm-5457067.out:
+Loop time of 309.524 on 160 procs for 6000 steps with 2048000 atoms
+rhodo-4x8x5-slurm-5463764.out:
+Loop time of 310.691 on 160 procs for 6000 steps with 2048000 atoms
+rhodo-4x8x5-slurm-5471040.out:
+Loop time of 309.135 on 160 procs for 6000 steps with 2048000 atoms

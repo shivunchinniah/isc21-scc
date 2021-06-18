@@ -1,0 +1,100 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) NiaEnv/2019b
+LAMMPS (29 Oct 2020)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (../comm.cpp:94)
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.6795962 1.6795962 1.6795962
+Created orthogonal box = (0.0000000 0.0000000 0.0000000) to (335.91924 335.91924 167.95962)
+  4 by 7 by 2 MPI processor grid
+Created 16000000 atoms
+  create_atoms CPU = 0.077 seconds
+----------------------------------------------------------
+Using Intel Package without Coprocessor.
+Precision: mixed
+----------------------------------------------------------
+Neighbor list info ...
+  update every 20 steps, delay 0 steps, check no
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.8
+  ghost atom cutoff = 2.8
+  binsize = 1.4, bins = 240 240 120
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/intel, perpetual
+      attributes: half, newton on, intel
+      pair build: half/bin/newton/intel
+      stencil: half/bin/3d/newton
+      bin: intel
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.005
+Per MPI rank memory allocation (min/avg/max) = 2464.0 | 2471.0 | 2507.0 Mbytes
+Step Temp E_pair E_mol TotEng Press 
+       0         1.44   -6.7733671            0   -4.6133672   -5.0196704 
+   10000   0.69712498   -5.6668664            0    -4.621179   0.74781599 
+Loop time of 965.834 on 56 procs for 10000 steps with 16000000 atoms
+
+Performance: 4472.819 tau/day, 10.354 timesteps/s
+99.0% CPU use with 56 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 544.93     | 586.99     | 616.02     | 104.9 | 60.78
+Neigh   | 55.84      | 57.573     | 59.553     |  12.9 |  5.96
+Comm    | 102.1      | 159.63     | 274.48     | 565.3 | 16.53
+Output  | 0.002482   | 0.0033319  | 0.0052407  |   1.9 |  0.00
+Modify  | 64.748     | 127.67     | 156.09     | 338.2 | 13.22
+Other   |            | 33.96      |            |       |  3.52
+
+Nlocal:       285714.0 ave      285947 max      285522 min
+Histogram: 5 6 4 9 12 5 4 4 5 2
+Nghost:        77320.9 ave       77491 max       77146 min
+Histogram: 3 1 7 9 8 10 6 4 3 5
+Neighs:    1.07157e+07 ave  1.0748e+07 max 1.06829e+07 min
+Histogram: 4 4 9 3 7 5 7 9 5 3
+
+Total # of neighbors = 6.0007677e+08
+Ave neighs/atom = 37.504798
+Neighbor list builds = 500
+Dangerous builds not checked
+Total wall time: 0:16:06
+
+scontrol show jobid 5481491
+JobId=5481491 JobName=LAMMPS_provisional
+   UserId=lcl_uotiscsccs1041(1911041) GroupId=lcl_uotiscscc(1910004) MCS_label=N/A
+   Priority=2146789 Nice=0 Account=lcl-uotiscsccs1041 QOS=normal
+   JobState=COMPLETED Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:16:35 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2021-06-12T09:06:34 EligibleTime=2021-06-12T09:06:34
+   AccrueTime=2021-06-12T09:06:34
+   StartTime=2021-06-12T09:06:34 EndTime=2021-06-12T09:23:09 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2021-06-12T09:06:34
+   Partition=compute AllocNode:Sid=nia-login01:343079
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[0526,0988,1419,1438]
+   BatchHost=nia0526
+   NumNodes=4 NumCPUs=320 NumTasks=160 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=320,mem=700000M,node=4,billing=160
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm_in_lj.sh
+   WorkDir=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1
+   StdErr=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm-5481491.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm-5481491.out
+   Power=
+   MailUser=lcl_uotiscsccs1041@scinet.local MailType=NONE
+
+sacct -j 5481491
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+5481491      LAMMPS_pr+ lcl-uotis+   00:16:35                        07:42.372   14:52:59      0:0 
+5481491.bat+      batch lcl-uotis+   00:16:35 130241928K  11642376K  06:00.265   10:37:25      0:0 
+5481491.ext+     extern lcl-uotis+   00:16:35    138360K       880K  00:00.001  00:00.001      0:0 
+5481491.0         orted lcl-uotis+   00:16:32  51922012K   4628632K  01:42.106   04:15:33      0:0 

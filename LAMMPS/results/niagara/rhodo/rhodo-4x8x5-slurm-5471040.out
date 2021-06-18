@@ -1,0 +1,169 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) NiaEnv/2019b
+LAMMPS (29 Oct 2020)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (../comm.cpp:94)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-27.500000 -38.500000 -36.364600) to (27.500000 38.500000 36.361500)
+  4 by 8 by 5 MPI processor grid
+  reading atoms ...
+  32000 atoms
+  reading velocities ...
+  32000 velocities
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  8 = max angles/atom
+  scanning dihedrals ...
+  18 = max dihedrals/atom
+  scanning impropers ...
+  2 = max impropers/atom
+  reading bonds ...
+  27723 bonds
+  reading angles ...
+  40467 angles
+  reading dihedrals ...
+  56829 dihedrals
+  reading impropers ...
+  1034 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0.0      0.0      0.0     
+  special bond factors coul:  0.0      0.0      0.0     
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    26 = max # of special neighbors
+  special bonds CPU = 0.021 seconds
+  read_data CPU = 0.393 seconds
+Replicating atoms ...
+  orthogonal box = (-27.500000 -38.500000 -36.364600) to (192.50000 269.50000 254.53980)
+  4 by 8 by 5 MPI processor grid
+  2048000 atoms
+  1774272 bonds
+  2589888 angles
+  3637056 dihedrals
+  66176 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0.0      0.0      0.0     
+  special bond factors coul:  0.0      0.0      0.0     
+     4 = max # of 1-2 neighbors
+    12 = max # of 1-3 neighbors
+    24 = max # of 1-4 neighbors
+    26 = max # of special neighbors
+  special bonds CPU = 0.025 seconds
+  replicate CPU = 0.087 seconds
+Finding SHAKE clusters ...
+  103488 = # of size 2 clusters
+  232512 = # of size 3 clusters
+   47808 = # of size 4 clusters
+  270912 = # of frozen angles
+  find clusters CPU = 0.015 seconds
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (../kspace.cpp:328)
+  G vector (1/distance) = 0.25045586
+  grid = 90 120 120
+  stencil order = 7
+  estimated absolute RMS force accuracy = 0.032785255
+  estimated relative force accuracy = 9.8731821e-05
+  using single precision MKL FFT
+  3d grid and FFT values/proc = 20460 8640
+----------------------------------------------------------
+Using Intel Package without Coprocessor.
+Precision: mixed
+----------------------------------------------------------
+Neighbor list info ...
+  update every 1 steps, delay 5 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 37 52 49
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long/intel, perpetual
+      attributes: half, newton on, intel
+      pair build: half/bin/newton/intel
+      stencil: half/bin/3d/newton
+      bin: intel
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 2.0
+Per MPI rank memory allocation (min/avg/max) = 165.3 | 166.7 | 168.1 Mbytes
+---------------- Step        0 ----- CPU =      0.0000 (sec) ----------------
+TotEng   =  -1622915.6822 KinEng   =   1372469.2022 Temp     =       299.0274 
+PotEng   =  -2995384.8844 E_bond   =    162431.7411 E_angle  =    698967.9457 
+E_dihed  =    333554.2808 E_impro  =     13664.8915 E_vdwl   =   -147703.2770 
+E_coul   =  13362001.3139 E_long   = -17418301.7804 Press    =      -148.3958 
+---------------- Step     6000 ----- CPU =    309.1349 (sec) ----------------
+TotEng   =  -1619767.8889 KinEng   =   1377042.0423 Temp     =       300.0237 
+PotEng   =  -2996809.9312 E_bond   =    165570.9794 E_angle  =    708370.6942 
+E_dihed  =    336301.5529 E_impro  =     14295.0680 E_vdwl   =   -132836.3203 
+E_coul   =  13329866.1769 E_long   = -17418378.0823 Press    =        37.2467 
+Loop time of 309.135 on 160 procs for 6000 steps with 2048000 atoms
+
+Performance: 3.354 ns/day, 7.156 hours/ns, 19.409 timesteps/s
+99.7% CPU use with 160 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 153.85     | 161.94     | 173.76     |  37.4 | 52.39
+Bond    | 8.3165     | 10.169     | 12.375     |  44.5 |  3.29
+Kspace  | 39.749     | 52.458     | 61.057     |  68.5 | 16.97
+Neigh   | 27.785     | 27.946     | 28.081     |   1.2 |  9.04
+Comm    | 24.682     | 26.416     | 27.784     |  12.5 |  8.55
+Output  | 0.00018559 | 0.00019925 | 0.00026157 |   0.0 |  0.00
+Modify  | 26.697     | 27.74      | 29.211     |   9.4 |  8.97
+Other   |            | 2.466      |            |       |  0.80
+
+Nlocal:        12800.0 ave       12999 max       12615 min
+Histogram: 3 9 18 25 28 27 29 16 3 2
+Nghost:        29370.5 ave       29720 max       28991 min
+Histogram: 1 9 14 26 24 33 13 23 14 3
+Neighs:    4.81306e+06 ave 4.95227e+06 max 4.70116e+06 min
+Histogram: 7 10 23 30 25 25 23 11 4 2
+
+Total # of neighbors = 7.7008958e+08
+Ave neighs/atom = 376.02030
+Ave special neighs/atom = 7.4318750
+Neighbor list builds = 791
+Dangerous builds = 0
+Total wall time: 0:05:10
+
+scontrol show jobid 5471040
+JobId=5471040 JobName=LAMMPS_provisional
+   UserId=lcl_uotiscsccs1041(1911041) GroupId=lcl_uotiscscc(1910004) MCS_label=N/A
+   Priority=2054146 Nice=0 Account=lcl-uotiscsccs1041 QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:05:18 TimeLimit=00:30:00 TimeMin=N/A
+   SubmitTime=2021-06-08T13:42:26 EligibleTime=2021-06-08T13:42:26
+   AccrueTime=2021-06-08T13:42:26
+   StartTime=2021-06-08T13:42:58 EndTime=2021-06-08T13:48:16 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2021-06-08T13:42:58
+   Partition=compute AllocNode:Sid=nia-login01:419532
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[0329-0331]
+   BatchHost=nia0014
+   NumNodes=3 NumCPUs=320 NumTasks=160 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=320,mem=700000M,node=4,billing=160
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm_in_rhodo.sh
+   WorkDir=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1
+   StdErr=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm-5471040.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/LAMMPS/Instances/test1/slurm-5471040.out
+   Power=
+   MailUser=lcl_uotiscsccs1041@scinet.local MailType=NONE
+
+sacct -j 5471040
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+5471040      LAMMPS_pr+ lcl-uotis+   00:05:18                        02:28.478   13:43:57      0:0 
+5471040.bat+      batch lcl-uotis+   00:05:18  39483704K   8067272K  00:36.370   03:26:03      0:0 
+5471040.ext+     extern lcl-uotis+   00:05:18    138360K       880K   00:00:00  00:00.002      0:0 
+5471040.0         orted lcl-uotis+   00:05:15  38514328K   8028908K  01:52.108   10:17:53      0:0 
