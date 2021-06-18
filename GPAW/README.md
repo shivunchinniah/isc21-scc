@@ -29,7 +29,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 
 ## Niagara (intel, intelmpi and python 3.8.5)
 
-# 1 Node (copper.py)
+### 1 Node (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
@@ -40,7 +40,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 | Total                | 944.620        |
 | Free energy          | -320.793       |
 
-# 2 Nodes (copper.py)
+### 2 Nodes (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
@@ -51,7 +51,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 | Total                | 553.167        |
 | Free energy          | -320.793       |
 
-# 4 Nodes (copper.py)
+### 4 Nodes (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
@@ -64,7 +64,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 
 ## NSCC Intel (intel, intelmpi and python 3.8.3)
 
-# 1 Node (copper.py)
+### 1 Node (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
@@ -74,7 +74,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 | SCF Cycle            | 5052.524 (incl) |
 | Total                | 5115.225        |
 
-# 2 Nodes (copper.py)
+### 2 Nodes (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
@@ -84,7 +84,7 @@ See GPAW/results/intel_provisional/Ru2Cl6-benchmark.tx
 | SCF Cycle            | 3885.655 (incl) |
 | Total                | 3920.741        |
 
-# 4 Nodes (copper.py)
+### 4 Nodes (copper.py)
 
 | METRIC        | VALUE         | 
 | ------------- |:-------------:|
