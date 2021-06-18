@@ -1,0 +1,12 @@
+
+WRF RUN COMPLETED
+MPI ranks used: 10 x 16 = 160
+Domain size :
+ ids,ide,jds,jde            1         793           1         853
+ ids,ide,jds,jde            1         805           1         805
+ ids,ide,jds,jde            1        1001           1        1001
+WRF NUMBER OF TILES FROM OMP_GET_MAX_THREADS =   2
+Average Time for radiation:      32.8302 ± 0.143271 s (7 times)
+Average Time for non-radiation:  16.8819 ± 0.0712411 s (88 times)
+Total Time:                    1715.42 s (95 times)
+

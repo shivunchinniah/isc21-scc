@@ -1,0 +1,1 @@
+/home/l/lcl_uotiscscc/lcl_uotiscsccs1041/scratch/WRF/2omp120mpi/WRF_ISC21_3_DOMAIN
