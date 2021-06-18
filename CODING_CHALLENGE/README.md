@@ -9,3 +9,11 @@ The main target is to analyze MPI_alltoallv patterns within the application. Thi
 MPI_alltoallv is a an MPI function call in which each rank sends to each other rank up to one message, similar to alltoall, but the size of each message could be different. More info about MPI_alltoallv can be found [here](https://www.open-mpi.org/doc/v4.1/man3/MPI_Alltoallv.3.php).
 ### Task 1: Understanding MPI alltov calls
 
+Ran with 160 ranks on niagara (4 nodes)
+
+#### Balanced Pattern:
+Wall time: 00:10:54
+
+#### Unbalanced Pattern:
+Wall time: 00:23:37
+
