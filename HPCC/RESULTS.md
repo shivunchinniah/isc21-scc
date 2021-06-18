@@ -58,4 +58,43 @@ NBs = 256
 Ps x Pq = 10 x 16
 
 
+## NSCC
+
+
+### Baseline
+HPCCOUTF NAME        |                WEB NAME         |            VALUE |  UNITS
+----------------------|---------------------------------|------------------|--------------------
+HPL_Tflops                         |  G-HPL               |         2.1120|   Tera Flops per Second
+PTRANS_GBs                         |  G-PTRANS            |         0.0018|   Tera Bytes per Second
+MPIRandomAccess_GUPs               |  G-RandomAccess      |         0.0499|   Giga Updates per Second
+MPIFFT_Gflops                      |  G-FFT               |         0.0027|   Tera Flops per Second
+StarSTREAM_Triad*CommWorldProcs    |  EP-STREAM Sys       |         0.1808|   Tera Bytes per Second
+StarSTREAM_Triad                   |  EP-STREAM Triad     |         1.8834|   Giga Bytes per Second
+StarDGEMM_Gflops                   |  EP-DGEMM            |        33.6737|   Giga Flops per Second
+RandomlyOrderedRingBandwidth_GBytes|  RandomRing Bandwidth|         0.6174|   Giga Bytes per second
+RandomlyOrderedRingLatency_usec    |  RandomRing Latency  |         1.1170|   micro-seconds
+
+Ns = 179200
+NBs = 256
+Ps x Pq = 8 x 12
+
+### Faster
+HPCCOUTF NAME        |                WEB NAME         |            VALUE |  UNITS
+----------------------|---------------------------------|------------------|--------------------
+HPL_Tflops                         |  G-HPL               |         2.1481|   Tera Flops per Second
+PTRANS_GBs                         |  G-PTRANS            |         0.0019|   Tera Bytes per Second
+MPIRandomAccess_GUPs               |  G-RandomAccess      |         0.0481|   Giga Updates per Second
+MPIFFT_Gflops                      |  G-FFT               |         0.0027|   Tera Flops per Second
+StarSTREAM_Triad*CommWorldProcs    |  EP-STREAM Sys       |         0.2187|   Tera Bytes per Second
+StarSTREAM_Triad                   |  EP-STREAM Triad     |         2.2783|   Giga Bytes per Second
+StarDGEMM_Gflops                   |  EP-DGEMM            |        34.4884|   Giga Flops per Second
+RandomlyOrderedRingBandwidth_GBytes|  RandomRing Bandwidth|         0.5921|   Giga Bytes per second
+RandomlyOrderedRingLatency_usec    |  RandomRing Latency  |         1.0801|   micro-seconds
+
+
+Ns = 2000448
+NBs = 384
+Ps x Pq = 8 x 12
+
+
 
