@@ -1,0 +1,49 @@
+2021-06-02 20:22:39 [40] <timers.cpp:481>  ------- Elapsed time for FastqReader construct competition1.fastq: 0.000538062 ------- 
+2021-06-02 20:22:39 [40] <fastq.cpp:415> Opened /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq in 0.00124582s.
+2021-06-02 20:22:39 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=173.22GB
+2021-06-02 20:22:40 [40] <fastq.cpp:485> Reading fastq file /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq at pos 10494842294 10494842294 seek 0.000506722s io to open+find+seek 0.00179765s
+2021-06-02 20:22:40 [40] <merge_reads.cpp:144> Found 716859 in file 0, total=716859
+2021-06-02 20:22:40 [40] <fastq.cpp:465> advised /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq POSIX_FADV_SEQUENTIAL in 1.6578e-05s
+2021-06-02 20:22:41 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=171.39GB
+2021-06-02 20:22:42 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=169.94GB
+2021-06-02 20:22:43 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=166.83GB
+2021-06-02 20:22:44 [40] <fastq.cpp:468> advised /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq POSIX_FADV_DONTNEED in 7.517e-06s
+2021-06-02 20:22:44 [40] <timers.cpp:481>  --------- Elapsed time for merging competition1.fastq: 3.56015 --------- 
+2021-06-02 20:22:44 [40] <packed_reads.cpp:281> Loaded Packed Reads Free memory: 166.77GB, stat: 224401 (mhm2) R 224341 224401 224341 0 -1 4202560 183515 0 0 0 526 93 0 0 20 0 2 0 18773344 20981440512 191222 18446744073709551615 4194304 9898976 140734759636992 140734759627536 139688413140829 0 0 0 21743 18446744073709551615 0 0 17 40 0 0 0 0 0 11999976 12018729 21491712 140734759639719 140734759639921 140734759639921 140734759645100 0
+2021-06-02 20:22:45 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=136.63GB
+2021-06-02 20:22:45 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=105.40GB
+2021-06-02 20:23:14 [40] <klign.cpp:760> Estimated room for 577216 my final count 478805
+2021-06-02 20:23:35 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 0.941846s (21234.9 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:23:50 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 0.924611s (21630.7 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:23:51 [40] <klign.cpp:572> Stole from kernel block 1986 alignments in 0.0905018s (21944.3 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:23:52 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 1.1688 s
+2021-06-02 20:24:06 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=100.28GB
+2021-06-02 20:24:06 [40] <mem_profile.cpp:106> MemoryTrackerThread free_mem=68.72GB
+2021-06-02 20:24:42 [40] <klign.cpp:760> Estimated room for 622774 my final count 516031
+2021-06-02 20:25:00 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 0.935134s (21387.3 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:25:18 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 0.983436s (20336.9 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:25:20 [40] <klign.cpp:572> Stole from kernel block 4779 alignments in 0.232327s (20570.2 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:25:20 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 0.919497 s
+2021-06-02 20:26:40 [40] <klign.cpp:760> Estimated room for 644748 my final count 534200
+2021-06-02 20:27:01 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 1.04981s (19051 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:27:21 [40] <klign.cpp:572> Stole from kernel block 18529 alignments in 1.01679s (18223 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:27:22 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 0.889952 s
+2021-06-02 20:28:42 [40] <klign.cpp:760> Estimated room for 649719 my final count 540724
+2021-06-02 20:29:10 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 1.18857s (16827 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:29:25 [40] <klign.cpp:572> Stole from kernel block 14249 alignments in 0.826222s (17246 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:29:27 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 1.02588 s
+2021-06-02 20:30:08 [40] <klign.cpp:760> Estimated room for 643361 my final count 535072
+2021-06-02 20:30:43 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 1.17639s (17001.2 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:30:50 [40] <klign.cpp:572> Stole from kernel block 7669 alignments in 0.44863s (17094.3 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:30:51 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 0.809854 s
+2021-06-02 20:31:11 [40] <klign.cpp:760> Estimated room for 1.27291e+06 my final count 524668
+2021-06-02 20:31:37 [40] <klign.cpp:572> Stole from kernel block 20000 alignments in 1.13975s (17547.7 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:31:46 [40] <klign.cpp:572> Stole from kernel block 11584 alignments in 0.649283s (17841.2 aln/s), while waiting for previous block to complete - THE ENTIRE BLOCK
+2021-06-02 20:31:47 [40] <timers.cpp:634> alignments.cpp:sort_alns completed in 0.892052 s
+2021-06-02 20:32:04 [40] <packed_reads.cpp:186> Clearing Packed Reads Free memory: 68.67GB, stat: 224401 (mhm2) R 224341 224401 224341 0 -1 4202560 833059 0 0 0 40764 2702 0 0 20 0 3 0 18773344 24614305792 1181043 18446744073709551615 4194304 9898976 140734759636992 140734759494288 139688413140829 0 0 0 21743 18446744073709551615 0 0 17 40 0 0 4 0 0 11999976 12018729 21491712 140734759639719 140734759639921 140734759639921 140734759645100 0
+2021-06-02 20:32:04 [40] <packed_reads.cpp:191> Cleared Packed Reads Free memory: 68.67GB, stat: 224401 (mhm2) R 224341 224401 224341 0 -1 4202560 833059 0 0 0 40771 2702 0 0 20 0 3 0 18773344 24614305792 1181043 18446744073709551615 4194304 9898976 140734759636992 140734759494288 139688413140829 0 0 0 21743 18446744073709551615 0 0 17 40 0 0 4 0 0 11999976 12018729 21491712 140734759639719 140734759639921 140734759639921 140734759645100 0
+2021-06-02 20:32:04 [40] <ofstream.cpp:863> dist_ofstream(ofname=final_assembly.fasta append=0)
+2021-06-02 20:32:04 [40] <ofstream.cpp:764> append_batch_collective(fname=final_assembly.fasta sh_ss bytes=522675, block_size=16777216)
+2021-06-02 20:32:05 [40] <ofstream.cpp:430> Writing times: final_assembly.fasta duration 0.0000s open 0.0000s io 0.0000s net 0.0091s s bytes 510.42KB wrote 0B
+2021-06-02 20:32:05 [40] <ofstream.cpp:446> Closed upcxx_utils::ofstream final_assembly.fasta with 522675 flushed bytes (0 written) and 0 async and 1 collective operations final_assembly.fasta network latency: 0.01 s 3 count final_assembly.fasta io: 0.00 s
+2021-06-02 20:32:05 [40] <thread_pool.cpp:126> Worker joined after executing 6 tasks over 5.70685 s.
