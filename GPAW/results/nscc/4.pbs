@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -l select=4:ncpus=24:mpiprocs=24:mem=96g
+#PBS -l walltime=03:00:00
+#PBS -P 50000008
+#PBS -N gpaw_copper_4
+#PBS -o gpaw_copper_4.o
+#PBS -e gpaw_copper_4.e
+
+module load intel
+module load intelmpi
+module load python/3.8.3
+
+ROOT=$HOME/scratch/GPAW/test1
+
+export GPAW_SETUP_PATH=$ROOT/gpaw-setups-0.9.20000
+export PYTHONUSERBASE=$ROOT/gpaw-20.10.0
+export PATH=$PATH:$PYTHONUSERBASE/bin
+export INPUT_FILES=$ROOT/gpaw-isc-2021/input-files
+
+mpirun -np 96  gpaw python $INPUT_FILES/copper.py
