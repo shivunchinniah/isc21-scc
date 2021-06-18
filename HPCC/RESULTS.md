@@ -57,6 +57,25 @@ NBs = 256
 
 Ps x Pq = 10 x 16
 
+### AVX2 icc impi better use of memory
+HPCCOUTF NAME        |                WEB NAME         |            VALUE |  UNITS
+----------------------|---------------------------------|------------------|--------------------
+HPL_Tflops                         |  G-HPL               |         6.8961|   Tera Flops per Second
+PTRANS_GBs                         |  G-PTRANS            |         0.0036|   Tera Bytes per Second
+MPIRandomAccess_GUPs               |  G-RandomAccess      |         0.5349|   Giga Updates per Second
+MPIFFT_Gflops                      |  G-FFT               |         0.0071|   Tera Flops per Second
+StarSTREAM_Triad*CommWorldProcs    |  EP-STREAM Sys       |         0.6409|   Tera Bytes per Second
+StarSTREAM_Triad                   |  EP-STREAM Triad     |         4.0057|   Giga Bytes per Second
+StarDGEMM_Gflops                   |  EP-DGEMM            |        50.5274|   Giga Flops per Second
+RandomlyOrderedRingBandwidth_GBytes|  RandomRing Bandwidth|         0.3981|   Giga Bytes per second
+RandomlyOrderedRingLatency_usec    |  RandomRing Latency  |         2.2075|   micro-seconds
+
+Ns = 211200
+NBs = 384
+
+Ps x Pq = 10 x 16
+
+
 
 ## NSCC
 
