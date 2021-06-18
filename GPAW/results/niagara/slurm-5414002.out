@@ -1,0 +1,52 @@
+############################################################
+GPAW benchmark: Copper Filament
+  dimensions: x=2, y=2, z=4
+  grid spacing: h=0.220000
+  Brillouin-zone sampling: kpts=(1, 1, 8)
+  MPI tasks: 80
+############################################################
+
+Free energy: -302.7928234755329
+
+scontrol show jobid 5414002
+JobId=5414002 JobName=gpaw_copper_1
+   UserId=lcl_uotiscsccs1041(1911041) GroupId=lcl_uotiscscc(1910004) MCS_label=N/A
+   Priority=2631661 Nice=0 Account=lcl-uotiscsccs1041 QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:16:07 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2021-05-26T13:58:18 EligibleTime=2021-05-26T13:58:18
+   AccrueTime=2021-05-26T13:58:18
+   StartTime=2021-05-26T13:58:21 EndTime=2021-05-26T14:14:28 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2021-05-26T13:58:21
+   Partition=compute AllocNode:Sid=nia-login02:86382
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia0540
+   BatchHost=nia0540
+   NumNodes=1 NumCPUs=80 NumTasks=80 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=80,mem=175000M,node=1,billing=40
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=1 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/GPAW/test2/gpaw_copper.sh
+   WorkDir=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/GPAW/test2
+   StdErr=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/GPAW/test2/slurm-5414002.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/GPAW/test2/slurm-5414002.out
+   Power=
+   MailUser=lcl_uotiscsccs1041@scinet.local MailType=NONE
+
+sacct -j 5414002
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+5414002      gpaw_copp+ lcl-uotis+   00:16:07                        04:10.095   21:01:11      0:0 
+5414002.bat+      batch lcl-uotis+   00:16:07    615280K     11820K  00:00.240  00:00.262      0:0 
+5414002.ext+     extern lcl-uotis+   00:16:07    138360K      1064K   00:00:00   00:00:00      0:0 
+5414002.0    hydra_bst+ lcl-uotis+   00:16:02 576694572K 112592040K  04:09.855   21:01:10      0:0 
+
+kernel messages produced during job executions:
+[May26 14:03] perf: interrupt took too long (2517 > 2500), lowering kernel.perf_event_max_sample_rate to 79000
+[May26 14:05] perf: interrupt took too long (3209 > 3146), lowering kernel.perf_event_max_sample_rate to 62000
+[May26 14:07] perf: interrupt took too long (4045 > 4011), lowering kernel.perf_event_max_sample_rate to 49000
+[May26 14:10] perf: interrupt took too long (5099 > 5056), lowering kernel.perf_event_max_sample_rate to 39000
