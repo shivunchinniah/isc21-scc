@@ -1,0 +1,37 @@
+
+scontrol show jobid 5508964
+JobId=5508964 JobName=HPCG_c
+   UserId=lcl_uotiscsccs1041(1911041) GroupId=lcl_uotiscscc(1910004) MCS_label=N/A
+   Priority=1479318 Nice=0 Account=lcl-uotiscsccs1041 QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:33:08 TimeLimit=01:00:00 TimeMin=N/A
+   SubmitTime=2021-06-18T15:49:15 EligibleTime=2021-06-18T15:49:15
+   AccrueTime=2021-06-18T15:49:15
+   StartTime=2021-06-18T15:50:06 EndTime=2021-06-18T16:23:14 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2021-06-18T15:50:06
+   Partition=compute AllocNode:Sid=nia-login07:144098
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[0158-0159,0211,0292]
+   BatchHost=nia0158
+   NumNodes=4 NumCPUs=320 NumTasks=160 CPUs/Task=1 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=320,mem=700000M,node=4,billing=160
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/HPCG/16/slurm.sh
+   WorkDir=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/HPCG/16
+   StdErr=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/HPCG/16/slurm-5508964.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/HPCG/16/slurm-5508964.out
+   Power=
+   MailUser=lcl_uotiscsccs1041@scinet.local MailType=NONE
+
+sacct -j 5508964
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+5508964          HPCG_c lcl-uotis+   00:33:08                        04:27.579 3-15:43:16      0:0 
+5508964.bat+      batch lcl-uotis+   00:33:08    814972K     11932K  00:00.280  00:00.279      0:0 
+5508964.ext+     extern lcl-uotis+   00:33:08    138360K       876K  00:00.001  00:00.001      0:0 
+5508964.0    hydra_bst+ lcl-uotis+   00:33:01 144570540K   4055224K  04:27.297 3-15:43:16      0:0 
