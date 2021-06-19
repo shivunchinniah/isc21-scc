@@ -44,9 +44,12 @@ Try 1. 5443169. 615.16s.
 
 
 Ran on 80 threads per node with --pin=core and got 159Gb used. job 5443033. 594.59s.
-
-Default kmer store is 44MB?
-Set maxkmer to 50. 5443150. 582.67s.
+  
+Default kmer store is 44MB?  
+Set maxkmer to 50. 5443150. 582.67s.  
+set kmer to 54 and rpcs to 1. 5443172. 619.85s. 
+kmer 54 rpcs to 30. 5443174. 611.41s. 
+Set max-rpcs to unlimited. Got 568.36
 
 ## Niagara Scaling Analysis
 
@@ -55,14 +58,13 @@ Using the default parameters and testing scaling across different configs we obt
 | ----------- | ----------- | ------- | ---------- |
 | 1           | 40          | 1561.59 | 68.37      |
 | 2           | 20          | 1561.59 | 68.37      |
-| 2           | 40          | 1561.59 | 68.37      |
-| 3           | 40          | 1561.59 | 68.37      |
-| 4           | 40          | 1561.59 | 68.37      |
+| 2           | 40          | 1068.8  | 103.31     |
+| 3           | 40          | 753.31  | 299.36     |
+| 4           | 40          | 586.35  | 413.09     |
 | 4           | 10          | 1561.59 | 68.37      |
-| 4           | 38          | 1561.59 | 68.37      |
-| 4           | 40          | 1561.59 | 68.37      |
+| 4           | 38          | 544.39  | 420.20     |
+| 4           | 40          | 586.35  | 413.09     |
 | 4           | 60          | 1561.59 | 68.37      |
-| 4           | 80          | 1561.59 | 68.37      |
+| 4           | 80          | 543.82  | 474.29     |
 
-set kmer to 54 and rpcs to 1. 5443172. 619.85s
-kmer 54 rpcs to 30. 5443174. 611.41s
+
