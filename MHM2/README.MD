@@ -67,5 +67,40 @@ Using the default parameters and testing scaling across different configs we obt
 | 4           | 60          | 581.16  | 391.10     |
 | 4           | 80          | 543.82  | 474.29     |
 
+# Did further tests by pinning to cores
+
+Did further tests by pinning to cores
+|  Nodes<br/> | Threads/node<br/> | Time<br/> | Memory<br/> |
+|-----|-----|-----|-----|
+|  40<br/> | 40<br/> | 602.25<br/> | 406.99<br/> |
+|  4<br/> | 38<br/> | 608.75<br/> | 477.55<br/> |
+|  1<br/> | 40<br/> | 1660.24<br/> | 68.46<br/> |
+
+Tweaking max-kmer store without tweaking Rpcs
+
+|  Max-kmer-store<br/> | Time<br/> | Memory<br/> |
+|-----|-----|-----|
+|  0<br/> | 593.62<br/> | 403.21<br/> |
+|  10<br/> | 537.20<br/> | 393.71<br/> |
+|  20<br/> | 594.66<br/> | 393.62<br/> |
+|  30<br/> | 598.84<br/> | 393.65<br/> |
+|  35<br/> | 583.63<br/> | 393.67<br/> |
+|  40<br/> | 529.10<br/> | 394.48<br/> |
+|  44<br/> | 559.15<br/> | 428.56<br/> |
+|  50<br/> | 563.65<br/> | 537.06<br/> |
+|  60<br/> | 525.04<br/> | 421.76<br/> |
+|  70<br/> | 557.04<br/> | 446.36<br/> |
+|  80<br/> | 533.86<br/> | 415.81<br/> |
+|  90<br/> | 559.87<br/> | 423.51<br/> |
+|  100<br/> | 560.04<br/> | 437.17<br/> |
+|  150<br/> | 532.89<br/> | 414.04<br/> |
+|  1000<br/> | 573.39<br/> | 439.30<br/> |
+
+This shit aint adding up
+
+![Pasted Graphic](https://user-images.githubusercontent.com/41543031/122656310-a5452a00-d159-11eb-9f8b-83fafe45132e.png)
+
+
+
 
 
