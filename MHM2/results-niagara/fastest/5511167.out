@@ -1,0 +1,247 @@
+Found 80 cpus and 2 hyperthreads from lscpu
+Found tasks per node from SLURM_NTASKS_PER_NODE= 40
+Executing mhm2 with job 5511167 (60kmer100rpcs) on 4 nodes.
+Executing as: /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/MHM2/mhm2-2.0.1/bin/mhm2.py -r /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq --checkpoint=no --max-kmer-store=60 --max-rpcs-in-flight=100
+Found tasks per node from SLURM_NTASKS_PER_NODE= 40
+Setting GASNET_COLL_SCRATCH_SIZE=4M 
+2021-06-19 19:36:31.612961 executing:
+ upcxx-run -n 160 -N 4 -shared-heap 10% -- /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/MHM2/mhm2-2.0.1/bin/mhm2 -r /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq --checkpoint=no --max-kmer-store=60 --max-rpcs-in-flight=100
+Started executing at 2021-06-19 19:36:35.144766 with PID 40948
+which: no lfs in (/home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/apps/bin:/opt/slurm/bin:/scinet/niagara/software/2019b/core/bin:/usr/local/bin:/usr/bin:/scinet/niagara/bin:/usr/lpp/mmfs/bin)
+Created mhm2-run-competition1-n160-N4-210619193635
+[94mMHM2 version 2.0.1- with upcxx-utils 0.3.5 built on 20210619_140738[0m
+[94mOptions:[0m
+[94m  reads =                  /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq[0m
+[94m  kmer-lens =              21 33 55 77 99[0m
+[94m  scaff-kmer-lens =        99 33[0m
+[94m  min-ctg-print-len =      500[0m
+[94m  output =                 mhm2-run-competition1-n160-N4-210619193635[0m
+[94m  checkpoint =             no[0m
+[94m  max-kmer-store =         60[0m
+[94m  max-rpcs-in-flight =     100[0m
+[94m_________________________[0m
+Starting run with 160 processes on 4 nodes at 06/19/21 19:36:35
+Pinning to cores: process 0 on node 0 pinned to cpus 0,40
+Reads file /home/l/lcl_uotiscscc/lcl_uotiscsccs1041/isc21-scc/downloads/competition1.fastq is 39.10GB
+Total size of 1 input file is 39.10GB
+Initial free memory across all 4 nodes: 691.47GB (172.87GB avg, 172.59GB min, 173.38GB max)
+[34mStarting with 172.81GB free on node 0[0m
+[34mMerging reads                           4.67 s[0m
+
+[34mCompleted initialization in 4.79 s at 06/19/21 19:36:39 (166.31GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mContig generation k = 21[0m
+
+[34mAnalyzing kmers                         25.16 s[0m
+[34mTraversing deBruijn graph               1.96 s[0m
+[34mAligning reads to contigs               39.67 s[0m
+[34mLocally extending ends of contigs       7.68 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       56770
+    Total assembled length:  68607506
+    Average contig depth:    135.108
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      42712
+    Contig lengths:
+        > 1kbp:              41257711 (60.14%)
+        > 5kbp:              15744550 (22.95%)
+        > 10kbp:             6055637 (8.83%)
+        > 25kbp:             387894 (0.57%)
+        > 50kbp:             0 (0.00%)
+
+[34mCompleted contig round k = 21 in 74.93 s at 06/19/21 19:37:54 (104.10GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mContig generation k = 33[0m
+
+[34mAnalyzing kmers                         29.33 s[0m
+[34mTraversing deBruijn graph               1.78 s[0m
+[34mAligning reads to contigs               39.37 s[0m
+[34mLocally extending ends of contigs       5.61 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       40039
+    Total assembled length:  71611849
+    Average contig depth:    64.3104
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      172236
+    Contig lengths:
+        > 1kbp:              53012203 (74.03%)
+        > 5kbp:              34309855 (47.91%)
+        > 10kbp:             28192776 (39.37%)
+        > 25kbp:             18200539 (25.42%)
+        > 50kbp:             9710413 (13.56%)
+
+[34mCompleted contig round k = 33 in 76.65 s at 06/19/21 19:39:11 (72.67GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mContig generation k = 55[0m
+
+[34mAnalyzing kmers                         63.58 s[0m
+[34mTraversing deBruijn graph               0.86 s[0m
+[34mAligning reads to contigs               41.79 s[0m
+[34mLocally extending ends of contigs       6.46 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       31787
+    Total assembled length:  74185153
+    Average contig depth:    39.6295
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      475047
+    Contig lengths:
+        > 1kbp:              61919351 (83.47%)
+        > 5kbp:              39212977 (52.86%)
+        > 10kbp:             34862620 (46.99%)
+        > 25kbp:             26078642 (35.15%)
+        > 50kbp:             16810900 (22.66%)
+
+[34mCompleted contig round k = 55 in 112.79 s at 06/19/21 19:41:04 (72.66GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mContig generation k = 77[0m
+
+[34mAnalyzing kmers                         62.91 s[0m
+[34mTraversing deBruijn graph               0.92 s[0m
+[34mAligning reads to contigs               42.87 s[0m
+[34mLocally extending ends of contigs       7.11 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       26842
+    Total assembled length:  74511843
+    Average contig depth:    33.8271
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      528496
+    Contig lengths:
+        > 1kbp:              65369223 (87.73%)
+        > 5kbp:              41774946 (56.06%)
+        > 10kbp:             37314170 (50.08%)
+        > 25kbp:             30613026 (41.08%)
+        > 50kbp:             21091458 (28.31%)
+
+[34mCompleted contig round k = 77 in 113.91 s at 06/19/21 19:42:58 (72.65GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mContig generation k = 99[0m
+
+[34mAnalyzing kmers                         25.97 s[0m
+[34mTraversing deBruijn graph               1.59 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       19270
+    Total assembled length:  68544532
+    Average contig depth:    16.9533
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      632211
+    Contig lengths:
+        > 1kbp:              63104160 (92.06%)
+        > 5kbp:              42553877 (62.08%)
+        > 10kbp:             38339516 (55.93%)
+        > 25kbp:             32845728 (47.92%)
+        > 50kbp:             24900666 (36.33%)
+
+[34mCompleted contig round k = 99 in 27.79 s at 06/19/21 19:43:26 (72.65GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mScaffolding k = 99[0m
+
+[34mAligning reads to contigs               42.82 s[0m
+[34mTraversing contig graph                 9.10 s[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       14143
+    Total assembled length:  70192586
+    Average contig depth:    41.0226
+    Number of Ns/100kbp:     0 (0)[0m
+    Max. contig length:      849447
+    Contig lengths:
+        > 1kbp:              67027603 (95.49%)
+        > 5kbp:              49152764 (70.03%)
+        > 10kbp:             42758505 (60.92%)
+        > 25kbp:             37392953 (53.27%)
+        > 50kbp:             31581214 (44.99%)
+
+[34mCompleted scaffolding round k = 99 in 57.25 s at 06/19/21 19:44:23 (72.64GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mScaffolding k = 33[0m
+
+[34mAligning reads to contigs               37.86 s[0m
+[34mTraversing contig graph                 6.18 s[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       11974
+    Total assembled length:  70887611
+    Average contig depth:    27.463
+    Number of Ns/100kbp:     0.057838 (41)[0m
+    Max. contig length:      850812
+    Contig lengths:
+        > 1kbp:              68374618 (96.45%)
+        > 5kbp:              53201306 (75.05%)
+        > 10kbp:             45717705 (64.49%)
+        > 25kbp:             39083645 (55.13%)
+        > 50kbp:             32968159 (46.51%)
+
+[34mCompleted scaffolding round k = 33 in 49.56 s at 06/19/21 19:45:12 (72.64GB free memory on node 0)[0m
+[34m_________________________[0m
+[34mDumping contigs                         0.45 s[0m
+[34m_________________________[0m
+Assembly statistics (contig lengths >= 500)
+    Number of contigs:       11974
+    Total assembled length:  70887611
+    Average contig depth:    27.463
+    Number of Ns/100kbp:     0.057838 (41)[0m
+    Max. contig length:      850812
+    Contig lengths:
+        > 1kbp:              68374618 (96.45%)
+        > 5kbp:              53201306 (75.05%)
+        > 10kbp:             45717705 (64.49%)
+        > 25kbp:             39083645 (55.13%)
+        > 50kbp:             32968159 (46.51%)
+
+[34mCompleted finalization in 0.52 s at 06/19/21 19:45:13 (72.64GB free memory on node 0)[0m
+[34m_________________________[0m
+Stage timing:
+    stage_timers.hpp:Merge reads: 4.67 s
+    stage_timers.hpp:Analyze kmers: 206.95 s 5 count
+    stage_timers.hpp:Traverse deBruijn graph: 7.11 s 5 count
+    stage_timers.hpp:Alignments: 244.38 s 6 count
+      -> stage_timers.hpp:Kernel alignments: 0.00 s
+    stage_timers.hpp:Local assembly: 26.86 s 4 count
+    stage_timers.hpp:Traverse contig graph: 15.28 s 2 count
+    FASTQ total read time: 0.76515
+    merged FASTQ write time: 1.14558
+    Contigs write time: 0.450515
+[34m_________________________[0m
+Peak memory used across all 4 nodes: 421.76GB (105.44GB avg, 100.17GB min, 107.90GB max)
+Finished in 518.79 s at 06/19/21 19:45:13 for 2.0.1
+Final assembly can be found at  mhm2-run-competition1-n160-N4-210619193635/final_assembly.fasta
+Overall time taken (including any restarts): 525.04 s
+
+scontrol show jobid 5511167
+JobId=5511167 JobName=60kmer100rpcs
+   UserId=lcl_uotiscsccs1041(1911041) GroupId=lcl_uotiscscc(1910004) MCS_label=N/A
+   Priority=1466804 Nice=0 Account=lcl-uotiscsccs1041 QOS=normal
+   JobState=COMPLETING Reason=None Dependency=(null)
+   Requeue=0 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:08:48 TimeLimit=00:20:00 TimeMin=N/A
+   SubmitTime=2021-06-19T13:33:03 EligibleTime=2021-06-19T13:33:03
+   AccrueTime=2021-06-19T13:33:03
+   StartTime=2021-06-19T13:36:28 EndTime=2021-06-19T13:45:16 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2021-06-19T13:36:28
+   Partition=compute AllocNode:Sid=nia-login03:147721
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=nia[1633,1890,1974,2003]
+   BatchHost=nia1633
+   NumNodes=4 NumCPUs=320 NumTasks=160 CPUs/Task=1 ReqB:S:C:T=0:0:*:1
+   TRES=cpu=320,mem=700000M,node=4,billing=160
+   Socks/Node=* NtasksPerN:B:S:C=40:0:*:* CoreSpec=*
+   MinCPUsNode=40 MinMemoryNode=175000M MinTmpDiskNode=0
+   Features=[skylake|cascade] DelayBoot=00:00:00
+   OverSubscribe=NO Contiguous=0 Licenses=(null) Network=(null)
+   Command=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/MHM2/tweakruns/60kmer100rpcs/MHM.sh
+   WorkDir=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/MHM2/tweakruns/60kmer100rpcs
+   StdErr=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/MHM2/tweakruns/60kmer100rpcs/5511167.out
+   StdIn=/dev/null
+   StdOut=/gpfs/fs0/scratch/l/lcl_uotiscscc/lcl_uotiscsccs1041/MHM2/tweakruns/60kmer100rpcs/5511167.out
+   Power=
+   MailUser=lcl_uotiscsccs1041@scinet.local MailType=NONE
+
+sacct -j 5511167
+       JobID    JobName    Account    Elapsed  MaxVMSize     MaxRSS  SystemCPU    UserCPU ExitCode 
+------------ ---------- ---------- ---------- ---------- ---------- ---------- ---------- -------- 
+5511167      60kmer100+ lcl-uotis+   00:08:48                        16:51.242   04:00:46      0:0 
+5511167.bat+      batch lcl-uotis+   00:08:48    718656K     28520K  00:00.242  00:00.451      0:0 
+5511167.ext+     extern lcl-uotis+   00:08:48 924861744K 154410108K   00:16:51   04:00:46      0:0 
